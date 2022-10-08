@@ -1,0 +1,12 @@
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/CMakeFiles/FirstTestProject.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule1/CMakeFiles/dirModule1.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule1/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule1/CMakeFiles/rebuild_cache.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule2/CMakeFiles/dirModule2.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule2/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule2/CMakeFiles/rebuild_cache.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule3/CMakeFiles/dirModule3.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule3/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/project-C-plus-plus/IntroLab/cmake-build-debug/dirModule3/CMakeFiles/rebuild_cache.dir
