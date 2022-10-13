@@ -1,0 +1,26 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/natasamihaleva/projectCXX/Lab2 -B /Users/natasamihaleva/projectCXX/Lab2/cmake-build-debug
+-- Could NOT find Boost (missing: Boost_INCLUDE_DIR filesystem program_options) (Required is at least version "1.78.0")
+-- Configuring done
+CMake Error: The following variables are used in this project, but they are set to NOTFOUND.
+Please set them or make sure they are set and tested correctly in the CMake files:
+Boost_INCLUDE_DIR (ADVANCED)
+   used as include directory in directory /Users/natasamihaleva/projectCXX/Lab2
+   used as include directory in directory /Users/natasamihaleva/projectCXX/Lab2
+   used as include directory in directory /Users/natasamihaleva/projectCXX/Lab2
+
+CMake Error in CMakeLists.txt:
+  Found relative path while evaluating include directories of "Lab2":
+
+    "Boost_INCLUDE_DIR-NOTFOUND"
+
+
+
+CMake Error in CMakeLists.txt:
+  Found relative path while evaluating include directories of "Lab2":
+
+    "Boost_INCLUDE_DIR-NOTFOUND"
+
+
+
+-- Generating done
+CMake Generate step failed.  Build files cannot be regenerated correctly.
