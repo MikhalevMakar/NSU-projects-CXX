@@ -49,12 +49,14 @@ build cmake_object_order_depends_target_Lab2: phony || CMakeFiles/Lab2.dir
 build CMakeFiles/Lab2.dir/EApplication.cpp.o: CXX_COMPILER__Lab2_Debug /Users/natasamihaleva/projectCXX/Lab2/EApplication.cpp || cmake_object_order_depends_target_Lab2
   DEP_FILE = CMakeFiles/Lab2.dir/EApplication.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab2/boost_1_78_0/boost
   OBJECT_DIR = CMakeFiles/Lab2.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab2.dir
 
 build CMakeFiles/Lab2.dir/main.cpp.o: CXX_COMPILER__Lab2_Debug /Users/natasamihaleva/projectCXX/Lab2/main.cpp || cmake_object_order_depends_target_Lab2
   DEP_FILE = CMakeFiles/Lab2.dir/main.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab2/boost_1_78_0/boost
   OBJECT_DIR = CMakeFiles/Lab2.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab2.dir
 
