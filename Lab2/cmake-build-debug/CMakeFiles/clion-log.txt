@@ -1,5 +1,9 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/natasamihaleva/projectCXX/Lab2 -B /Users/natasamihaleva/projectCXX/Lab2/cmake-build-debug
 -- Could NOT find Boost (missing: Boost_INCLUDE_DIR filesystem program_options) 
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/natasamihaleva/projectCXX/Lab2/cmake-build-debug
+CMake Error at CMakeLists.txt:9 (ind_package):
+  Unknown CMake command "ind_package".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/natasamihaleva/projectCXX/Lab2/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/natasamihaleva/projectCXX/Lab2/cmake-build-debug/CMakeFiles/CMakeError.log".
