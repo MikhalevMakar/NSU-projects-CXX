@@ -1,0 +1,15 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake;-P;/Users/natasamihaleva/projectCXX/Lab2/_deps/boost-subbuild/boost-populate-prefix/tmp/boost-populate-gitclone.cmake
+source_dir=/Users/natasamihaleva/projectCXX/Lab2/_deps/boost-src
+work_dir=/Users/natasamihaleva/projectCXX/Lab2/_deps
+repository=https://github.com/boostorg/boost.git
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=tools/cmake;libs/program_options;libs/assert;libs/exception;libs/throw_exception;libs/static_assert;libs/bind;libs/function_types;libs/function;libs/chrono;libs/date_time;libs/concept_check;libs/config;libs/container;libs/container_hash;libs/iterator;libs/utility;libs/type_traits;libs/algorithm;libs/conversion;libs/numeric/conversion;libs/regex;libs/unordered;libs/tokenizer;libs/move;libs/ratio;libs/lexical_cast;libs/tuple;libs/variant2;libs/typeof;libs/detail;libs/array;libs/type_index;libs/range;libs/optional;libs/smart_ptr;libs/integer;libs/rational;libs/intrusive;libs/io;libs/core;libs/align;libs/predef;libs/preprocessor;libs/system;libs/winapi;libs/atomic;libs/mpl;libs/fusion;libs/mp11;libs/any;libs/functional;libs/thread
+CMP0097=NEW
+

@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libInputParser.a CMakeFiles/InputParser.dir/InputParser.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libInputParser.a

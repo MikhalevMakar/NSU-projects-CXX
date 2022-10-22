@@ -1,1 +1,4 @@
-CMakeLists.txt not found in /Users/natasamihaleva/projectCXX/Lab2 Select CMakeLists.txt
+Cannot generate into /Users/natasamihaleva/projectCXX/Lab2
+It was created with incompatible generator 'Unix Makefiles'
+
+Please either delete it manually or select another generation directory
