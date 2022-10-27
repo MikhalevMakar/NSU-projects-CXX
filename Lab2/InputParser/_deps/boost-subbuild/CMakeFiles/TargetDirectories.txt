@@ -1,3 +1,0 @@
-/Users/natasamihaleva/projectCXX/Lab2/InputParser/_deps/boost-subbuild/CMakeFiles/boost-populate.dir
-/Users/natasamihaleva/projectCXX/Lab2/InputParser/_deps/boost-subbuild/CMakeFiles/edit_cache.dir
-/Users/natasamihaleva/projectCXX/Lab2/InputParser/_deps/boost-subbuild/CMakeFiles/rebuild_cache.dir

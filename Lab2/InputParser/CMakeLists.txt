@@ -1,4 +1,5 @@
-add_library(InputParser STATIC InputParser.h InputParser.cpp)
+add_library(InputParser STATIC InputParser.cpp
+                               InputParser.h)
 
 find_package(Boost COMPONENTS program_options)
 set(BOOST_INCLUDE_LIBRARIES program_options)
@@ -34,4 +35,5 @@ if(NOT Boost_FOUND)
 endif()
 
 include_directories(${BOOST_INCLUDE_LIBRARIES})
-target_link_libraries(InputParser Boost::program_options)
+
+target_link_libraries(InputParser PUBLIC Boost::program_options)

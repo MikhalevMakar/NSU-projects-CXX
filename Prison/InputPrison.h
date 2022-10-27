@@ -9,8 +9,11 @@
 
 namespace po = boost::program_options;
 
-struct InputParser {
+class InputParser {
+public:
     InputParser(int argc, char** argv);
+
+private:
     po::variables_map vm;
     std::vector<std::string> strategyName;
     std::string modeLine;
@@ -19,4 +22,4 @@ struct InputParser {
     std::string matrixLine;
 };
 
-#endif
+#endif //LAB2_INPUTPARSER_H
