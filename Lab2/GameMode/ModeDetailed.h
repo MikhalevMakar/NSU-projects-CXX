@@ -1,15 +1,17 @@
 #ifndef PRISON_MODEDETAILED_H
 #define PRISON_MODEDETAILED_H
-#include <vector>
-#include <string>
 
-class ModeDetailed {
+#include "Mode.h"
+class ModeDetailed : public Mode {
 public:
-    ModeDetailed() = default;
-    ModeDetailed(std::vector<std::string> strategyName,
-                 std::string modeLine,
-                 std::vector<std::string> configsLine);
+    ModeDetailed(int _countSteps,
+                 std::vector<std::string> _strategyName,
+                 std::vector<std::string> _configsLine);
+    void gameModeStart() override;
+    void printGame() override;
+private:
+    std::string key;
+    std::string ret = "return";
 };
-
 
 #endif
