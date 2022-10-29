@@ -1,5 +1,6 @@
 add_library(InputParser STATIC InputParser.cpp
-                               InputParser.h)
+        InputParser.h)
+
 
 find_package(Boost COMPONENTS program_options)
 set(BOOST_INCLUDE_LIBRARIES program_options)
@@ -36,4 +37,7 @@ endif()
 
 include_directories(${BOOST_INCLUDE_LIBRARIES})
 
+target_include_directories(InputParser PUBLIC ${CMAKE_SOURCE_DIR}/GameMatrix)
+
+target_link_libraries(InputParser PUBLIC  ${CMAKE_BINARY_DIR}/GameMatrix)
 target_link_libraries(InputParser PUBLIC Boost::program_options)

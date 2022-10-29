@@ -16,11 +16,9 @@ public:
     void updateScorePointMatrix(Voice VoiceA,
                                 Voice VoiceB,
                                 Voice VoiceC);
-private:
     std::vector<std::string> matrixVoice;
-    std::vector<std::string> matrixPoint;
+    std::vector< std::vector<int> > matrixPoint;
     std::vector<std::string> ScorePointMatrix;
 };
-
 
 #endif
