@@ -3,13 +3,17 @@
 
 Game::Game(int argc, char** argv) {
     InputParser inputParser(argc, argv);
-    std::cout<<inputParser.modeLine;
-    RandomVoice v;
 
-    if(inputParser.modeLine == "detailed")  ModeDetailed(inputParser.strategyName,
-                                                         inputParser.modeLine,
+    if(inputParser.modeLine == "detailed")
+                                            ModeDetailed(inputParser.countSteps,
+                                                         inputParser.strategyName,
                                                          inputParser.configsLine);
-    else if(inputParser.modeLine == "fast") std::cout << "fast";
-    else if(inputParser.modeLine == "tournament") std::cout << "tournament";
-
+    else if(inputParser.modeLine == "fast")
+                                            ModeFast(inputParser.countSteps,
+                                                     inputParser.strategyName,
+                                                     inputParser.configsLine);
+    else if(inputParser.modeLine == "tournament")
+                                            ModeTournament(inputParser.countSteps,
+                                                           inputParser.strategyName,
+                                                           inputParser.configsLine);
 }
