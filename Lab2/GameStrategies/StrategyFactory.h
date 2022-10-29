@@ -12,9 +12,7 @@
 class StrategyFactory {
 public:
     StrategyFactory() = default;
-     GameStrategy* createStrategy(StrategyName strategyName,
-                                        const std::string &configPath,
-                                        const GameMatrix &gameMatrix);
+     GameStrategy* createStrategy(std::string strategyName);
     ~StrategyFactory() = default;
 };
 

@@ -14,4 +14,4 @@ public:
 };
 
 
-#endif //LAB2_ALWAYSVOICEC_H
+#endif

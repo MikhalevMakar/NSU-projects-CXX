@@ -5,7 +5,8 @@
 #define LAB2_ALWAYSVOICED_H
 #include "GameStrategy.h"
 
-class AlwaysVoiceD : public GameStrategy {
+class AlwaysVoiceD : public GameStrategy
+        {
 public:
      Voice vote() override;
      void update(Voice playerA, Voice playerB) override;
@@ -13,5 +14,4 @@ public:
      ~AlwaysVoiceD() override = default;
 };
 
-
-#endif //LAB2_ALWAYSVOICED_H
+#endif
