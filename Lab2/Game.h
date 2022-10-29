@@ -10,6 +10,8 @@
 #include "InputParser.h"
 #include "Voice.h"
 #include "ModeDetailed.h"
+#include "ModeFast.h"
+#include "ModeTournament.h"
 
 class Game {
 public:
@@ -19,6 +21,5 @@ public:
     // bool isApplicable(StrategyName name) = 0;
      //~GameStrategy() = default;
  };
-
 
 #endif
