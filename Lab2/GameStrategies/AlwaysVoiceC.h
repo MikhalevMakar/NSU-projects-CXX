@@ -9,7 +9,6 @@ class AlwaysVoiceC : public GameStrategy {
 public:
     Voice vote() override;
     void update(Voice playerA, Voice playerB) override;
-    bool isApplicable(StrategyName name) override;
     ~AlwaysVoiceC() override = default;
 };
 

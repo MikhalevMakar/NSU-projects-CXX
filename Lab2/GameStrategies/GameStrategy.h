@@ -7,13 +7,11 @@
 
 #include "Voice.h"
 #include <iostream>
-
-
+#include <string>
 class GameStrategy {
 public:
     virtual Voice vote() = 0;
     virtual void update(Voice playerA, Voice playerB) = 0;
-    virtual bool isApplicable(StrategyName name) = 0;
     virtual ~GameStrategy() = default;
 };
 

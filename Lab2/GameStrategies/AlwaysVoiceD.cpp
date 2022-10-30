@@ -7,10 +7,7 @@ Voice AlwaysVoiceD::vote()  {
     return DEFECT;
 }
 
-bool AlwaysVoiceD::isApplicable(StrategyName name)  {
-    return name == ALWAYS_VOICE_D;
-}
-
 void AlwaysVoiceD::update(Voice playerA, Voice playerB) {
+
 
 }

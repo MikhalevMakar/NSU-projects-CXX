@@ -1,0 +1,3 @@
+/Users/natasamihaleva/Desktop/Prison/GameStrategies/CMakeFiles/GameStrategies.dir
+/Users/natasamihaleva/Desktop/Prison/GameStrategies/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/Desktop/Prison/GameStrategies/CMakeFiles/rebuild_cache.dir

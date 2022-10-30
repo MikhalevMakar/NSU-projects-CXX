@@ -7,10 +7,6 @@ Voice AlwaysVoiceC::vote()  {
     return COOPERATE;
 }
 
-bool AlwaysVoiceC::isApplicable(StrategyName name)  {
-    return name == ALWAYS_VOICE_C;
-}
-
 void AlwaysVoiceC::update(Voice playerA, Voice playerB) {
 
 }

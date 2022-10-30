@@ -8,10 +8,10 @@
 class AlwaysVoiceD : public GameStrategy
         {
 public:
-     Voice vote() override;
-     void update(Voice playerA, Voice playerB) override;
-     bool isApplicable(StrategyName name) override;
-     ~AlwaysVoiceD() override = default;
+    AlwaysVoiceD() = default;
+    Voice vote() override;
+    void update(Voice playerA, Voice playerB) override;
+    ~AlwaysVoiceD() override = default;
 };
 
 #endif

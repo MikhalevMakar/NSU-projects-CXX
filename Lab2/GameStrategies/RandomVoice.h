@@ -8,12 +8,9 @@
 
 class RandomVoice : public GameStrategy {
 public:
+    RandomVoice() =default;
     Voice vote() override;
-
     void update(Voice playerA, Voice playerB) override;
-
-    bool isApplicable(StrategyName name) override;
-
     ~RandomVoice() override = default;
 };
 

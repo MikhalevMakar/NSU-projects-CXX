@@ -5,9 +5,4 @@ Voice RandomVoice::vote()  {
     return (rand() % 2) ? COOPERATE : DEFECT;
 }
 
-void RandomVoice::update(Voice playerA, Voice playerB)  {
-
-}
-bool RandomVoice::isApplicable(StrategyName name)  {
-    return name == RANDOM_VOICE;
-}
+void RandomVoice::update(Voice playerA, Voice playerB) { }
