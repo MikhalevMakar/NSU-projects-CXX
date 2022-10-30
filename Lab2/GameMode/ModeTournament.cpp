@@ -6,9 +6,11 @@
 
 ModeTournament::ModeTournament(int _countSteps,
                std::vector<std::string> _strategyName,
-               std::vector<std::string> _configsLine) : Mode(_countSteps,
-                                                             _strategyName,
-                                                             _configsLine) {
+               std::vector<std::string> _configsLine,
+               std::string _matrixLine) : Mode(  _countSteps,
+                                               _strategyName,
+                                                 _configsLine,
+                                                  _matrixLine) {
     gameModeStart();
 }
 
@@ -23,11 +25,13 @@ bool ModeTournament::threePlayerGeneration() {
     }
     if(player1+2 >= strategyName.size()) return false;
 
-    vectorPlayers = { strategyFactory.createStrategy(strategyName[player1]),
-                      strategyFactory.createStrategy(strategyName[player2]),
-                      strategyFactory.createStrategy(strategyName[player3]) };
+    vectorPlayers = { strategyFactory.createStrategy(strategyName[player1], configsLine),
+                      strategyFactory.createStrategy(strategyName[player2], configsLine),
+                      strategyFactory.createStrategy(strategyName[player3], configsLine) };
+    strategyFactory.indexConfigsLine = 0;
     return true;
 }
+
 void ModeTournament::supportMessageClient() {
     std::cout << "\nCurrent game results:\n\n";
 }
@@ -51,10 +55,14 @@ void ModeTournament::updateTotalPoints(int value) {
 void ModeTournament::gameModeStart() {
     supportMessageClient();
     while(threePlayerGeneration()) {
-        makeUpVotePlayers();
-        updatePointsPerTurn();
-        updateTotalPoints(1);
-        printCurrentGameResults();
+        while(countSteps != step++) {
+            makeUpVotePlayers();
+            updatePointsPerTurn();
+            updateTotalPoints(1);
+            printCurrentGameResults();
+            updateStrategy();
+        }
+        step = 0;
     }
     printGame();
 }

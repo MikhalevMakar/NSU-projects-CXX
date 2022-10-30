@@ -1,9 +1,11 @@
 #include "ModeDetailed.h"
 ModeDetailed::ModeDetailed( int _countSteps,
                             std::vector<std::string> _strategyName,
-                            std::vector<std::string> _configsLine) : Mode(_countSteps,
-                                                                          _strategyName,
-                                                                          _configsLine) {
+                            std::vector<std::string> _configsLine,
+                            std::string _matrixLine) : Mode(_countSteps,
+                                                           _strategyName,
+                                                           _configsLine,
+                                                           _matrixLine) {
     gameModeStart();
 }
 
@@ -21,6 +23,7 @@ void ModeDetailed::gameModeStart() {
         } else {
             throw std::invalid_argument("Input not recognized\n");
         }
+        updateStrategy();
    }
 }
 

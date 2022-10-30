@@ -12,7 +12,8 @@ public:
 
     ModeFast(int _countSteps,
              std::vector<std::string> _strategyName,
-             std::vector<std::string> _configsLine);
+             std::vector<std::string> _configsLine,
+             std::string _matrixLine);
     void gameModeStart() override;
     void printGame() override;
 private:

@@ -5,9 +5,11 @@
 
 ModeFast::ModeFast(int _countSteps,
                    std::vector<std::string> _strategyName,
-                   std::vector<std::string> _configsLine) : Mode(_countSteps,
-                                                                 _strategyName,
-                                                                 _configsLine) {
+                   std::vector<std::string> _configsLine,
+                    std::string _matrixLine) : Mode(_countSteps,
+                                                    _strategyName,
+                                                    _configsLine,
+                                                    _matrixLine) {
     gameModeStart();
 }
 
@@ -17,6 +19,7 @@ void ModeFast::gameModeStart() {
         makeUpVotePlayers();
         updatePointsPerTurn();
         updateTotalPoints();
+        updateStrategy();
     }
     printGame();
 }

@@ -2,15 +2,21 @@
 
 Mode::Mode(int _countSteps,
            std::vector<std::string>  _strategyName,
-           std::vector<std::string> _configsLine) : countSteps(_countSteps),
-                                                    strategyName(_strategyName),
-                                                    configsLine(_configsLine) {
+           std::vector<std::string> _configsLine,
+           std::string _matrixLine) : countSteps(_countSteps),
+                                      strategyName(_strategyName),
+                                      configsLine(_configsLine),
+                                      matrixLine(_matrixLine) {
     vectorTotalPoint.resize(strategyName.size());
+
+    if(!matrixLine.empty()) {
+        matrix.updateGivenGameMatrix(matrixLine);
+    }
 }
 
 void Mode::CreatePlayers() {
     for(int i = 0; i < 3; ++i) {
-        vectorPlayers.push_back(strategyFactory.createStrategy(strategyName[i]));
+        vectorPlayers.push_back(strategyFactory.createStrategy(strategyName[i], configsLine));
     }
     if(vectorPlayers.size() != 3) throw std::invalid_argument("nameStrategy less 3");
 }
@@ -44,4 +50,15 @@ std::string Mode::pickingWinner() {
         if(vectorTotalPoint[i] > vectorTotalPoint[maxIndex]) maxIndex = i;
     }
     return strategyName[maxIndex];
+}
+
+void Mode::updateStrategy() {
+    for(int i = 0; i < strategyName.size(); ++i) {
+        if( strategyName[i] != "ALWAYS_VOICE_C" ||
+            strategyName[i] != "ALWAYS_VOICE_D" ||
+            strategyName[i] !=  "RANDOM_VOICE") {
+            vectorPlayers[i]->update((Voice)(votePlayer[(i+1)%3]),
+                                     (Voice)(votePlayer[(i+2)%3]));
+        }
+    }
 }

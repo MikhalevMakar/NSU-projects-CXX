@@ -22,7 +22,8 @@ class Mode {
 public:
     Mode(  int _countSteps,
            std::vector<std::string> _strategyName,
-           std::vector<std::string> _configsLine);
+           std::vector<std::string> _configsLine,
+           std::string _matrixLine);
     virtual void gameModeStart() = 0;
     void CreatePlayers();
     void makeUpVotePlayers();
@@ -30,12 +31,14 @@ public:
     void updateTotalPoints();
     virtual void printGame() = 0;
     std::string pickingWinner();
+    void updateStrategy();
 protected:
     void VectorIntToString(std::string& curPlayerTun);
     std::vector<std::string> strategyName;
     std::vector<std::string> configsLine;
     std::vector<GameStrategy*> vectorPlayers;
     std::vector <int> vectorTotalPoint;
+    std::string matrixLine;
     std::string  votePlayer;
     StrategyFactory strategyFactory;
     int curStep = 0, row, countSteps;
