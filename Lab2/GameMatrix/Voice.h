@@ -9,7 +9,8 @@ enum Voice {
 enum StrategyName {
     ALWAYS_VOICE_C,
     ALWAYS_VOICE_D,
-    RANDOM_VOICE
+    RANDOM_VOICE,
+    PERCENTAGE_CHOICE
 };
 
 #endif

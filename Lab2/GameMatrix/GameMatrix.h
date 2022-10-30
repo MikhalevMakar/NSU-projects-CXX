@@ -7,18 +7,20 @@
 #include <iostream>
 #include <fstream>
 #include "Voice.h"
-
+#include <cstdlib>
 class GameMatrix {
 public:
     GameMatrix();
     void allocMemory();
-    GameMatrix(std::string& tableMatrix);
-    void updateScorePointMatrix(Voice VoiceA,
-                                Voice VoiceB,
-                                Voice VoiceC);
+    //void updateScorePointMatrix(Voice VoiceA,
+//                                Voice VoiceB,
+//                                Voice VoiceC);
+    void updateGivenGameMatrix(std::string& tableMatrix);
     std::vector<std::string> matrixVoice;
     std::vector< std::vector<int> > matrixPoint;
-    std::vector<std::string> ScorePointMatrix;
+private:
+    int n = 3;
+    char tab;
 };
 
 #endif

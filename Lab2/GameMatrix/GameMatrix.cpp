@@ -29,20 +29,21 @@ GameMatrix::GameMatrix() {
                     {1, 1, 1} };
 }
 
-GameMatrix::GameMatrix(std::string& tableMatrix) {
-    allocMemory();
-    std::ifstream fileMatrix("fileMatrix.txt");
+void GameMatrix::updateGivenGameMatrix(std::string& tableMatrix) {
+    std::ifstream fileMatrix(tableMatrix);
 
     if(!fileMatrix.is_open()) throw std::invalid_argument("file is not open");
-    int n = 3;
-    char* currReadLine = new char[n+1];
+
+    char* currReadLine = new char[n];
+
     for(int i =0; !fileMatrix.eof(); ++i) {
-//        fileMatrix.read(currReadLine, n);
-//        matrixVoice[i] = currReadLine;
-//        fileMatrix.read(currReadLine, n);
-//        matrixPoint[i][0] = currReadLine[0];
-//        matrixPoint[i][1] = currReadLine[1];
-//        matrixPoint[i][2] = currReadLine[2];
+        fileMatrix.read(currReadLine, n);
+        matrixVoice[i] = currReadLine;
+        fileMatrix.read(currReadLine, n);
+        matrixPoint[i][0] = std::atoi(&currReadLine[0]) / 100;
+        matrixPoint[i][1] = std::atoi(&currReadLine[1]) / 10;
+        matrixPoint[i][2] = std::atoi(&currReadLine[2]);
+        fileMatrix.get(tab);
     }
     delete[] currReadLine;
 }
