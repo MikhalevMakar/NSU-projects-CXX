@@ -14,8 +14,8 @@ project(googletest-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(googletest-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/google/googletest/archive/58d77fa8070e8cec2dc1ed015d66b454c8d78850.zip"
-                    SOURCE_DIR          "/Users/natasamihaleva/BigInt_GTest/cmake-build-debug/_deps/googletest-src"
-                    BINARY_DIR          "/Users/natasamihaleva/BigInt_GTest/cmake-build-debug/_deps/googletest-build"
+                    SOURCE_DIR          "/Users/natasamihaleva/projectCXX/Lab1/cmake-build-debug/_deps/googletest-src"
+                    BINARY_DIR          "/Users/natasamihaleva/projectCXX/Lab1/cmake-build-debug/_deps/googletest-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""
