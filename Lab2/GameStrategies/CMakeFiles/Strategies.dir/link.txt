@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libStrategies.a CMakeFiles/Strategies.dir/AlwaysVoiceD.cpp.o CMakeFiles/Strategies.dir/AlwaysVoiceC.cpp.o CMakeFiles/Strategies.dir/RandomVoice.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libStrategies.a

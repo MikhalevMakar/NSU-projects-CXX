@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libGameStrategies.a CMakeFiles/GameStrategies.dir/AlwaysVoiceD.cpp.o CMakeFiles/GameStrategies.dir/AlwaysVoiceC.cpp.o CMakeFiles/GameStrategies.dir/RandomVoice.cpp.o CMakeFiles/GameStrategies.dir/StrategyFactory.cpp.o CMakeFiles/GameStrategies.dir/PercentageChoice.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libGameStrategies.a

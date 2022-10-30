@@ -7,6 +7,7 @@
 #include <string>
 #include <vector>
 #include <string>
+#include "map"
 #include "Voice.h"
 namespace po = boost::program_options;
 

@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libGameMatrix.a CMakeFiles/GameMatrix.dir/GameMatrix.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libGameMatrix.a
