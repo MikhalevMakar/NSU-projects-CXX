@@ -10,7 +10,7 @@ class ModeTournament : public Mode {
 public:
     ModeTournament(int _countSteps,
                    std::vector<std::string> _strategyName,
-                   std::vector<std::string> _configsLine,
+                   std::string _configsLine,
                    std::string _matrixLine);
     void gameModeStart() override;
     bool threePlayerGeneration();
@@ -18,11 +18,14 @@ public:
     void printGame() override;
     void printCurrentGameResults();
     void updateTotalPoints(int value);
+    int getIndexStrategy(int index);
+    void PrintStartOfTheRound();
 private:
     int player1 = 0,
         player2 = 1,
         player3 = 1,
         step = 0;
+    std::array< std::string, 3> printStrategy;
 };
 
 

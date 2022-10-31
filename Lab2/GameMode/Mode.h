@@ -20,10 +20,11 @@ enum {numFirstPlayer = 0, lastPlayer = 3};
 
 class Mode {
 public:
-    Mode(  int _countSteps,
-           std::vector<std::string> _strategyName,
-           std::vector<std::string> _configsLine,
-           std::string _matrixLine);
+    Mode(int _countSteps,
+         std::vector<std::string> _strategyName,
+         std::string _configsLine,
+         std::string _matrixLine);
+
     virtual void gameModeStart() = 0;
     void CreatePlayers();
     void makeUpVotePlayers();
@@ -35,8 +36,8 @@ public:
 protected:
     void VectorIntToString(std::string& curPlayerTun);
     std::vector<std::string> strategyName;
-    std::vector<std::string> configsLine;
-    std::vector<GameStrategy*> vectorPlayers;
+    std::string configsLine;
+    std::array<GameStrategy*, 3> vectorPlayers;
     std::vector <int> vectorTotalPoint;
     std::string matrixLine;
     std::string  votePlayer;
