@@ -1,0 +1,3 @@
+/Users/natasamihaleva/Desktop/CreateFabricy/cmake-build-debug/CMakeFiles/CreateFabricy.dir
+/Users/natasamihaleva/Desktop/CreateFabricy/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/Desktop/CreateFabricy/cmake-build-debug/CMakeFiles/rebuild_cache.dir

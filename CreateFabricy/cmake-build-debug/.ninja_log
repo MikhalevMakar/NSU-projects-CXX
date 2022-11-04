@@ -1,0 +1,12 @@
+# ninja log v5
+2	287	1667544486669793591	CMakeFiles/CreateFabricy.dir/AlwaysVoiceC.cpp.o	e6b0cdb08043f2ce
+1	226	1667545219501514607	CMakeFiles/CreateFabricy.dir/main.cpp.o	496d58b6232815fa
+2	326	1667544486708518467	CMakeFiles/CreateFabricy.dir/StrategyFactory.cpp.o	9c629be126e08d69
+247	279	1667544423936606090	CreateFabricy	3d1e772b4e03fce
+2	395	1667547043522405381	CMakeFiles/CreateFabricy.dir/AlwaysVoiceC.cpp.o	e6b0cdb08043f2ce
+1	399	1667547043525766725	CMakeFiles/CreateFabricy.dir/main.cpp.o	496d58b6232815fa
+2	426	1667547043554671565	CMakeFiles/CreateFabricy.dir/StrategyFactory.cpp.o	9c629be126e08d69
+3	409	1667547351616857667	CMakeFiles/CreateFabricy.dir/StrategyFactory.cpp.o	9c629be126e08d69
+4	438	1667556721601365053	CMakeFiles/CreateFabricy.dir/AlwaysVoiceC.cpp.o	e6b0cdb08043f2ce
+3	441	1667556721604815541	CMakeFiles/CreateFabricy.dir/main.cpp.o	496d58b6232815fa
+4	469	1667556721632957069	CMakeFiles/CreateFabricy.dir/StrategyFactory.cpp.o	9c629be126e08d69
