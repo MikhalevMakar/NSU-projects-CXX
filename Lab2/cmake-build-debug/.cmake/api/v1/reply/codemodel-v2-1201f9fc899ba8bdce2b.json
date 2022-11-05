@@ -1,0 +1,163 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "GameMatrix",
+					"jsonFile" : "directory-GameMatrix-Debug-f51e7a22f8be0dacbb4f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "GameMatrix",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "InputParser",
+					"jsonFile" : "directory-InputParser-Debug-614797d21fc5ec45219f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "InputParser",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "GameStrategies",
+					"jsonFile" : "directory-GameStrategies-Debug-005e1726837739daea8e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "GameStrategies",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "GameMode",
+					"jsonFile" : "directory-GameMode-Debug-445020a5a4adbfd50384.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "GameMode",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "Lab2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "GameMatrix::@fe3bc541ea7ae2e72ae2",
+					"jsonFile" : "target-GameMatrix-Debug-0f13c36b84632dda23a7.json",
+					"name" : "GameMatrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "GameMode::@cc0e4d1cd686338d3be3",
+					"jsonFile" : "target-GameMode-Debug-187f7cd39df41e1feebb.json",
+					"name" : "GameMode",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "GameStrategies::@b1797f6ad1607cb75e0f",
+					"jsonFile" : "target-GameStrategies-Debug-8a44cb4d3527ed9a6acd.json",
+					"name" : "GameStrategies",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "InputParser::@532e657d26915491a197",
+					"jsonFile" : "target-InputParser-Debug-1d5d3475b97b7a6d290a.json",
+					"name" : "InputParser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab2-Debug-6cfe1b072c8440ee3a99.json",
+					"name" : "Lab2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/natasamihaleva/projectCXX/Lab2/cmake-build-debug",
+		"source" : "/Users/natasamihaleva/projectCXX/Lab2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
