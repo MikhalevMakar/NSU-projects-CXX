@@ -7,13 +7,16 @@ Game::Game(int argc, char** argv) {
     if(inputParser.modeLine == "detailed")
                                             ModeDetailed(inputParser.countSteps,
                                                          inputParser.strategyName,
-                                                         inputParser.configsLine);
+                                                         inputParser.configsLine,
+                                                         inputParser.matrixLine);
     else if(inputParser.modeLine == "fast")
                                             ModeFast(inputParser.countSteps,
                                                      inputParser.strategyName,
-                                                     inputParser.configsLine);
+                                                     inputParser.configsLine,
+                                                     inputParser.matrixLine);
     else if(inputParser.modeLine == "tournament")
                                             ModeTournament(inputParser.countSteps,
                                                            inputParser.strategyName,
-                                                           inputParser.configsLine);
+                                                           inputParser.configsLine,
+                                                           inputParser.matrixLine);
 }
