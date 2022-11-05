@@ -29,7 +29,8 @@ GameMatrix::GameMatrix() {
                     {1, 1, 1} };
 }
 
-void GameMatrix::updateGivenGameMatrix(std::string& tableMatrix) {
+void GameMatrix::updateGivenGameMatrix(std::string tableMatrix) {
+    tableMatrix+="/matrix.txt";
     std::ifstream fileMatrix(tableMatrix);
 
     if(!fileMatrix.is_open()) throw std::invalid_argument("file is not open");
