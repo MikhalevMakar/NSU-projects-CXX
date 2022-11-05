@@ -1,7 +1,7 @@
-GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.o: \
-  /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast.cpp \
-  /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast.h \
-  /Users/natasamihaleva/Desktop/Lab2/GameMode/Mode.h \
+GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o: \
+  /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast/ModeFast.cpp \
+  /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast/ModeFast.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast/../Mode/Mode.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config_site \

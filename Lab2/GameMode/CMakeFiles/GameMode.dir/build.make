@@ -69,76 +69,76 @@ include GameMode/CMakeFiles/GameMode.dir/progress.make
 # Include the compile flags for this target's objects.
 include GameMode/CMakeFiles/GameMode.dir/flags.make
 
-GameMode/CMakeFiles/GameMode.dir/Mode.cpp.o: GameMode/CMakeFiles/GameMode.dir/flags.make
-GameMode/CMakeFiles/GameMode.dir/Mode.cpp.o: GameMode/Mode.cpp
-GameMode/CMakeFiles/GameMode.dir/Mode.cpp.o: GameMode/CMakeFiles/GameMode.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object GameMode/CMakeFiles/GameMode.dir/Mode.cpp.o"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameMode/CMakeFiles/GameMode.dir/Mode.cpp.o -MF CMakeFiles/GameMode.dir/Mode.cpp.o.d -o CMakeFiles/GameMode.dir/Mode.cpp.o -c /Users/natasamihaleva/Desktop/Lab2/GameMode/Mode.cpp
+GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.o: GameMode/CMakeFiles/GameMode.dir/flags.make
+GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.o: GameMode/Mode/Mode.cpp
+GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.o: GameMode/CMakeFiles/GameMode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.o"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.o -MF CMakeFiles/GameMode.dir/Mode/Mode.cpp.o.d -o CMakeFiles/GameMode.dir/Mode/Mode.cpp.o -c /Users/natasamihaleva/Desktop/Lab2/GameMode/Mode/Mode.cpp
 
-GameMode/CMakeFiles/GameMode.dir/Mode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameMode.dir/Mode.cpp.i"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab2/GameMode/Mode.cpp > CMakeFiles/GameMode.dir/Mode.cpp.i
+GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameMode.dir/Mode/Mode.cpp.i"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab2/GameMode/Mode/Mode.cpp > CMakeFiles/GameMode.dir/Mode/Mode.cpp.i
 
-GameMode/CMakeFiles/GameMode.dir/Mode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameMode.dir/Mode.cpp.s"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab2/GameMode/Mode.cpp -o CMakeFiles/GameMode.dir/Mode.cpp.s
+GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameMode.dir/Mode/Mode.cpp.s"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab2/GameMode/Mode/Mode.cpp -o CMakeFiles/GameMode.dir/Mode/Mode.cpp.s
 
-GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.o: GameMode/CMakeFiles/GameMode.dir/flags.make
-GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.o: GameMode/ModeFast.cpp
-GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.o: GameMode/CMakeFiles/GameMode.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.o"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.o -MF CMakeFiles/GameMode.dir/ModeFast.cpp.o.d -o CMakeFiles/GameMode.dir/ModeFast.cpp.o -c /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast.cpp
+GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o: GameMode/CMakeFiles/GameMode.dir/flags.make
+GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o: GameMode/ModeFast/ModeFast.cpp
+GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o: GameMode/CMakeFiles/GameMode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o -MF CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o.d -o CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o -c /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast/ModeFast.cpp
 
-GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameMode.dir/ModeFast.cpp.i"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast.cpp > CMakeFiles/GameMode.dir/ModeFast.cpp.i
+GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.i"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast/ModeFast.cpp > CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.i
 
-GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameMode.dir/ModeFast.cpp.s"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast.cpp -o CMakeFiles/GameMode.dir/ModeFast.cpp.s
+GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.s"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeFast/ModeFast.cpp -o CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.s
 
-GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.o: GameMode/CMakeFiles/GameMode.dir/flags.make
-GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.o: GameMode/ModeDetailed.cpp
-GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.o: GameMode/CMakeFiles/GameMode.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.o"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.o -MF CMakeFiles/GameMode.dir/ModeDetailed.cpp.o.d -o CMakeFiles/GameMode.dir/ModeDetailed.cpp.o -c /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeDetailed.cpp
+GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o: GameMode/CMakeFiles/GameMode.dir/flags.make
+GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o: GameMode/ModeDetailed/ModeDetailed.cpp
+GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o: GameMode/CMakeFiles/GameMode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o -MF CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o.d -o CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o -c /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeDetailed/ModeDetailed.cpp
 
-GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameMode.dir/ModeDetailed.cpp.i"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeDetailed.cpp > CMakeFiles/GameMode.dir/ModeDetailed.cpp.i
+GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.i"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeDetailed/ModeDetailed.cpp > CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.i
 
-GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameMode.dir/ModeDetailed.cpp.s"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeDetailed.cpp -o CMakeFiles/GameMode.dir/ModeDetailed.cpp.s
+GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.s"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeDetailed/ModeDetailed.cpp -o CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.s
 
-GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.o: GameMode/CMakeFiles/GameMode.dir/flags.make
-GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.o: GameMode/ModeTournament.cpp
-GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.o: GameMode/CMakeFiles/GameMode.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.o"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.o -MF CMakeFiles/GameMode.dir/ModeTournament.cpp.o.d -o CMakeFiles/GameMode.dir/ModeTournament.cpp.o -c /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeTournament.cpp
+GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o: GameMode/CMakeFiles/GameMode.dir/flags.make
+GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o: GameMode/ModeTournament/ModeTournament.cpp
+GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o: GameMode/CMakeFiles/GameMode.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o -MF CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o.d -o CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o -c /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeTournament/ModeTournament.cpp
 
-GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameMode.dir/ModeTournament.cpp.i"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeTournament.cpp > CMakeFiles/GameMode.dir/ModeTournament.cpp.i
+GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.i"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeTournament/ModeTournament.cpp > CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.i
 
-GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameMode.dir/ModeTournament.cpp.s"
-	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeTournament.cpp -o CMakeFiles/GameMode.dir/ModeTournament.cpp.s
+GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.s"
+	cd /Users/natasamihaleva/Desktop/Lab2/GameMode && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab2/GameMode/ModeTournament/ModeTournament.cpp -o CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.s
 
 # Object files for target GameMode
 GameMode_OBJECTS = \
-"CMakeFiles/GameMode.dir/Mode.cpp.o" \
-"CMakeFiles/GameMode.dir/ModeFast.cpp.o" \
-"CMakeFiles/GameMode.dir/ModeDetailed.cpp.o" \
-"CMakeFiles/GameMode.dir/ModeTournament.cpp.o"
+"CMakeFiles/GameMode.dir/Mode/Mode.cpp.o" \
+"CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o" \
+"CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o" \
+"CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o"
 
 # External object files for target GameMode
 GameMode_EXTERNAL_OBJECTS =
 
-GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/Mode.cpp.o
-GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.o
-GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.o
-GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.o
+GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.o
+GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o
+GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o
+GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o
 GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/build.make
 GameMode/libGameMode.a: GameMode/CMakeFiles/GameMode.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/natasamihaleva/Desktop/Lab2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libGameMode.a"

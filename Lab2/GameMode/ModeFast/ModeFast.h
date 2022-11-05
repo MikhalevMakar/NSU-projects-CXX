@@ -5,7 +5,7 @@
 #ifndef LAB2_MODEFAST_H
 #define LAB2_MODEFAST_H
 
-#include "Mode.h"
+#include "../Mode/Mode.h"
 
 class ModeFast : public Mode {
 public:

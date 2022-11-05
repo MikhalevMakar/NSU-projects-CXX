@@ -420,20 +420,31 @@ GameMode/CMakeFiles/GameMode.dir/Mode.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iomanip \
-  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/GameStrategy.h \
-  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/GameStrategy/GameStrategy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__node_handle \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__tree \
-  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/AlwaysVoiceC.h \
-  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/AlwaysVoiceD.h \
-  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/RandomVoice.h \
-  /Users/natasamihaleva/Desktop/Lab2/GameMatrix/GameMatrix.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/deque \
-  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/PercentageChoice.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/StrategyFactory.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../GameStrategy/GameStrategy.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../AlwaysVoiceC/AlwaysVoiceC.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../AlwaysVoiceC/../GameStrategy/GameStrategy.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../AlwaysVoiceD/AlwaysVoiceD.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../AlwaysVoiceD/../GameStrategy/GameStrategy.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../RandomVoice/RandomVoice.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../RandomVoice/../GameStrategy/GameStrategy.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameMatrix/GameMatrix.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../PercentageChoice/PercentageChoice.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../PercentageChoice/../GameStrategy/GameStrategy.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../ViewOpponentsActions/ViewOpponentsActions.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../ViewOpponentsActions/../GameStrategy/GameStrategy.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../BipolarDisorder/BipolarDisorder.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../BipolarDisorder/../GameStrategy/GameStrategy.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../CollectiveStrategy/CollectiveStrategy.h \
+  /Users/natasamihaleva/Desktop/Lab2/GameStrategies/StrategyFactory/../CollectiveStrategy/Factory.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/array

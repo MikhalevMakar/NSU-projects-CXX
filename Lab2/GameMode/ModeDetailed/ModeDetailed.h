@@ -1,7 +1,7 @@
 #ifndef PRISON_MODEDETAILED_H
 #define PRISON_MODEDETAILED_H
 
-#include "Mode.h"
+#include "../Mode/Mode.h"
 class ModeDetailed : public Mode {
 public:
     ModeDetailed(int _countSteps,

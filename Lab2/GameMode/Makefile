@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/opt/homebrew/Cellar/cmake/3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /Users/natasamihaleva/Desktop/Lab2 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab2/CMakeFiles /Users/natasamihaleva/Desktop/Lab2/GameMode//CMakeFiles/progress.marks
@@ -130,101 +175,101 @@ GameMode/fast:
 	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/build
 .PHONY : GameMode/fast
 
-Mode.o: Mode.cpp.o
-.PHONY : Mode.o
+Mode/Mode.o: Mode/Mode.cpp.o
+.PHONY : Mode/Mode.o
 
 # target to build an object file
-Mode.cpp.o:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/Mode.cpp.o
-.PHONY : Mode.cpp.o
+Mode/Mode.cpp.o:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.o
+.PHONY : Mode/Mode.cpp.o
 
-Mode.i: Mode.cpp.i
-.PHONY : Mode.i
+Mode/Mode.i: Mode/Mode.cpp.i
+.PHONY : Mode/Mode.i
 
 # target to preprocess a source file
-Mode.cpp.i:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/Mode.cpp.i
-.PHONY : Mode.cpp.i
+Mode/Mode.cpp.i:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.i
+.PHONY : Mode/Mode.cpp.i
 
-Mode.s: Mode.cpp.s
-.PHONY : Mode.s
+Mode/Mode.s: Mode/Mode.cpp.s
+.PHONY : Mode/Mode.s
 
 # target to generate assembly for a file
-Mode.cpp.s:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/Mode.cpp.s
-.PHONY : Mode.cpp.s
+Mode/Mode.cpp.s:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/Mode/Mode.cpp.s
+.PHONY : Mode/Mode.cpp.s
 
-ModeDetailed.o: ModeDetailed.cpp.o
-.PHONY : ModeDetailed.o
+ModeDetailed/ModeDetailed.o: ModeDetailed/ModeDetailed.cpp.o
+.PHONY : ModeDetailed/ModeDetailed.o
 
 # target to build an object file
-ModeDetailed.cpp.o:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.o
-.PHONY : ModeDetailed.cpp.o
+ModeDetailed/ModeDetailed.cpp.o:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o
+.PHONY : ModeDetailed/ModeDetailed.cpp.o
 
-ModeDetailed.i: ModeDetailed.cpp.i
-.PHONY : ModeDetailed.i
+ModeDetailed/ModeDetailed.i: ModeDetailed/ModeDetailed.cpp.i
+.PHONY : ModeDetailed/ModeDetailed.i
 
 # target to preprocess a source file
-ModeDetailed.cpp.i:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.i
-.PHONY : ModeDetailed.cpp.i
+ModeDetailed/ModeDetailed.cpp.i:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.i
+.PHONY : ModeDetailed/ModeDetailed.cpp.i
 
-ModeDetailed.s: ModeDetailed.cpp.s
-.PHONY : ModeDetailed.s
+ModeDetailed/ModeDetailed.s: ModeDetailed/ModeDetailed.cpp.s
+.PHONY : ModeDetailed/ModeDetailed.s
 
 # target to generate assembly for a file
-ModeDetailed.cpp.s:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeDetailed.cpp.s
-.PHONY : ModeDetailed.cpp.s
+ModeDetailed/ModeDetailed.cpp.s:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.s
+.PHONY : ModeDetailed/ModeDetailed.cpp.s
 
-ModeFast.o: ModeFast.cpp.o
-.PHONY : ModeFast.o
+ModeFast/ModeFast.o: ModeFast/ModeFast.cpp.o
+.PHONY : ModeFast/ModeFast.o
 
 # target to build an object file
-ModeFast.cpp.o:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.o
-.PHONY : ModeFast.cpp.o
+ModeFast/ModeFast.cpp.o:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o
+.PHONY : ModeFast/ModeFast.cpp.o
 
-ModeFast.i: ModeFast.cpp.i
-.PHONY : ModeFast.i
+ModeFast/ModeFast.i: ModeFast/ModeFast.cpp.i
+.PHONY : ModeFast/ModeFast.i
 
 # target to preprocess a source file
-ModeFast.cpp.i:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.i
-.PHONY : ModeFast.cpp.i
+ModeFast/ModeFast.cpp.i:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.i
+.PHONY : ModeFast/ModeFast.cpp.i
 
-ModeFast.s: ModeFast.cpp.s
-.PHONY : ModeFast.s
+ModeFast/ModeFast.s: ModeFast/ModeFast.cpp.s
+.PHONY : ModeFast/ModeFast.s
 
 # target to generate assembly for a file
-ModeFast.cpp.s:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeFast.cpp.s
-.PHONY : ModeFast.cpp.s
+ModeFast/ModeFast.cpp.s:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.s
+.PHONY : ModeFast/ModeFast.cpp.s
 
-ModeTournament.o: ModeTournament.cpp.o
-.PHONY : ModeTournament.o
+ModeTournament/ModeTournament.o: ModeTournament/ModeTournament.cpp.o
+.PHONY : ModeTournament/ModeTournament.o
 
 # target to build an object file
-ModeTournament.cpp.o:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.o
-.PHONY : ModeTournament.cpp.o
+ModeTournament/ModeTournament.cpp.o:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o
+.PHONY : ModeTournament/ModeTournament.cpp.o
 
-ModeTournament.i: ModeTournament.cpp.i
-.PHONY : ModeTournament.i
+ModeTournament/ModeTournament.i: ModeTournament/ModeTournament.cpp.i
+.PHONY : ModeTournament/ModeTournament.i
 
 # target to preprocess a source file
-ModeTournament.cpp.i:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.i
-.PHONY : ModeTournament.cpp.i
+ModeTournament/ModeTournament.cpp.i:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.i
+.PHONY : ModeTournament/ModeTournament.cpp.i
 
-ModeTournament.s: ModeTournament.cpp.s
-.PHONY : ModeTournament.s
+ModeTournament/ModeTournament.s: ModeTournament/ModeTournament.cpp.s
+.PHONY : ModeTournament/ModeTournament.s
 
 # target to generate assembly for a file
-ModeTournament.cpp.s:
-	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeTournament.cpp.s
-.PHONY : ModeTournament.cpp.s
+ModeTournament/ModeTournament.cpp.s:
+	cd /Users/natasamihaleva/Desktop/Lab2 && $(MAKE) $(MAKESILENT) -f GameMode/CMakeFiles/GameMode.dir/build.make GameMode/CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.s
+.PHONY : ModeTournament/ModeTournament.cpp.s
 
 # Help Target
 help:
@@ -233,20 +278,24 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... GameMode"
-	@echo "... Mode.o"
-	@echo "... Mode.i"
-	@echo "... Mode.s"
-	@echo "... ModeDetailed.o"
-	@echo "... ModeDetailed.i"
-	@echo "... ModeDetailed.s"
-	@echo "... ModeFast.o"
-	@echo "... ModeFast.i"
-	@echo "... ModeFast.s"
-	@echo "... ModeTournament.o"
-	@echo "... ModeTournament.i"
-	@echo "... ModeTournament.s"
+	@echo "... Mode/Mode.o"
+	@echo "... Mode/Mode.i"
+	@echo "... Mode/Mode.s"
+	@echo "... ModeDetailed/ModeDetailed.o"
+	@echo "... ModeDetailed/ModeDetailed.i"
+	@echo "... ModeDetailed/ModeDetailed.s"
+	@echo "... ModeFast/ModeFast.o"
+	@echo "... ModeFast/ModeFast.i"
+	@echo "... ModeFast/ModeFast.s"
+	@echo "... ModeTournament/ModeTournament.o"
+	@echo "... ModeTournament/ModeTournament.i"
+	@echo "... ModeTournament/ModeTournament.s"
 .PHONY : help
 
 

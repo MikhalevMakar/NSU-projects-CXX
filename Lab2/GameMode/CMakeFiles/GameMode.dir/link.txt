@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libGameMode.a CMakeFiles/GameMode.dir/Mode.cpp.o CMakeFiles/GameMode.dir/ModeFast.cpp.o CMakeFiles/GameMode.dir/ModeDetailed.cpp.o CMakeFiles/GameMode.dir/ModeTournament.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ar qc libGameMode.a CMakeFiles/GameMode.dir/Mode/Mode.cpp.o CMakeFiles/GameMode.dir/ModeFast/ModeFast.cpp.o CMakeFiles/GameMode.dir/ModeDetailed/ModeDetailed.cpp.o CMakeFiles/GameMode.dir/ModeTournament/ModeTournament.cpp.o
 /Library/Developer/CommandLineTools/usr/bin/ranlib libGameMode.a

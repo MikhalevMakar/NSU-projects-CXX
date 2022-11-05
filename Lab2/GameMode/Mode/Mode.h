@@ -10,12 +10,13 @@
 #include <vector>
 #include <iomanip>
 
-#include "GameStrategy.h"
-#include "StrategyFactory.h"
+#include "GameStrategy/GameStrategy.h"
+#include "StrategyFactory/StrategyFactory.h"
 #include "GameMatrix.h"
 #include <array>
 #include <map>
 #include <string>
+
 enum {numFirstPlayer = 0, lastPlayer = 3};
 
 class Mode {

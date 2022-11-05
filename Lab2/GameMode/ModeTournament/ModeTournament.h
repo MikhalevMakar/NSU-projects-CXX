@@ -4,7 +4,7 @@
 
 #ifndef LAB2_MODETOURNAMENT_H
 #define LAB2_MODETOURNAMENT_H
-#include "Mode.h"
+#include "../Mode/Mode.h"
 
 class ModeTournament : public Mode {
 public:
