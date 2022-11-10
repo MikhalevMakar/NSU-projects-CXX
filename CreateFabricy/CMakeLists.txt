@@ -3,4 +3,15 @@ project(CreateFabricy)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CreateFabricy main.cpp StrategyObject.h StrategyFactoryRegistrations.h AlwaysVoiceC.cpp AlwaysVoiceC.h StrategyFactory.h StrategyFactory.cpp Voice.h )
+add_executable(CreateFabricy main.cpp
+               StrategyFactoryRegistrations.h
+               AlwaysVoiceC.cpp
+               AlwaysVoiceC.h
+               GameStrategy.h
+               GameStrategy.cpp
+               StrategyFactory.cpp
+               StrategyFactory.h
+               Voice.h
+               BipolarDisorder.h
+               BipolarDisorder.cpp
+        )

@@ -9,17 +9,15 @@
 #include <string>
 #include <unordered_map>
 
-class StrategyObject;
-typedef StrategyObject*(*StrategyInstanceGenerator)();
+class GameStrategy;
+typedef GameStrategy*(*StrategyInstanceGenerator)();
 
 class StrategyFactory {
 public:
     static StrategyFactory& get();
-    StrategyObject* orderStrategy(std::string  typeName);
+    GameStrategy* orderStrategy(std::string  typeName);
     bool registerGenerator(std::string  typeName, const StrategyInstanceGenerator& funcCreate);
-
     StrategyFactory() = default;
-
     ~StrategyFactory() = default;
     std::unordered_map<std::string, StrategyInstanceGenerator> s_generators;
 };

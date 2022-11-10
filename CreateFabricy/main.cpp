@@ -1,11 +1,13 @@
 #include <iostream>
-#include "StrategyObject.h"
+#include "GameStrategy.h"
 #include "StrategyFactory.h"
-#include "StrategyFactoryRegistrations.h"
-#include "AlwaysVoiceC.h"
+
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    StrategyFactoryRegistration::StrategyFactoryRegistrations<AlwaysVoiceC>  a("AlwaysVoiceC");
+    GameStrategy* temp = StrategyFactory::get().orderStrategy("AlwaysVoiceC");
+    temp->Print();
+    GameStrategy* e = StrategyFactory::get().orderStrategy("BipolarDisorder");
+    e->Print();
     return 0;
 }

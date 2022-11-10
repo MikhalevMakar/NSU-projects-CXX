@@ -6,6 +6,7 @@
 
 #include "StrategyFactory.h"
 
+
 namespace StrategyFactoryRegistration {
     template <typename T>
     class StrategyFactoryRegistrations {
@@ -14,7 +15,7 @@ namespace StrategyFactoryRegistration {
             StrategyFactory::get().registerGenerator(
                     id,
                     []() {
-                        return static_cast<StrategyObject*>(new T());
+                        return static_cast<GameStrategy*>(new T());
                     });
             }
         };
