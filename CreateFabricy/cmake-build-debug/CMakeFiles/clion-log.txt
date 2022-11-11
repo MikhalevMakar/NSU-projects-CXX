@@ -1,4 +1,0 @@
-Cannot generate into /Users/natasamihaleva/projectCXX/CreateFabricy
-It was created with incompatible generator 'Unix Makefiles'
-
-Please either delete it manually or select another generation directory
