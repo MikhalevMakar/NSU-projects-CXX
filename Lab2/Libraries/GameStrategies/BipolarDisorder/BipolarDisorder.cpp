@@ -3,8 +3,9 @@
 //
 #include "BipolarDisorder.h"
 
-BipolarDisorder::BipolarDisorder(std::string configFolder) : GameStrategy("BIPOLAR_DISORDER",
-                                                                           configFolder) {
+void BipolarDisorder::strategyDevelopment(std::string folder) {
+    openFolder(folder,  "BIPOLAR_DISORDER");
+
     it = mapFile.find(configsFile);
 
     while(!it->second->eof()) {
@@ -22,6 +23,6 @@ Voice BipolarDisorder::vote() {
 
 void BipolarDisorder::update(Voice playerA, Voice playerB) {
     if(playerA == DEFECT || playerB == DEFECT) countD++;
-    else countD =0;
+    else countD = 0;
     if(disorderFrequency == countD) voice = DEFECT;
 }

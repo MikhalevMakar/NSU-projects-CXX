@@ -10,6 +10,7 @@
 #include "ModeFast/ModeFast.h"
 #include "ModeTournament/ModeTournament.h"
 
+
 class Game {
 public:
      Game(int argc, char** argv);;

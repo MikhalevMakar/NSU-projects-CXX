@@ -7,5 +7,6 @@ Voice AlwaysVoiceD::vote()  {
     return DEFECT;
 }
 
-void AlwaysVoiceD::update(Voice playerA, Voice playerB) {
-}
+void AlwaysVoiceD::update(Voice playerA, Voice playerB) { }
+
+void AlwaysVoiceD::strategyDevelopment(std::string folder) { }

@@ -9,9 +9,8 @@
 #include "Voice.h"
 #include <vector>
 #include <iomanip>
-
-#include "GameStrategy/GameStrategy.h"
-#include "StrategyFactory/StrategyFactory.h"
+#include "../GameStrategies/GameStrategy/GameStrategy.h"
+#include "../StrategyFactory/StrategyFactory.h"
 #include "GameMatrix.h"
 #include <array>
 #include <map>
@@ -42,7 +41,6 @@ protected:
     std::vector <int> vectorTotalPoint;
     std::string matrixLine;
     std::string  votePlayer;
-    StrategyFactory strategyFactory;
     int curStep = 0, row, countSteps;
     GameMatrix matrix;
     std::string quit = "quit";

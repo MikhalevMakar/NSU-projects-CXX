@@ -8,11 +8,15 @@
 
 class RandomVoice : public GameStrategy {
 public:
-    RandomVoice() =default;
+    RandomVoice() = default;
     Voice vote() override;
     void update(Voice playerA, Voice playerB) override;
+    void strategyDevelopment(std::string folder) override;
     ~RandomVoice()  = default;
 };
 
+namespace StrategyFactoryRegistration {
+    StrategyFactoryRegistrations<RandomVoice> _RandomVoice("RANDOM_VOICE");
+}
 
 #endif

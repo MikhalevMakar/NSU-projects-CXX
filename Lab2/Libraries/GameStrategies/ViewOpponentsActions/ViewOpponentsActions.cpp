@@ -4,8 +4,8 @@
 
 #include "ViewOpponentsActions.h"
 
-ViewOpponentsActions::ViewOpponentsActions(std::string configFolder) : GameStrategy("VIEW_OPPONENTS_ACTIONS",
-                                                                                     configFolder) {
+void ViewOpponentsActions::strategyDevelopment(std::string folder) {
+    openFolder(folder, "VIEW_OPPONENTS_ACTIONS");
     it = mapFile.find(configsFile);
     it->second->get(c);
     voice = static_cast<Voice>(c);

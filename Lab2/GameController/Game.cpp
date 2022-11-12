@@ -20,3 +20,4 @@ Game::Game(int argc, char** argv) {
                                                            inputParser.configsLine,
                                                            inputParser.matrixLine);
 }
+

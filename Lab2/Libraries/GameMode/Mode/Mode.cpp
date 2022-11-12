@@ -12,12 +12,12 @@ Mode::Mode(int _countSteps,
     if(!matrixLine.empty()) {
         matrix.updateGivenGameMatrix(matrixLine);
     }
-    strategyFactory = configsLine;
 }
 
 void Mode::CreatePlayers() {
     for(int i = 0; i < 3; ++i) {
-        vectorPlayers[i] = strategyFactory.createStrategy(strategyName[i]);
+        vectorPlayers[i] = StrategyFactory::get().orderStrategy(strategyName[i]);
+        vectorPlayers[i]->strategyDevelopment(configsLine);
     }
     if(vectorPlayers.size() != 3) throw std::invalid_argument("nameStrategy less 3");
 }
@@ -59,3 +59,4 @@ void Mode::updateStrategy() {
                                      (Voice)(votePlayer[(i+2)%3]));
     }
 }
+

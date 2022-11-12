@@ -12,9 +12,11 @@
 
 class PercentageChoice : public GameStrategy {
 public:
-    PercentageChoice(std::string configFile);
+    PercentageChoice() = default;
     Voice vote() override;
     void update(Voice playerA, Voice playerB) override;
+    void strategyDevelopment(std::string folder) override;
+    ~PercentageChoice();
 private:
     std::string configsFile = "PERCENTAGE_CHOICE";
     std::ofstream* ptrOutputConfigFile;
@@ -24,5 +26,7 @@ private:
     int indexInputLine = 0;
 };
 
-
+namespace StrategyFactoryRegistration {
+    StrategyFactoryRegistrations<PercentageChoice> _PercentageChoice("PERCENTAGE_CHOICE");
+}
 #endif

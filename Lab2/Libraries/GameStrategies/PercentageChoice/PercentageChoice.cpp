@@ -2,8 +2,9 @@
 // Created by Макар Михалёв on 29.10.2022.
 
 #include "PercentageChoice.h"
-PercentageChoice::PercentageChoice(std::string configFolder) : GameStrategy("PERCENTAGE_CHOICE",
-                                                                            configFolder) {
+
+void PercentageChoice::strategyDevelopment(std::string folder) {
+    openFolder(folder, "PERCENTAGE_CHOICE");
     it = mapFile.find(configsFile);
     it->second->get(c);
     voice = static_cast<Voice>(c);

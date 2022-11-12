@@ -6,3 +6,5 @@ Voice RandomVoice::vote()  {
 }
 
 void RandomVoice::update(Voice playerA, Voice playerB) { }
+
+void RandomVoice::strategyDevelopment(std::string folder) { }

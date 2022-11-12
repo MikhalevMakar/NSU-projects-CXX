@@ -8,14 +8,18 @@
 
 class BipolarDisorder : public GameStrategy {
 public:
-    BipolarDisorder(std::string configFolder);
+    BipolarDisorder() = default;
     Voice vote() override;
     void update(Voice playerA, Voice playerB) override;
-
+    void strategyDevelopment(std::string folder) override;
 private:
     int disorderFrequency = 0;
     int countD = 0;
     std::string configsFile = "BIPOLAR_DISORDER";
 };
+
+namespace StrategyFactoryRegistration {
+    StrategyFactoryRegistrations<BipolarDisorder> _BipolarDisorder("BIPOLAR_DISORDER");
+}
 
 #endif //LAB2_BIPOLARDISORDER_H

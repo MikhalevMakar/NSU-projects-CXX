@@ -1,10 +1,10 @@
 #include "GameStrategy.h"
 
-GameStrategy::GameStrategy(std::string nameStrategy, std::string configFolder) {
-    configFolder += "/" + nameStrategy + ".txt";
-    auto it = mapFile.find(configFolder);
+void GameStrategy::openFolder(std::string f, std::string nameStrategy) {
+    f += "/" + nameStrategy + ".txt";
+    auto it = mapFile.find(f);
     if(it != mapFile.end()) return;
-    std::fstream* ptrConfigFile = new std::fstream(configFolder,std::fstream::in | std::fstream::out);
+    std::fstream* ptrConfigFile = new std::fstream(f, std::fstream::in | std::fstream::out);
     if(!ptrConfigFile->is_open())
         throw std::invalid_argument("ConfigFile is not open\n");
 

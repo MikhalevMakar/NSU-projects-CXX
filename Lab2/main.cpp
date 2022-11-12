@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Game.h"
+#include "GameController/Game.h"
 int main(int argc, char** argv) {
     try {
         Game game(argc, argv);

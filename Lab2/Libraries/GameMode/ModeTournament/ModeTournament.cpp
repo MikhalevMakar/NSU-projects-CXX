@@ -35,7 +35,8 @@ bool ModeTournament::threePlayerGeneration() {
     if(player1+2 >= strategyName.size()) return false;
 
     for(int i = 0; i < 3; ++i) {
-        vectorPlayers[i] = strategyFactory.createStrategy(strategyName[getIndexStrategy(i)]);
+        vectorPlayers[i] = StrategyFactory::get().orderStrategy(strategyName[getIndexStrategy(i)]);
+        vectorPlayers[i]->strategyDevelopment(configsLine);
         printStrategy[i] = strategyName[getIndexStrategy(i)];
     }
 

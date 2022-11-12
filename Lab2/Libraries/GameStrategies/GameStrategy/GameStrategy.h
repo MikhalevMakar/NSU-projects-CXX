@@ -5,22 +5,24 @@
 #ifndef PRISONERS_GAMESTRATEGY_H
 #define PRISONERS_GAMESTRATEGY_H
 
-#include "Voice.h"
 #include <iostream>
 #include <string>
 #include <map>
 #include <fstream>
+#include "../StrategyFactory/StrategyFactoryRegistrations.h"
+#include "Voice.h"
 
 #define cast_d static_cast<double>
 
 class GameStrategy {
 public:
     GameStrategy() = default;
-    GameStrategy(std::string nameStrategy, std::string configFolder);
-    virtual Voice vote() = 0;
-    virtual void update(Voice playerA, Voice playerB) = 0;
-     ~GameStrategy();
-     int voiceToNumTransl(Voice player);
+    void openFolder(std::string f, std::string nameStrategy);
+    virtual void strategyDevelopment(std::string folder) = 0;
+    virtual Voice vote()  = 0;
+    virtual void update(Voice playerA, Voice playerB)  = 0;
+    ~GameStrategy();
+    int voiceToNumTransl(Voice player);
 protected:
     std::map<std::string, std::fstream*>::iterator  it;
     std::map<std::string, std::fstream*> mapFile;

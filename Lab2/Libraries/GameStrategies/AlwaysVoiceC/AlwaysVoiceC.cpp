@@ -3,10 +3,10 @@
 //
 
 #include "AlwaysVoiceC.h"
-Voice AlwaysVoiceC::vote()  {
+void AlwaysVoiceC::update(Voice playerA, Voice playerB)  { }
+
+Voice AlwaysVoiceC::vote() {
     return COOPERATE;
 }
 
-void AlwaysVoiceC::update(Voice playerA, Voice playerB ) {
-
-}
+void AlwaysVoiceC::strategyDevelopment(std::string folder) { }
