@@ -1,7 +1,3 @@
-//
-// Created by daniil on 15.10.22.
-//
-
 #ifndef PRISONERS_GAMESTRATEGY_H
 #define PRISONERS_GAMESTRATEGY_H
 
