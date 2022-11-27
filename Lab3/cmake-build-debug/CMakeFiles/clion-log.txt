@@ -1,0 +1,4 @@
+Cannot generate into /Users/natasamihaleva/projectCXX/Lab3
+It is already used for project /Users/natasamihaleva/Desktop/Lab3
+
+Please either delete it manually or select another generation directory

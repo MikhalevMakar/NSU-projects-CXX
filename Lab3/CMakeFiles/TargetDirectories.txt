@@ -1,0 +1,6 @@
+/Users/natasamihaleva/Desktop/Lab3/CMakeFiles/Lab3.dir
+/Users/natasamihaleva/Desktop/Lab3/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/Desktop/Lab3/CMakeFiles/rebuild_cache.dir
+/Users/natasamihaleva/Desktop/Lab3/InputParser/CMakeFiles/InputParser.dir
+/Users/natasamihaleva/Desktop/Lab3/InputParser/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/Desktop/Lab3/InputParser/CMakeFiles/rebuild_cache.dir
