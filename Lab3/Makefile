@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/natasamihaleva/Desktop/Lab3
+CMAKE_SOURCE_DIR = /Users/natasamihaleva/projectCXX/Lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/natasamihaleva/Desktop/Lab3
+CMAKE_BINARY_DIR = /Users/natasamihaleva/projectCXX/Lab3
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab3/CMakeFiles /Users/natasamihaleva/Desktop/Lab3//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles /Users/natasamihaleva/projectCXX/Lab3//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab3/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,19 @@ InputParser/fast:
 	$(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/build
 .PHONY : InputParser/fast
 
+#=============================================================================
+# Target rules for targets named WAV
+
+# Build rule for target.
+WAV: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WAV
+.PHONY : WAV
+
+# fast build rule for target.
+WAV/fast:
+	$(MAKE) $(MAKESILENT) -f WAV/CMakeFiles/WAV.dir/build.make WAV/CMakeFiles/WAV.dir/build
+.PHONY : WAV/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -176,6 +189,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... InputParser"
 	@echo "... Lab3"
+	@echo "... WAV"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

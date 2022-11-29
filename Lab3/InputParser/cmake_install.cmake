@@ -1,4 +1,4 @@
-# Install script for directory: /Users/natasamihaleva/Desktop/Lab3/InputParser
+# Install script for directory: /Users/natasamihaleva/projectCXX/Lab3/InputParser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

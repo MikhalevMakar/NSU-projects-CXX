@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/natasamihaleva/Desktop/Lab3
+CMAKE_SOURCE_DIR = /Users/natasamihaleva/projectCXX/Lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/natasamihaleva/Desktop/Lab3
+CMAKE_BINARY_DIR = /Users/natasamihaleva/projectCXX/Lab3
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab3/CMakeFiles /Users/natasamihaleva/Desktop/Lab3/InputParser//CMakeFiles/progress.marks
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab3/CMakeFiles 0
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles /Users/natasamihaleva/projectCXX/Lab3/InputParser//CMakeFiles/progress.marks
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/clean
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/preinstall
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/preinstall
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 InputParser/CMakeFiles/InputParser.dir/rule:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/CMakeFiles/InputParser.dir/rule
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/CMakeFiles/InputParser.dir/rule
 .PHONY : InputParser/CMakeFiles/InputParser.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ InputParser: InputParser/CMakeFiles/InputParser.dir/rule
 
 # fast build rule for target.
 InputParser/fast:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/build
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/build
 .PHONY : InputParser/fast
 
 InputParser.o: InputParser.cpp.o
@@ -135,7 +135,7 @@ InputParser.o: InputParser.cpp.o
 
 # target to build an object file
 InputParser.cpp.o:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o
 .PHONY : InputParser.cpp.o
 
 InputParser.i: InputParser.cpp.i
@@ -143,7 +143,7 @@ InputParser.i: InputParser.cpp.i
 
 # target to preprocess a source file
 InputParser.cpp.i:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.i
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.i
 .PHONY : InputParser.cpp.i
 
 InputParser.s: InputParser.cpp.s
@@ -151,7 +151,7 @@ InputParser.s: InputParser.cpp.s
 
 # target to generate assembly for a file
 InputParser.cpp.s:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.s
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.s
 .PHONY : InputParser.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

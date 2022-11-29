@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/natasamihaleva/Desktop/Lab3/InputParser/InputParser.cpp" "InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o" "gcc" "InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o.d"
+  "/Users/natasamihaleva/projectCXX/Lab3/InputParser/InputParser.cpp" "InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o" "gcc" "InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o.d"
   )
 
 # Targets to which this target links.

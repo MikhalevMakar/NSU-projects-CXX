@@ -53,10 +53,10 @@ RM = /opt/homebrew/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/natasamihaleva/Desktop/Lab3
+CMAKE_SOURCE_DIR = /Users/natasamihaleva/projectCXX/Lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/natasamihaleva/Desktop/Lab3
+CMAKE_BINARY_DIR = /Users/natasamihaleva/projectCXX/Lab3
 
 # Include any dependencies generated for this target.
 include InputParser/CMakeFiles/InputParser.dir/depend.make
@@ -72,16 +72,16 @@ include InputParser/CMakeFiles/InputParser.dir/flags.make
 InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o: InputParser/CMakeFiles/InputParser.dir/flags.make
 InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o: InputParser/InputParser.cpp
 InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o: InputParser/CMakeFiles/InputParser.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/Desktop/Lab3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o"
-	cd /Users/natasamihaleva/Desktop/Lab3/InputParser && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o -MF CMakeFiles/InputParser.dir/InputParser.cpp.o.d -o CMakeFiles/InputParser.dir/InputParser.cpp.o -c /Users/natasamihaleva/Desktop/Lab3/InputParser/InputParser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasamihaleva/projectCXX/Lab3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o"
+	cd /Users/natasamihaleva/projectCXX/Lab3/InputParser && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o -MF CMakeFiles/InputParser.dir/InputParser.cpp.o.d -o CMakeFiles/InputParser.dir/InputParser.cpp.o -c /Users/natasamihaleva/projectCXX/Lab3/InputParser/InputParser.cpp
 
 InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/InputParser.dir/InputParser.cpp.i"
-	cd /Users/natasamihaleva/Desktop/Lab3/InputParser && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/Desktop/Lab3/InputParser/InputParser.cpp > CMakeFiles/InputParser.dir/InputParser.cpp.i
+	cd /Users/natasamihaleva/projectCXX/Lab3/InputParser && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/natasamihaleva/projectCXX/Lab3/InputParser/InputParser.cpp > CMakeFiles/InputParser.dir/InputParser.cpp.i
 
 InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/InputParser.dir/InputParser.cpp.s"
-	cd /Users/natasamihaleva/Desktop/Lab3/InputParser && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/Desktop/Lab3/InputParser/InputParser.cpp -o CMakeFiles/InputParser.dir/InputParser.cpp.s
+	cd /Users/natasamihaleva/projectCXX/Lab3/InputParser && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/natasamihaleva/projectCXX/Lab3/InputParser/InputParser.cpp -o CMakeFiles/InputParser.dir/InputParser.cpp.s
 
 # Object files for target InputParser
 InputParser_OBJECTS = \
@@ -93,19 +93,19 @@ InputParser_EXTERNAL_OBJECTS =
 InputParser/libInputParser.a: InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o
 InputParser/libInputParser.a: InputParser/CMakeFiles/InputParser.dir/build.make
 InputParser/libInputParser.a: InputParser/CMakeFiles/InputParser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/natasamihaleva/Desktop/Lab3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libInputParser.a"
-	cd /Users/natasamihaleva/Desktop/Lab3/InputParser && $(CMAKE_COMMAND) -P CMakeFiles/InputParser.dir/cmake_clean_target.cmake
-	cd /Users/natasamihaleva/Desktop/Lab3/InputParser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/InputParser.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/natasamihaleva/projectCXX/Lab3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libInputParser.a"
+	cd /Users/natasamihaleva/projectCXX/Lab3/InputParser && $(CMAKE_COMMAND) -P CMakeFiles/InputParser.dir/cmake_clean_target.cmake
+	cd /Users/natasamihaleva/projectCXX/Lab3/InputParser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/InputParser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 InputParser/CMakeFiles/InputParser.dir/build: InputParser/libInputParser.a
 .PHONY : InputParser/CMakeFiles/InputParser.dir/build
 
 InputParser/CMakeFiles/InputParser.dir/clean:
-	cd /Users/natasamihaleva/Desktop/Lab3/InputParser && $(CMAKE_COMMAND) -P CMakeFiles/InputParser.dir/cmake_clean.cmake
+	cd /Users/natasamihaleva/projectCXX/Lab3/InputParser && $(CMAKE_COMMAND) -P CMakeFiles/InputParser.dir/cmake_clean.cmake
 .PHONY : InputParser/CMakeFiles/InputParser.dir/clean
 
 InputParser/CMakeFiles/InputParser.dir/depend:
-	cd /Users/natasamihaleva/Desktop/Lab3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/natasamihaleva/Desktop/Lab3 /Users/natasamihaleva/Desktop/Lab3/InputParser /Users/natasamihaleva/Desktop/Lab3 /Users/natasamihaleva/Desktop/Lab3/InputParser /Users/natasamihaleva/Desktop/Lab3/InputParser/CMakeFiles/InputParser.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/natasamihaleva/projectCXX/Lab3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/natasamihaleva/projectCXX/Lab3 /Users/natasamihaleva/projectCXX/Lab3/InputParser /Users/natasamihaleva/projectCXX/Lab3 /Users/natasamihaleva/projectCXX/Lab3/InputParser /Users/natasamihaleva/projectCXX/Lab3/InputParser/CMakeFiles/InputParser.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : InputParser/CMakeFiles/InputParser.dir/depend
 

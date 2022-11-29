@@ -2,7 +2,6 @@
 // Created by Макар Михалёв on 25.11.2022.
 #include "InputParser.h"
 
-
 InputParser::InputParser(int argc, char** argv) {
     po::options_description desc("Generate parameters");
     desc.add_options()
@@ -19,6 +18,4 @@ InputParser::InputParser(int argc, char** argv) {
         std::cout << desc;
         throw ("call --help\n");
     }
-
-
 }

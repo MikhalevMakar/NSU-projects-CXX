@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.24.3/CMakeSystem.cmake"
   "CMakeLists.txt"
   "InputParser/CMakeLists.txt"
+  "WAV/CMakeLists.txt"
   "/opt/homebrew/Cellar/cmake/3.24.3/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.24.3/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.24.3/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
@@ -59,10 +60,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "InputParser/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "WAV/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Lab3.dir/DependInfo.cmake"
   "InputParser/CMakeFiles/InputParser.dir/DependInfo.cmake"
+  "WAV/CMakeFiles/WAV.dir/DependInfo.cmake"
   )

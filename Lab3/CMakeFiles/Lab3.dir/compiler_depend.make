@@ -947,8 +947,24 @@ CMakeFiles/Lab3.dir/main.cpp.o: main.cpp \
   /opt/homebrew/include/boost/program_options/detail/parsers.hpp \
   /opt/homebrew/include/boost/program_options/detail/convert.hpp \
   /opt/homebrew/include/boost/program_options/variables_map.hpp \
-  /opt/homebrew/include/boost/program_options/version.hpp
+  /opt/homebrew/include/boost/program_options/version.hpp \
+  IncludeLibs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/fstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stack \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iomanip \
+  IncludeLibs.h \
+  WAV/WAV.h \
+  IncludeLibs.h
 
+
+WAV/WAV.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stack:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/filesystem:
+
+IncludeLibs.h:
 
 /opt/homebrew/include/boost/program_options/variables_map.hpp:
 
@@ -1325,6 +1341,8 @@ CMakeFiles/Lab3.dir/main.cpp.o: main.cpp \
 /opt/homebrew/include/boost/type_traits/is_convertible.hpp:
 
 /opt/homebrew/include/boost/mpl/next_prior.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iomanip:
 
 /opt/homebrew/include/boost/mpl/aux_/include_preprocessed.hpp:
 
@@ -2393,6 +2411,8 @@ CMakeFiles/Lab3.dir/main.cpp.o: main.cpp \
 /opt/homebrew/include/boost/type_traits/is_copy_constructible.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/comp.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/fstream:
 
 /opt/homebrew/include/boost/mpl/arg_fwd.hpp:
 

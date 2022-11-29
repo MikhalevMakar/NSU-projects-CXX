@@ -54,10 +54,10 @@ RM = /opt/homebrew/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/natasamihaleva/Desktop/Lab3
+CMAKE_SOURCE_DIR = /Users/natasamihaleva/projectCXX/Lab3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/natasamihaleva/Desktop/Lab3
+CMAKE_BINARY_DIR = /Users/natasamihaleva/projectCXX/Lab3
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -65,15 +65,18 @@ CMAKE_BINARY_DIR = /Users/natasamihaleva/Desktop/Lab3
 # The main recursive "all" target.
 all: CMakeFiles/Lab3.dir/all
 all: InputParser/all
+all: WAV/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: InputParser/preinstall
+preinstall: WAV/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Lab3.dir/clean
 clean: InputParser/clean
+clean: WAV/clean
 .PHONY : clean
 
 #=============================================================================
@@ -92,20 +95,36 @@ InputParser/clean: InputParser/CMakeFiles/InputParser.dir/clean
 .PHONY : InputParser/clean
 
 #=============================================================================
+# Directory level rules for directory WAV
+
+# Recursive "all" directory target.
+WAV/all: WAV/CMakeFiles/WAV.dir/all
+.PHONY : WAV/all
+
+# Recursive "preinstall" directory target.
+WAV/preinstall:
+.PHONY : WAV/preinstall
+
+# Recursive "clean" directory target.
+WAV/clean: WAV/CMakeFiles/WAV.dir/clean
+.PHONY : WAV/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Lab3.dir
 
 # All Build rule for target.
 CMakeFiles/Lab3.dir/all: InputParser/CMakeFiles/InputParser.dir/all
+CMakeFiles/Lab3.dir/all: WAV/CMakeFiles/WAV.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/natasamihaleva/Desktop/Lab3/CMakeFiles --progress-num=3,4 "Built target Lab3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/natasamihaleva/projectCXX/Lab3/CMakeFiles --progress-num=3,4 "Built target Lab3"
 .PHONY : CMakeFiles/Lab3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Lab3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab3/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Lab3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab3/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles 0
 .PHONY : CMakeFiles/Lab3.dir/rule
 
 # Convenience name for target.
@@ -124,14 +143,14 @@ CMakeFiles/Lab3.dir/clean:
 InputParser/CMakeFiles/InputParser.dir/all:
 	$(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/depend
 	$(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/natasamihaleva/Desktop/Lab3/CMakeFiles --progress-num=1,2 "Built target InputParser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/natasamihaleva/projectCXX/Lab3/CMakeFiles --progress-num=1,2 "Built target InputParser"
 .PHONY : InputParser/CMakeFiles/InputParser.dir/all
 
 # Build rule for subdir invocation for target.
 InputParser/CMakeFiles/InputParser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab3/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 InputParser/CMakeFiles/InputParser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/Desktop/Lab3/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles 0
 .PHONY : InputParser/CMakeFiles/InputParser.dir/rule
 
 # Convenience name for target.
@@ -142,6 +161,32 @@ InputParser: InputParser/CMakeFiles/InputParser.dir/rule
 InputParser/CMakeFiles/InputParser.dir/clean:
 	$(MAKE) $(MAKESILENT) -f InputParser/CMakeFiles/InputParser.dir/build.make InputParser/CMakeFiles/InputParser.dir/clean
 .PHONY : InputParser/CMakeFiles/InputParser.dir/clean
+
+#=============================================================================
+# Target rules for target WAV/CMakeFiles/WAV.dir
+
+# All Build rule for target.
+WAV/CMakeFiles/WAV.dir/all:
+	$(MAKE) $(MAKESILENT) -f WAV/CMakeFiles/WAV.dir/build.make WAV/CMakeFiles/WAV.dir/depend
+	$(MAKE) $(MAKESILENT) -f WAV/CMakeFiles/WAV.dir/build.make WAV/CMakeFiles/WAV.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/natasamihaleva/projectCXX/Lab3/CMakeFiles --progress-num=5,6 "Built target WAV"
+.PHONY : WAV/CMakeFiles/WAV.dir/all
+
+# Build rule for subdir invocation for target.
+WAV/CMakeFiles/WAV.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WAV/CMakeFiles/WAV.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/natasamihaleva/projectCXX/Lab3/CMakeFiles 0
+.PHONY : WAV/CMakeFiles/WAV.dir/rule
+
+# Convenience name for target.
+WAV: WAV/CMakeFiles/WAV.dir/rule
+.PHONY : WAV
+
+# clean rule for target.
+WAV/CMakeFiles/WAV.dir/clean:
+	$(MAKE) $(MAKESILENT) -f WAV/CMakeFiles/WAV.dir/build.make WAV/CMakeFiles/WAV.dir/clean
+.PHONY : WAV/CMakeFiles/WAV.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,6 +1,6 @@
 InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o: \
-  /Users/natasamihaleva/Desktop/Lab3/InputParser/InputParser.cpp \
-  /Users/natasamihaleva/Desktop/Lab3/InputParser/InputParser.h \
+  /Users/natasamihaleva/projectCXX/Lab3/InputParser/InputParser.cpp \
+  /Users/natasamihaleva/projectCXX/Lab3/InputParser/InputParser.h \
   /opt/homebrew/include/boost/program_options.hpp \
   /opt/homebrew/include/boost/program_options/options_description.hpp \
   /opt/homebrew/include/boost/program_options/config.hpp \
@@ -945,4 +945,9 @@ InputParser/CMakeFiles/InputParser.dir/InputParser.cpp.o: \
   /opt/homebrew/include/boost/program_options/detail/convert.hpp \
   /opt/homebrew/include/boost/program_options/variables_map.hpp \
   /opt/homebrew/include/boost/program_options/version.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream
+  /Users/natasamihaleva/projectCXX/Lab3/InputParser/../IncludeLibs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/fstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/stack \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iomanip

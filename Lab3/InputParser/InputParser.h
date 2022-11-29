@@ -6,9 +6,7 @@
 #define SOUNDPROCESSOR__INPUTPARSER_H
 
 #include <boost/program_options.hpp>
-#include <iostream>
-#include <string>
-#include "map"
+#include "../IncludeLibs.h"
 
 namespace po = boost::program_options;
 
