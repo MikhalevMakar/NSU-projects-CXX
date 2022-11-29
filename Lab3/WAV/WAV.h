@@ -38,8 +38,11 @@ private:
 
     std::string pathWAV = "FolderWAV";
     ConstantParameters constantParameters;
-private:
+
     void InverseToBigEndian(unsigned& value);
+    void findDataIntoFileWAV(std::fstream* ptrFileWAV);
+    char readByte;
+    std::string findData;
 };
 
 #endif//LAB3_WAV_H

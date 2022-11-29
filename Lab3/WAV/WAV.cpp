@@ -11,44 +11,31 @@ void WAV::InverseToBigEndian(unsigned& value) {
     value = b0 | b1 | b2 | b3;
 }
 
+void WAV::findDataIntoFileWAV(std::fstream* ptrFileWAV) {
+    while(findData.size() != 4) {
+        ptrFileWAV->read((char*)&readByte, sizeof(readByte));
+        if((findData.size() == 0 && readByte ==  'd') ||
+           (findData.size() == 1 && readByte ==  'a') ||
+           (findData.size() == 2 && readByte ==  't') ||
+           (findData.size() == 3 && readByte ==  'a')) {
+            findData += readByte;
+        } else {
+            findData.clear();
+        }
+    }
+}
+
 void WAV::checkChunk(std::fstream* ptrFileWAV) {
     ptrFileWAV->read((char*)&wavHeader, sizeof(wavHeader));
 
-     if(constantParameters.RIFF != wavHeader.chunkID) {
+    if(constantParameters.RIFF != wavHeader.chunkID) {
         //throw std::invalid_argument("Wrong four character code file\n");
     }
 
-//    std::cout<< sizeof(wavHeader) << "\n";
-//    std::cout << wavHeader.chunkID << "\n";
-//    std::cout << wavHeader.chunkSize << "\n";
-//    std::cout  << wavHeader.format << "\n";
-//    std::cout << wavHeader.subChunk1Id << "\n";
-//    std::cout << wavHeader.subChunk1Size << "\n";
-//    std::cout << wavHeader.audioFormat << "\n";
-//    std::cout << wavHeader.numberOfChannels << "\n";
-//    std::cout << wavHeader.sampleRate << "\n";
-//    std::cout << wavHeader.byteRate << "\n";
-//    std::cout << wavHeader.blockAlign << "\n";
-//    std::cout << wavHeader.bitsPerSample << "\n";
-   char c;
-   std::string findData;
-
-   while(findData.size() != 4) {
-       ptrFileWAV->read((char*)&c, sizeof(c));
-       if((findData.size() == 0 && c ==  'd') ||
-          (findData.size() == 1 && c ==  'a') ||
-          (findData.size() == 2 && c ==  't') ||
-          (findData.size() == 3 && c ==  'a')) {
-           findData += c;
-       } else {
-           findData.clear();
-       }
-   }
-
-   std::cout << findData << "\n";
-   char d;
-   ptrFileWAV->read((char*)&d, sizeof(char));
-   std::cout << (int) d << "\n";
+    std::cout << findData << "\n";
+    char d;
+    ptrFileWAV->read((char*)&d, sizeof(char));
+    std::cout << (int) d << "\n";
     ptrFileWAV->read((char*)&d, sizeof(char));
     std::cout << (int) d << "\n";
     ptrFileWAV->read((char*)&d, sizeof(char));
