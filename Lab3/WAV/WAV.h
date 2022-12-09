@@ -6,46 +6,37 @@
 #define LAB3_WAV_H
 
 #include "../IncludeLibs.h"
+#include "ParametersWAVFile.h"
+
+typedef   std::array<uint16_t , ConstantParameters::SampleRate> uint16_tArray;
 
 class WAV {
 public:
-    WAV(std::string nameInputWAV);
-    void checkChunk(std::fstream* ptrFileWAV);
+    WAV() = default;
+    WAV(std::string nameInputWAV,
+        std::string outputFile);
+    WAV(std::string nameInputWAV,
+        std::string outputFile,
+        int count);
+    bool readNewSample(uint16_tArray bufferSample);
+    void writeSample(const uint16_tArray bufferSample);
+    void writeLastPart(uint16_tArray bufferSample);
+    void seekIntroFile();
+    void fileOverWritten(int rightTime, uint16_tArray bufferSample);
+    int getBufferSampleValue(int index);
+    ~WAV();
 private:
-    struct WAVHeader {
-        unsigned  chunkID;
-        unsigned  chunkSize;
-        unsigned format;
-        unsigned subChunk1Id;
-        unsigned  subChunk1Size;
-        unsigned short audioFormat; //
-        unsigned short numberOfChannels; //
-        unsigned sampleRate; //
-        unsigned  byteRate;
-        unsigned short blockAlign;
-        unsigned short bitsPerSample; //
-    };
-
-    struct  ConstantParameters {
-        unsigned RIFF = 0x52494646;
-        unsigned WAVE = 0x57415645;
-        unsigned FMT = 0x666d7420;
-        unsigned DATA = 0x61746164;
-        short PCM = 1;
-    };
-
+    void openFile(std::string nameInputWAV, std::string outputFile);
     WAVHeader wavHeader;
-
-    std::string pathWAV = "FolderWAV";
-    ConstantParameters constantParameters;
-
+    std::string pathWAV = "../FolderWAV/";
+    std::string outputPath = "../FolderOutput/";
+    std::ifstream istreamFileWAV;
+    std::fstream ostreamOutputWAV;
     void InverseToBigEndian(unsigned& value);
-    void findDataIntoFileWAV(std::fstream* ptrFileWAV);
+    void checkChunkAndWrite();
+    void findDataIntoFileAndWriteWAV(std::function<void()> variableFunction);
     char readByte;
     std::string findData;
 };
 
 #endif//LAB3_WAV_H
-//46 46 49 52
-//52 49 46 46
-//52 49 46 46

@@ -1,9 +1,0 @@
-/Users/natasamihaleva/projectCXX/Lab3/CMakeFiles/Lab3.dir
-/Users/natasamihaleva/projectCXX/Lab3/CMakeFiles/edit_cache.dir
-/Users/natasamihaleva/projectCXX/Lab3/CMakeFiles/rebuild_cache.dir
-/Users/natasamihaleva/projectCXX/Lab3/InputParser/CMakeFiles/InputParser.dir
-/Users/natasamihaleva/projectCXX/Lab3/InputParser/CMakeFiles/edit_cache.dir
-/Users/natasamihaleva/projectCXX/Lab3/InputParser/CMakeFiles/rebuild_cache.dir
-/Users/natasamihaleva/projectCXX/Lab3/WAV/CMakeFiles/WAV.dir
-/Users/natasamihaleva/projectCXX/Lab3/WAV/CMakeFiles/edit_cache.dir
-/Users/natasamihaleva/projectCXX/Lab3/WAV/CMakeFiles/rebuild_cache.dir

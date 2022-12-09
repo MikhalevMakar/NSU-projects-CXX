@@ -1,6 +1,0 @@
-/Users/natasamihaleva/Desktop/Lab3/cmake-build-debug/CMakeFiles/SoundProcessor.dir
-/Users/natasamihaleva/Desktop/Lab3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/natasamihaleva/Desktop/Lab3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/natasamihaleva/Desktop/Lab3/cmake-build-debug/InputParser/CMakeFiles/InputParser.dir
-/Users/natasamihaleva/Desktop/Lab3/cmake-build-debug/InputParser/CMakeFiles/edit_cache.dir
-/Users/natasamihaleva/Desktop/Lab3/cmake-build-debug/InputParser/CMakeFiles/rebuild_cache.dir

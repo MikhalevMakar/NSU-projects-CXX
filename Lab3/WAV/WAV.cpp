@@ -11,9 +11,10 @@ void WAV::InverseToBigEndian(unsigned& value) {
     value = b0 | b1 | b2 | b3;
 }
 
-void WAV::findDataIntoFileWAV(std::fstream* ptrFileWAV) {
+void WAV::findDataIntoFileAndWriteWAV(std::function<void()> variableFunction) {
     while(findData.size() != 4) {
-        ptrFileWAV->read((char*)&readByte, sizeof(readByte));
+        istreamFileWAV.read((char*)&readByte, sizeof(readByte));
+        variableFunction();
         if((findData.size() == 0 && readByte ==  'd') ||
            (findData.size() == 1 && readByte ==  'a') ||
            (findData.size() == 2 && readByte ==  't') ||
@@ -25,30 +26,94 @@ void WAV::findDataIntoFileWAV(std::fstream* ptrFileWAV) {
     }
 }
 
-void WAV::checkChunk(std::fstream* ptrFileWAV) {
-    ptrFileWAV->read((char*)&wavHeader, sizeof(wavHeader));
+void WAV::checkChunkAndWrite() {
+    istreamFileWAV.read((char*)&wavHeader, sizeof(wavHeader));
+    ostreamOutputWAV.write((char *) &wavHeader, sizeof(wavHeader));
+    InverseToBigEndian(wavHeader.chunkID);
+    InverseToBigEndian(wavHeader.format);
+    InverseToBigEndian(wavHeader.subChunk1Id);
 
-    if(constantParameters.RIFF != wavHeader.chunkID) {
-        //throw std::invalid_argument("Wrong four character code file\n");
+    if(ConstantParameters::RIFF != wavHeader.chunkID ||
+       ConstantParameters::WAVE != wavHeader.format ||
+       ConstantParameters::FMT != wavHeader.subChunk1Id) {
+        throw std::invalid_argument("Wrong four character code file\n");
     }
 
-    std::cout << findData << "\n";
-    char d;
-    ptrFileWAV->read((char*)&d, sizeof(char));
-    std::cout << (int) d << "\n";
-    ptrFileWAV->read((char*)&d, sizeof(char));
-    std::cout << (int) d << "\n";
-    ptrFileWAV->read((char*)&d, sizeof(char));
-    std::cout << (int) d << "\n";
+    if(wavHeader.audioFormat != ConstantParameters::AudioFormat) throw std::invalid_argument("Wrong AudioFormat\n");
+    //if(wavHeader.numberOfChannels != ConstantParameters::PCM) throw std::invalid_argument("Wrong PCM\n");
+    if(wavHeader.sampleRate != ConstantParameters::SampleRate) throw std::invalid_argument("Wrong SampleRate\n");
+    if(wavHeader.bitsPerSample != ConstantParameters::BitsPerSample) throw std::invalid_argument("Wrong BitsPerSample\n");
+    //if(wavHeader.blockAlign != ConstantParameters::BlockAlign) throw std::invalid_argument("Wrong BlockAlign\n");
+    //if(wavHeader.byteRate != ConstantParameters::ByteRate) throw std::invalid_argument("Wrong ByteRate\n");
 }
 
-WAV::WAV(std::string nameInputWAV) {
-    pathWAV += "/" + nameInputWAV + ".wav";
+void WAV::openFile(std::string nameInputWAV, std::string outputFile) {
+    pathWAV = pathWAV + nameInputWAV + ".wav";
+    istreamFileWAV.open(pathWAV);
 
-    std::fstream* ptrFileWAV = new std::fstream(pathWAV, std::fstream::in | std::fstream::out);
-    if (!ptrFileWAV->is_open()) {
-        throw std::invalid_argument("ConfigFile is not open\n");
+    outputPath = outputPath + outputFile + ".wav";
+    ostreamOutputWAV.open(outputPath);
+
+    if (!istreamFileWAV.is_open() || !ostreamOutputWAV.is_open()) {
+        throw std::invalid_argument("WAV File is not open\n");
     }
+}
 
-    checkChunk(ptrFileWAV);
+WAV::WAV(std::string nameInputWAV, std::string outputFile) {
+    openFile(nameInputWAV, outputFile);
+    checkChunkAndWrite();
+
+    auto writeToFile = [=](){
+        ostreamOutputWAV.write((char*)&(readByte), sizeof(readByte));
+    };
+
+    findDataIntoFileAndWriteWAV(writeToFile);
+}
+
+WAV::WAV(std::string nameInputWAV, std::string outputFile, int count) {
+    openFile(nameInputWAV, outputFile);
+    istreamFileWAV.seekg(sizeof(WAVHeader), std::ios::cur);
+    ostreamOutputWAV.seekg(sizeof(WAVHeader), std::ios::cur);
+    istreamFileWAV.seekg(sizeof(wavHeader), std::ios::cur);
+    std::function<void()> sizeSkipInformation;
+    sizeSkipInformation = [&count]() {
+        count++;
+    };
+    findDataIntoFileAndWriteWAV(sizeSkipInformation);
+    count += sizeof(wavHeader);
+    ostreamOutputWAV.seekg(count, std::ios::cur);
+}
+
+
+bool WAV::readNewSample(uint16_tArray bufferSample) {
+    istreamFileWAV.read((char*)&bufferSample, sizeof(bufferSample));
+    return istreamFileWAV.gcount();
+}
+
+void WAV::seekIntroFile() {
+    istreamFileWAV.seekg(-ConstantParameters::SampleRate, std::ios::cur);
+}
+
+void WAV::fileOverWritten(int rightTime, uint16_tArray bufferSample) {
+    for(int i = 0; i < rightTime; ++i) {
+        if(istreamFileWAV.eof()) throw std::invalid_argument("Not correct file\n");
+        istreamFileWAV.read((char*)&bufferSample, sizeof(bufferSample));
+        ostreamOutputWAV.write((char*) &bufferSample, sizeof(bufferSample));
+    }
+}
+
+void WAV::writeSample(uint16_tArray bufferSample) {
+    ostreamOutputWAV.write((char*) &bufferSample, sizeof(bufferSample));
+}
+
+void WAV::writeLastPart(uint16_tArray bufferSample) {
+    while(!istreamFileWAV.eof()) {
+        istreamFileWAV.read((char*)&bufferSample, sizeof(bufferSample));
+        ostreamOutputWAV.write((char*) &bufferSample, sizeof(bufferSample));
+    }
+}
+
+WAV::~WAV() {
+    istreamFileWAV.close();
+    ostreamOutputWAV.close();
 }
