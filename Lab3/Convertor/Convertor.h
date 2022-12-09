@@ -14,8 +14,9 @@ class Convertor {
 public:
     Convertor() = default;
     virtual int getBeginningTime() = 0;
-    virtual void changingSamples(uint16_tArray buffer1,
-                                 uint16_tArray buffer2) = 0;
+    virtual void changingSamples(uint16_tArray& buffer1,
+                                 uint16_tArray& buffer2) = 0;
+    virtual int getNumberFile() = 0;
     virtual void readArg(ConfigurationFile* ptrConfigurationFile) = 0;
     virtual int getEndingTime() = 0;
     bool is_number(const std::string& s);

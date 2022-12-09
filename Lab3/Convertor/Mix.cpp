@@ -33,10 +33,11 @@ void Mix::readArg(ConfigurationFile* ptrConfigurationFile) {
     numberFile = static_cast<int>(std::atoi(ptrConfigurationFile->getParameter(index).c_str()));
     timeFrom = static_cast<int>(std::atoi(ptrConfigurationFile->getParameter(index+1).c_str()));
 }
-void Mix::changingSamples(uint16_tArray buffer1,
-                          uint16_tArray buffer2) {
+
+void Mix::changingSamples(uint16_tArray& buffer1,
+                          uint16_tArray& buffer2) {
     for(int i = 0; i < ConstantParameters::SampleRate; ++i) {
-        buffer1[i] = (buffer1[i] + buffer2[i]) / 2;
+        buffer1[i] = buffer2[i];
     }
 }
 
@@ -47,4 +48,8 @@ int Mix:: getEndingTime() {
 
 int Mix::getBeginningTime() {
     return timeFrom;
+}
+
+int Mix::getNumberFile() {
+    return numberFile;
 }

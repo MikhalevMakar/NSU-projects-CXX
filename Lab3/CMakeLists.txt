@@ -8,10 +8,14 @@ add_executable(Lab3 main.cpp IncludeLibs.h
                              Convertor/Mute.cpp
                              Convertor/Mix.h
                              Convertor/Mix.cpp
+                             Convertor/Quick.cpp
+                             Convertor/Quick.h
                              ServiceConvertorAndWAV/ServiceMixAndWAV.cpp
                              ServiceConvertorAndWAV/ServiceMixAndWAV.h
                              ServiceConvertorAndWAV/ServiceMuteAndWAV.cpp
-                             ServiceConvertorAndWAV/ServiceMuteAndWAV.h)
+                             ServiceConvertorAndWAV/ServiceMuteAndWAV.h
+                             ServiceConvertorAndWAV/ServiceQuickAndWAV.cpp
+                             ServiceConvertorAndWAV/ServiceQuickAndWAV.h)
 
 add_subdirectory(WAV)
 add_subdirectory(ParseCommandLine)

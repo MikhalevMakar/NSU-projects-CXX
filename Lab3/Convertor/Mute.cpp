@@ -17,8 +17,8 @@ void Mute::readArg(ConfigurationFile* ptrConfigurationFile) {
     timeEnd = static_cast<int>(std::atoi(ptrConfigurationFile->getParameter(index).c_str()));
 }
 
-void Mute::changingSamples(uint16_tArray buffer1,
-                           uint16_tArray buffer2) {
+void Mute::changingSamples(uint16_tArray& buffer1,
+                           uint16_tArray& buffer2) {
     buffer1.fill(0);
 }
 
@@ -28,4 +28,9 @@ int Mute:: getEndingTime() {
 
 int Mute::getBeginningTime() {
     return timeFrom;
+}
+
+int Mute::getNumberFile() {
+    throw std::invalid_argument("No such option\n");
+    return 0;
 }

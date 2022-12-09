@@ -1,0 +1,695 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: Lab3
+# Configurations: Release
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Release
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/
+# =============================================================================
+# Object build statements for EXECUTABLE target Lab3
+
+
+#############################################
+# Order-only phony target for Lab3
+
+build cmake_object_order_depends_target_Lab3: phony || cmake_object_order_depends_target_ConfigurationFile cmake_object_order_depends_target_Convertor cmake_object_order_depends_target_Factory cmake_object_order_depends_target_ParseCommandLine cmake_object_order_depends_target_ServiceConvertorAndWAV cmake_object_order_depends_target_SoundProcessor cmake_object_order_depends_target_WAV
+
+build CMakeFiles/Lab3.dir/main.cpp.o: CXX_COMPILER__Lab3_Release /Users/natasamihaleva/projectCXX/Lab3/main.cpp || cmake_object_order_depends_target_Lab3
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = CMakeFiles/Lab3.dir/main.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/SoundProcessor -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Lab3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lab3.dir
+
+build CMakeFiles/Lab3.dir/Convertor/Mute.cpp.o: CXX_COMPILER__Lab3_Release /Users/natasamihaleva/projectCXX/Lab3/Convertor/Mute.cpp || cmake_object_order_depends_target_Lab3
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = CMakeFiles/Lab3.dir/Convertor/Mute.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/SoundProcessor -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Lab3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lab3.dir/Convertor
+
+build CMakeFiles/Lab3.dir/Convertor/Mix.cpp.o: CXX_COMPILER__Lab3_Release /Users/natasamihaleva/projectCXX/Lab3/Convertor/Mix.cpp || cmake_object_order_depends_target_Lab3
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = CMakeFiles/Lab3.dir/Convertor/Mix.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/SoundProcessor -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Lab3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lab3.dir/Convertor
+
+build CMakeFiles/Lab3.dir/Convertor/Quick.cpp.o: CXX_COMPILER__Lab3_Release /Users/natasamihaleva/projectCXX/Lab3/Convertor/Quick.cpp || cmake_object_order_depends_target_Lab3
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = CMakeFiles/Lab3.dir/Convertor/Quick.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/SoundProcessor -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Lab3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lab3.dir/Convertor
+
+build CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceMixAndWAV.cpp.o: CXX_COMPILER__Lab3_Release /Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV/ServiceMixAndWAV.cpp || cmake_object_order_depends_target_Lab3
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceMixAndWAV.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/SoundProcessor -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Lab3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lab3.dir/ServiceConvertorAndWAV
+
+build CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceMuteAndWAV.cpp.o: CXX_COMPILER__Lab3_Release /Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV/ServiceMuteAndWAV.cpp || cmake_object_order_depends_target_Lab3
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceMuteAndWAV.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/SoundProcessor -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Lab3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lab3.dir/ServiceConvertorAndWAV
+
+build CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceQuickAndWAV.cpp.o: CXX_COMPILER__Lab3_Release /Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV/ServiceQuickAndWAV.cpp || cmake_object_order_depends_target_Lab3
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceQuickAndWAV.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/SoundProcessor -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = CMakeFiles/Lab3.dir
+  OBJECT_FILE_DIR = CMakeFiles/Lab3.dir/ServiceConvertorAndWAV
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Lab3
+
+
+#############################################
+# Link the executable Lab3
+
+build Lab3: CXX_EXECUTABLE_LINKER__Lab3_Release CMakeFiles/Lab3.dir/main.cpp.o CMakeFiles/Lab3.dir/Convertor/Mute.cpp.o CMakeFiles/Lab3.dir/Convertor/Mix.cpp.o CMakeFiles/Lab3.dir/Convertor/Quick.cpp.o CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceMixAndWAV.cpp.o CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceMuteAndWAV.cpp.o CMakeFiles/Lab3.dir/ServiceConvertorAndWAV/ServiceQuickAndWAV.cpp.o | ParseCommandLine/libParseCommandLine.a ConfigurationFile/libConfigurationFile.a ServiceConvertorAndWAV/libServiceConvertorAndWAV.a Convertor/libConvertor.a WAV/libWAV.a SoundProcessor/libSoundProcessor.a Factory/libFactory.a ServiceConvertorAndWAV/libServiceConvertorAndWAV.a ParseCommandLine/libParseCommandLine.a /opt/homebrew/lib/libboost_program_options-mt.dylib Convertor/libConvertor.a ConfigurationFile/libConfigurationFile.a Factory/libFactory.a WAV/libWAV.a || ConfigurationFile/libConfigurationFile.a Convertor/libConvertor.a Factory/libFactory.a ParseCommandLine/libParseCommandLine.a ServiceConvertorAndWAV/libServiceConvertorAndWAV.a SoundProcessor/libSoundProcessor.a WAV/libWAV.a
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LINK_LIBRARIES = -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/WAV -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Convertor -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ParseCommandLine -Wl,-rpath,"/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ConfigurationFile\$$" -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab3/Factory -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ConfigurationFile -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Factory -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ServiceConvertorAndWAV  ParseCommandLine/libParseCommandLine.a  ConfigurationFile/libConfigurationFile.a  ServiceConvertorAndWAV/libServiceConvertorAndWAV.a  Convertor/libConvertor.a  WAV/libWAV.a  SoundProcessor/libSoundProcessor.a  Factory/libFactory.a  ServiceConvertorAndWAV/libServiceConvertorAndWAV.a  ParseCommandLine/libParseCommandLine.a  /opt/homebrew/lib/libboost_program_options-mt.dylib  Convertor/libConvertor.a  ConfigurationFile/libConfigurationFile.a  Factory/libFactory.a  WAV/libWAV.a
+  LINK_PATH = -L/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/WAV   -L/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Convertor   -L/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ParseCommandLine   -L"/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ConfigurationFile\$$"   -L/Users/natasamihaleva/projectCXX/Lab3/Factory   -L/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ConfigurationFile   -L/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Factory   -L/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ServiceConvertorAndWAV
+  OBJECT_DIR = CMakeFiles/Lab3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Lab3
+  TARGET_PDB = Lab3.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab3 -B/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/natasamihaleva/projectCXX/Lab3/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target WAV
+
+
+#############################################
+# Order-only phony target for WAV
+
+build cmake_object_order_depends_target_WAV: phony || WAV/CMakeFiles/WAV.dir
+
+build WAV/CMakeFiles/WAV.dir/WAV.cpp.o: CXX_COMPILER__WAV_Release /Users/natasamihaleva/projectCXX/Lab3/WAV/WAV.cpp || cmake_object_order_depends_target_WAV
+  DEP_FILE = WAV/CMakeFiles/WAV.dir/WAV.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = WAV/CMakeFiles/WAV.dir
+  OBJECT_FILE_DIR = WAV/CMakeFiles/WAV.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target WAV
+
+
+#############################################
+# Link the static library WAV/libWAV.a
+
+build WAV/libWAV.a: CXX_STATIC_LIBRARY_LINKER__WAV_Release WAV/CMakeFiles/WAV.dir/WAV.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = WAV/CMakeFiles/WAV.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = WAV/libWAV.a
+  TARGET_PDB = WAV.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build WAV/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/WAV && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build WAV/edit_cache: phony WAV/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build WAV/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/WAV && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab3 -B/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build WAV/rebuild_cache: phony WAV/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/natasamihaleva/projectCXX/Lab3/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ParseCommandLine
+
+
+#############################################
+# Order-only phony target for ParseCommandLine
+
+build cmake_object_order_depends_target_ParseCommandLine: phony || ParseCommandLine/CMakeFiles/ParseCommandLine.dir
+
+build ParseCommandLine/CMakeFiles/ParseCommandLine.dir/ParseCommandLine.cpp.o: CXX_COMPILER__ParseCommandLine_Release /Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine/ParseCommandLine.cpp || cmake_object_order_depends_target_ParseCommandLine
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = ParseCommandLine/CMakeFiles/ParseCommandLine.dir/ParseCommandLine.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine/program_options -isystem /opt/homebrew/include
+  OBJECT_DIR = ParseCommandLine/CMakeFiles/ParseCommandLine.dir
+  OBJECT_FILE_DIR = ParseCommandLine/CMakeFiles/ParseCommandLine.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ParseCommandLine
+
+
+#############################################
+# Link the static library ParseCommandLine/libParseCommandLine.a
+
+build ParseCommandLine/libParseCommandLine.a: CXX_STATIC_LIBRARY_LINKER__ParseCommandLine_Release ParseCommandLine/CMakeFiles/ParseCommandLine.dir/ParseCommandLine.cpp.o || /opt/homebrew/lib/libboost_program_options-mt.dylib
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = ParseCommandLine/CMakeFiles/ParseCommandLine.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ParseCommandLine/libParseCommandLine.a
+  TARGET_PDB = ParseCommandLine.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build ParseCommandLine/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ParseCommandLine && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build ParseCommandLine/edit_cache: phony ParseCommandLine/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ParseCommandLine/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ParseCommandLine && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab3 -B/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ParseCommandLine/rebuild_cache: phony ParseCommandLine/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/natasamihaleva/projectCXX/Lab3/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ConfigurationFile
+
+
+#############################################
+# Order-only phony target for ConfigurationFile
+
+build cmake_object_order_depends_target_ConfigurationFile: phony || ConfigurationFile/CMakeFiles/ConfigurationFile.dir
+
+build ConfigurationFile/CMakeFiles/ConfigurationFile.dir/ConfigurationFile.cpp.o: CXX_COMPILER__ConfigurationFile_Release /Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile/ConfigurationFile.cpp || cmake_object_order_depends_target_ConfigurationFile
+  DEP_FILE = ConfigurationFile/CMakeFiles/ConfigurationFile.dir/ConfigurationFile.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = ConfigurationFile/CMakeFiles/ConfigurationFile.dir
+  OBJECT_FILE_DIR = ConfigurationFile/CMakeFiles/ConfigurationFile.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ConfigurationFile
+
+
+#############################################
+# Link the static library ConfigurationFile/libConfigurationFile.a
+
+build ConfigurationFile/libConfigurationFile.a: CXX_STATIC_LIBRARY_LINKER__ConfigurationFile_Release ConfigurationFile/CMakeFiles/ConfigurationFile.dir/ConfigurationFile.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = ConfigurationFile/CMakeFiles/ConfigurationFile.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ConfigurationFile/libConfigurationFile.a
+  TARGET_PDB = ConfigurationFile.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build ConfigurationFile/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ConfigurationFile && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build ConfigurationFile/edit_cache: phony ConfigurationFile/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ConfigurationFile/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ConfigurationFile && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab3 -B/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ConfigurationFile/rebuild_cache: phony ConfigurationFile/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/natasamihaleva/projectCXX/Lab3/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ServiceConvertorAndWAV
+
+
+#############################################
+# Order-only phony target for ServiceConvertorAndWAV
+
+build cmake_object_order_depends_target_ServiceConvertorAndWAV: phony || cmake_object_order_depends_target_ConfigurationFile cmake_object_order_depends_target_Convertor cmake_object_order_depends_target_Factory cmake_object_order_depends_target_ParseCommandLine cmake_object_order_depends_target_WAV
+
+build ServiceConvertorAndWAV/CMakeFiles/ServiceConvertorAndWAV.dir/ServiceInterfaceConvertorAndWAV.cpp.o: CXX_COMPILER__ServiceConvertorAndWAV_Release /Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV/ServiceInterfaceConvertorAndWAV.cpp || cmake_object_order_depends_target_ServiceConvertorAndWAV
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = ServiceConvertorAndWAV/CMakeFiles/ServiceConvertorAndWAV.dir/ServiceInterfaceConvertorAndWAV.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = ServiceConvertorAndWAV/CMakeFiles/ServiceConvertorAndWAV.dir
+  OBJECT_FILE_DIR = ServiceConvertorAndWAV/CMakeFiles/ServiceConvertorAndWAV.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ServiceConvertorAndWAV
+
+
+#############################################
+# Link the static library ServiceConvertorAndWAV/libServiceConvertorAndWAV.a
+
+build ServiceConvertorAndWAV/libServiceConvertorAndWAV.a: CXX_STATIC_LIBRARY_LINKER__ServiceConvertorAndWAV_Release ServiceConvertorAndWAV/CMakeFiles/ServiceConvertorAndWAV.dir/ServiceInterfaceConvertorAndWAV.cpp.o || ConfigurationFile/libConfigurationFile.a Convertor/libConvertor.a Factory/libFactory.a ParseCommandLine/libParseCommandLine.a WAV/libWAV.a /opt/homebrew/lib/libboost_program_options-mt.dylib
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = ServiceConvertorAndWAV/CMakeFiles/ServiceConvertorAndWAV.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ServiceConvertorAndWAV/libServiceConvertorAndWAV.a
+  TARGET_PDB = ServiceConvertorAndWAV.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build ServiceConvertorAndWAV/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ServiceConvertorAndWAV && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build ServiceConvertorAndWAV/edit_cache: phony ServiceConvertorAndWAV/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build ServiceConvertorAndWAV/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ServiceConvertorAndWAV && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab3 -B/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build ServiceConvertorAndWAV/rebuild_cache: phony ServiceConvertorAndWAV/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/natasamihaleva/projectCXX/Lab3/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Convertor
+
+
+#############################################
+# Order-only phony target for Convertor
+
+build cmake_object_order_depends_target_Convertor: phony || cmake_object_order_depends_target_ConfigurationFile cmake_object_order_depends_target_Factory cmake_object_order_depends_target_WAV
+
+build Convertor/CMakeFiles/Convertor.dir/Convertor.cpp.o: CXX_COMPILER__Convertor_Release /Users/natasamihaleva/projectCXX/Lab3/Convertor/Convertor.cpp || cmake_object_order_depends_target_Convertor
+  DEP_FILE = Convertor/CMakeFiles/Convertor.dir/Convertor.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/Factory
+  OBJECT_DIR = Convertor/CMakeFiles/Convertor.dir
+  OBJECT_FILE_DIR = Convertor/CMakeFiles/Convertor.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Convertor
+
+
+#############################################
+# Link the static library Convertor/libConvertor.a
+
+build Convertor/libConvertor.a: CXX_STATIC_LIBRARY_LINKER__Convertor_Release Convertor/CMakeFiles/Convertor.dir/Convertor.cpp.o || ConfigurationFile/libConfigurationFile.a Factory/libFactory.a WAV/libWAV.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = Convertor/CMakeFiles/Convertor.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Convertor/libConvertor.a
+  TARGET_PDB = Convertor.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Convertor/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Convertor && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Convertor/edit_cache: phony Convertor/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Convertor/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Convertor && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab3 -B/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Convertor/rebuild_cache: phony Convertor/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/natasamihaleva/projectCXX/Lab3/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target SoundProcessor
+
+
+#############################################
+# Order-only phony target for SoundProcessor
+
+build cmake_object_order_depends_target_SoundProcessor: phony || cmake_object_order_depends_target_ConfigurationFile cmake_object_order_depends_target_Convertor cmake_object_order_depends_target_Factory cmake_object_order_depends_target_ParseCommandLine cmake_object_order_depends_target_ServiceConvertorAndWAV cmake_object_order_depends_target_WAV
+
+build SoundProcessor/CMakeFiles/SoundProcessor.dir/SoundProcessor.cpp.o: CXX_COMPILER__SoundProcessor_Release /Users/natasamihaleva/projectCXX/Lab3/SoundProcessor/SoundProcessor.cpp || cmake_object_order_depends_target_SoundProcessor
+  DEFINES = -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB
+  DEP_FILE = SoundProcessor/CMakeFiles/SoundProcessor.dir/SoundProcessor.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab3/WAV -I/Users/natasamihaleva/projectCXX/Lab3/Convertor -I/Users/natasamihaleva/projectCXX/Lab3/ParseCommandLine -I/Users/natasamihaleva/projectCXX/Lab3/ConfigurationFile -I/Users/natasamihaleva/projectCXX/Lab3/ServiceConvertorAndWAV -I/Users/natasamihaleva/projectCXX/Lab3/Factory -isystem /opt/homebrew/include
+  OBJECT_DIR = SoundProcessor/CMakeFiles/SoundProcessor.dir
+  OBJECT_FILE_DIR = SoundProcessor/CMakeFiles/SoundProcessor.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target SoundProcessor
+
+
+#############################################
+# Link the static library SoundProcessor/libSoundProcessor.a
+
+build SoundProcessor/libSoundProcessor.a: CXX_STATIC_LIBRARY_LINKER__SoundProcessor_Release SoundProcessor/CMakeFiles/SoundProcessor.dir/SoundProcessor.cpp.o || ConfigurationFile/libConfigurationFile.a Convertor/libConvertor.a Factory/libFactory.a ParseCommandLine/libParseCommandLine.a ServiceConvertorAndWAV/libServiceConvertorAndWAV.a WAV/libWAV.a /opt/homebrew/lib/libboost_program_options-mt.dylib
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = SoundProcessor/CMakeFiles/SoundProcessor.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = SoundProcessor/libSoundProcessor.a
+  TARGET_PDB = SoundProcessor.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build SoundProcessor/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/SoundProcessor && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build SoundProcessor/edit_cache: phony SoundProcessor/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build SoundProcessor/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/SoundProcessor && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab3 -B/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build SoundProcessor/rebuild_cache: phony SoundProcessor/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/natasamihaleva/projectCXX/Lab3/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target Factory
+
+
+#############################################
+# Order-only phony target for Factory
+
+build cmake_object_order_depends_target_Factory: phony || Factory/CMakeFiles/Factory.dir
+
+build Factory/CMakeFiles/Factory.dir/Factory.cpp.o: CXX_COMPILER__Factory_Release /Users/natasamihaleva/projectCXX/Lab3/Factory/Factory.cpp || cmake_object_order_depends_target_Factory
+  DEP_FILE = Factory/CMakeFiles/Factory.dir/Factory.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  OBJECT_DIR = Factory/CMakeFiles/Factory.dir
+  OBJECT_FILE_DIR = Factory/CMakeFiles/Factory.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target Factory
+
+
+#############################################
+# Link the static library Factory/libFactory.a
+
+build Factory/libFactory.a: CXX_STATIC_LIBRARY_LINKER__Factory_Release Factory/CMakeFiles/Factory.dir/Factory.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
+  OBJECT_DIR = Factory/CMakeFiles/Factory.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Factory/libFactory.a
+  TARGET_PDB = Factory.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Factory/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Factory && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Factory/edit_cache: phony Factory/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Factory/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Factory && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab3 -B/Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Factory/rebuild_cache: phony Factory/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build ConfigurationFile: phony ConfigurationFile/libConfigurationFile.a
+
+build Convertor: phony Convertor/libConvertor.a
+
+build Factory: phony Factory/libFactory.a
+
+build ParseCommandLine: phony ParseCommandLine/libParseCommandLine.a
+
+build ServiceConvertorAndWAV: phony ServiceConvertorAndWAV/libServiceConvertorAndWAV.a
+
+build SoundProcessor: phony SoundProcessor/libSoundProcessor.a
+
+build WAV: phony WAV/libWAV.a
+
+build libConfigurationFile.a: phony ConfigurationFile/libConfigurationFile.a
+
+build libConvertor.a: phony Convertor/libConvertor.a
+
+build libFactory.a: phony Factory/libFactory.a
+
+build libParseCommandLine.a: phony ParseCommandLine/libParseCommandLine.a
+
+build libServiceConvertorAndWAV.a: phony ServiceConvertorAndWAV/libServiceConvertorAndWAV.a
+
+build libSoundProcessor.a: phony SoundProcessor/libSoundProcessor.a
+
+build libWAV.a: phony WAV/libWAV.a
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release
+
+build all: phony Lab3 WAV/all ParseCommandLine/all ConfigurationFile/all ServiceConvertorAndWAV/all Convertor/all SoundProcessor/all Factory/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ConfigurationFile
+
+build ConfigurationFile/all: phony ConfigurationFile/libConfigurationFile.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Convertor
+
+build Convertor/all: phony Convertor/libConvertor.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/Factory
+
+build Factory/all: phony Factory/libFactory.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ParseCommandLine
+
+build ParseCommandLine/all: phony ParseCommandLine/libParseCommandLine.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/ServiceConvertorAndWAV
+
+build ServiceConvertorAndWAV/all: phony ServiceConvertorAndWAV/libServiceConvertorAndWAV.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/SoundProcessor
+
+build SoundProcessor/all: phony SoundProcessor/libSoundProcessor.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/natasamihaleva/projectCXX/Lab3/cmake-build-release/WAV
+
+build WAV/all: phony WAV/libWAV.a
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../ConfigurationFile/CMakeLists.txt ../Convertor/CMakeLists.txt ../Factory/CMakeLists.txt ../ParseCommandLine/CMakeLists.txt ../ServiceConvertorAndWAV/CMakeLists.txt ../SoundProcessor/CMakeLists.txt ../WAV/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /opt/homebrew/lib/cmake/Boost-1.80.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.80.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.80.0.cmake /opt/homebrew/lib/cmake/boost_headers-1.80.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.80.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/boost_program_options-config-version.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/boost_program_options-config.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/libboost_program_options-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/libboost_program_options-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/libboost_program_options-variant-shared.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/libboost_program_options-variant-static.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build ../CMakeLists.txt ../ConfigurationFile/CMakeLists.txt ../Convertor/CMakeLists.txt ../Factory/CMakeLists.txt ../ParseCommandLine/CMakeLists.txt ../ServiceConvertorAndWAV/CMakeLists.txt ../SoundProcessor/CMakeLists.txt ../WAV/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindBoost.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /opt/homebrew/lib/cmake/Boost-1.80.0/BoostConfig.cmake /opt/homebrew/lib/cmake/Boost-1.80.0/BoostConfigVersion.cmake /opt/homebrew/lib/cmake/BoostDetectToolset-1.80.0.cmake /opt/homebrew/lib/cmake/boost_headers-1.80.0/boost_headers-config-version.cmake /opt/homebrew/lib/cmake/boost_headers-1.80.0/boost_headers-config.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/boost_program_options-config-version.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/boost_program_options-config.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/libboost_program_options-variant-mt-shared.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/libboost_program_options-variant-mt-static.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/libboost_program_options-variant-shared.cmake /opt/homebrew/lib/cmake/boost_program_options-1.80.0/libboost_program_options-variant-static.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

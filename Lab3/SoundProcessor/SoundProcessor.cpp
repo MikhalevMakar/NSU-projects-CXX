@@ -21,26 +21,24 @@ void SoundProcessor::firstLaunchConverter() {
     ptrConvertor = Factory::get().orderСonvertor(ptrConfigurationFile->getNameConvertor());
     WAV  beginWav(vectorInputFile[0],
                   ptrParseCommandLine->getOutputFile());
-    ptrWAV = &beginWav;
-    ptrService->linkConvertorAndWAV(ptrParseCommandLine,
+    ptrService->firstLaunchConvertorAndWAV(ptrParseCommandLine,
                                     ptrConvertor,
                                     vectorInputFile,
                                     ptrConfigurationFile,
-                                    ptrWAV);
+                                    &beginWav);
 }
+
 void SoundProcessor::converterConversions() {
     firstLaunchConverter();
-    vectorInputFile[0] = ptrParseCommandLine->getOutputFile();
+    //vectorInputFile[0] = ptrParseCommandLine->getOutputFile();
     while(true) {
+        writeAllFile();
         ptrConfigurationFile->getNewInputLine();
-        std::cout << ptrConfigurationFile->getNameConvertor() << "\n";
         if(ptrConfigurationFile->getNameConvertor().empty()) break;
         ptrService = Factory::get().orderService(ptrConfigurationFile->getNameConvertor());
         ptrConvertor = Factory::get().orderСonvertor(ptrConfigurationFile->getNameConvertor());
 
-        WAV mainWAV(vectorInputFile[0],
-                    ptrParseCommandLine->getOutputFile(),
-                    0);
+        WAV mainWAV(vectorInputFile[0]);
 
         ptrService->linkConvertorAndWAV(ptrParseCommandLine,
                                         ptrConvertor,
@@ -49,6 +47,7 @@ void SoundProcessor::converterConversions() {
                                         &mainWAV);
     }
 }
+
 
 void SoundProcessor::createVectorInputFile() {
     int size = ptrParseCommandLine->getInputFileSize();

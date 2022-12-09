@@ -20,6 +20,8 @@ public:
     ~SoundProcessor() = default;
 private:
     void firstLaunchConverter();
+    bool firstLaunch = true;
+    int count;
     ParseCommandLine* ptrParseCommandLine;
     ConfigurationFile* ptrConfigurationFile;
     ServiceInterfaceConvertorAndWAV* ptrService;

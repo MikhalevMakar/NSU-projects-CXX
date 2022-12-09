@@ -11,6 +11,11 @@
 class ServiceMixAndWAV : public ServiceInterfaceConvertorAndWAV{
 public:
     ServiceMixAndWAV() = default;
+    void firstLaunchConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
+                                    Convertor* ptrConvertor,
+                                    std::vector<std::string> vectorInputFile,
+                                    ConfigurationFile* ptrConfigurationFile,
+                                    WAV* ptrWAV) override;
     void linkConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
                              Convertor* ptrConvertor,
                              std::vector<std::string> vectorInputFile,

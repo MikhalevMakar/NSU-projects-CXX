@@ -12,8 +12,9 @@ class Mix : public Convertor {
 public:
     Mix() = default;
     void readArg(ConfigurationFile* ptrConfigurationFile) override;
-    void changingSamples(uint16_tArray buffer1,
-                         uint16_tArray buffer2) override;
+    void changingSamples(uint16_tArray& buffer1,
+                         uint16_tArray& buffer2) override;
+    virtual int getNumberFile();
     int getEndingTime() override;
     int getBeginningTime() override;
     ~Mix() = default;

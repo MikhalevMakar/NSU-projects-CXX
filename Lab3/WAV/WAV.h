@@ -13,16 +13,15 @@ typedef   std::array<uint16_t , ConstantParameters::SampleRate> uint16_tArray;
 class WAV {
 public:
     WAV() = default;
+    WAV(std::string nameInputWAV);
     WAV(std::string nameInputWAV,
         std::string outputFile);
-    WAV(std::string nameInputWAV,
-        std::string outputFile,
-        int count);
-    bool readNewSample(uint16_tArray bufferSample);
+    bool readNewSample(uint16_tArray& bufferSample);
     void writeSample(const uint16_tArray bufferSample);
     void writeLastPart(uint16_tArray bufferSample);
-    void seekIntroFile();
+    void seekIntroFile(int countSeek);
     void fileOverWritten(int rightTime, uint16_tArray bufferSample);
+    void imageOverwrite(uint16_tArray bufferSample);
     int getBufferSampleValue(int index);
     ~WAV();
 private:
@@ -30,7 +29,7 @@ private:
     WAVHeader wavHeader;
     std::string pathWAV = "../FolderWAV/";
     std::string outputPath = "../FolderOutput/";
-    std::ifstream istreamFileWAV;
+    std::fstream istreamFileWAV;
     std::fstream ostreamOutputWAV;
     void InverseToBigEndian(unsigned& value);
     void checkChunkAndWrite();
