@@ -1,1 +1,0 @@
-add_library(dirModule1 STATIC module1.h module1.cpp)
