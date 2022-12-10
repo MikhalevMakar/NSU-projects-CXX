@@ -1,5 +1,6 @@
 add_library(ParseCommandLine STATIC ParseCommandLine.h
-                                    ParseCommandLine.cpp)
+                                    ParseCommandLine.cpp
+                                    ParserRegistrations.h)
 
 find_package(Boost COMPONENTS program_options)
 set(BOOST_INCLUDE_LIBRARIES program_options)

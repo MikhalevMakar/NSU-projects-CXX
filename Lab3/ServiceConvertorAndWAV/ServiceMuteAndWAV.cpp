@@ -38,4 +38,3 @@ void ServiceMuteAndWAV::linkConvertorAndWAV(ParseCommandLine* ptrParseCommandLin
         ptrWAV->imageOverwrite(bufferSample1);
     }
 }
-

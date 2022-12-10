@@ -94,7 +94,7 @@ void WAV::seekIntroFile(int countSeek) {
 }
 
 void WAV::imageOverwrite(uint16_tArray bufferSample) {
-    istreamFileWAV.seekg(istreamFileWAV.gcount()*(-1), std::ios::cur);
+    istreamFileWAV.seekg(istreamFileWAV.gcount()*(-1.5), std::ios::cur);
     istreamFileWAV.write((char*)&bufferSample, sizeof(bufferSample));
 }
 
@@ -107,7 +107,7 @@ void WAV::fileOverWritten(int rightTime, uint16_tArray bufferSample) {
 }
 
 void WAV::writeSample(uint16_tArray bufferSample) {
-    ostreamOutputWAV.write((char*)&bufferSample, sizeof(bufferSample)); //to do
+    ostreamOutputWAV.write((char*)&bufferSample, sizeof(bufferSample));
 }
 
 void WAV::writeLastPart(uint16_tArray bufferSample) {

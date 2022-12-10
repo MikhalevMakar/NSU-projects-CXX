@@ -13,8 +13,8 @@ ParseCommandLine::ParseCommandLine(int argc, char* argv[]) {
 
     po::store(po::parse_command_line(argc, argv, desc), vm);
     po::notify(vm);
-
     if(vm.count("help")) {
+        std::cout << helpInf;
         std::cout << desc;
         throw std::invalid_argument("call --help\n");
     }
@@ -31,6 +31,25 @@ std::string ParseCommandLine::getConfigFile() {
 std::string ParseCommandLine::getInputFile(int index) {
     return input[index];
 }
+
 int ParseCommandLine::getInputFileSize() {
     return input.size();
+}
+
+ParseCommandLine& ParseCommandLine::Instance() {
+    static ParseCommandLine theSingleInstance;
+    return theSingleInstance;
+}
+
+void ParseCommandLine::ParserRegistration(std::string descriptor) {
+    helpInf += descriptor;
+}
+
+
+po::variables_map ParseCommandLine::getVM() {
+    return vm;
+}
+
+std::string ParseCommandLine::getHelpInf() {
+    return helpInf;
 }

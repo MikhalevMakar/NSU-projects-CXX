@@ -7,6 +7,9 @@
 SoundProcessor::SoundProcessor(int argc, char* argv[]) {
     ParseCommandLine parseCommandLine(argc, argv);
     ptrParseCommandLine = &parseCommandLine;
+    if(ptrParseCommandLine->getVM().count("help")) {
+        std::cout << ptrParseCommandLine->getHelpInf();
+    }
 
     ConfigurationFile configurationFile(ptrParseCommandLine->getConfigFile());
     ptrConfigurationFile = &configurationFile;
@@ -22,17 +25,16 @@ void SoundProcessor::firstLaunchConverter() {
     WAV  beginWav(vectorInputFile[0],
                   ptrParseCommandLine->getOutputFile());
     ptrService->firstLaunchConvertorAndWAV(ptrParseCommandLine,
-                                    ptrConvertor,
-                                    vectorInputFile,
-                                    ptrConfigurationFile,
-                                    &beginWav);
+                                           ptrConvertor,
+                                           vectorInputFile,
+                                           ptrConfigurationFile,
+                                           &beginWav);
 }
 
 void SoundProcessor::converterConversions() {
     firstLaunchConverter();
-    //vectorInputFile[0] = ptrParseCommandLine->getOutputFile();
+    vectorInputFile[0] = ptrParseCommandLine->getOutputFile();
     while(true) {
-        writeAllFile();
         ptrConfigurationFile->getNewInputLine();
         if(ptrConfigurationFile->getNameConvertor().empty()) break;
         ptrService = Factory::get().orderService(ptrConfigurationFile->getNameConvertor());
@@ -55,4 +57,3 @@ void SoundProcessor::createVectorInputFile() {
         vectorInputFile.push_back(ptrParseCommandLine->getInputFile(i));
     }
 }
-

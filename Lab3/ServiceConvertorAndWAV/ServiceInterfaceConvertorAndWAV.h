@@ -17,10 +17,10 @@ public:
     ServiceInterfaceConvertorAndWAV() = default;
 
     virtual void firstLaunchConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
-                                    Convertor* ptrConvertor,
-                                    std::vector<std::string> vectorInputFile,
-                                    ConfigurationFile* ptrConfigurationFile,
-                                    WAV* ptrWAV) = 0;
+                                            Convertor* ptrConvertor,
+                                            std::vector<std::string> vectorInputFile,
+                                            ConfigurationFile* ptrConfigurationFile,
+                                            WAV* ptrWAV) = 0;
 
     virtual void linkConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
                                      Convertor* ptrConvertor,

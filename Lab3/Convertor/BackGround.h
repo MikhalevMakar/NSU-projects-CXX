@@ -2,16 +2,17 @@
 // Created by Макар Михалёв on 09.12.2022.
 //
 
-#ifndef LAB3_QUICK_H
-#define LAB3_QUICK_H
+#ifndef LAB3_BACKGROUND_H
+#define LAB3_BACKGROUND_H
 
 #include "Convertor.h"
-std::string descriptionQuickHelp = "\nQuick Convertor: \n"
+
+std::string descriptionBackGroundHelp = "\nBackGround Convertor: \n"
                                    " first parameter file number second parameter "
                                    "is the time from which the converter starts working \n "
                                    "third parameter end time\n";
 
-class Quick : public Convertor{
+class BackGround : public Convertor{
 public:
     void readArg(ConfigurationFile* ptrConfigurationFile) override;
     void changingSamples(uint16_tArray& buffer1,
@@ -23,9 +24,11 @@ private:
     int timeEnd, valueQuick, length;
 };
 
+namespace FactoryConfigurationRegistration{
+    ConfigurationFactoryRegistrations<BackGround> _BackGround("backGround");
+}
 
-FactoryConfigurationRegistration::ConfigurationFactoryRegistrations<Quick> _Quick("quick");
-ParserRegistration::ParserRegistration QuickHelp(descriptionQuickHelp);
+ParserRegistration::ParserRegistration BackGroundHelp(descriptionBackGroundHelp);
 
 
-#endif //LAB3_QUICK_H
+#endif //LAB3_BACKGROUND_H

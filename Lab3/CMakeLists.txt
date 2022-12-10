@@ -3,7 +3,7 @@ project(Lab3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab3 main.cpp IncludeLibs.h
+add_executable(main.cpp IncludeLibs.h
                              Convertor/Mute.h
                              Convertor/Mute.cpp
                              Convertor/Mix.h
@@ -15,7 +15,7 @@ add_executable(Lab3 main.cpp IncludeLibs.h
                              ServiceConvertorAndWAV/ServiceMuteAndWAV.cpp
                              ServiceConvertorAndWAV/ServiceMuteAndWAV.h
                              ServiceConvertorAndWAV/ServiceQuickAndWAV.cpp
-                             ServiceConvertorAndWAV/ServiceQuickAndWAV.h)
+                             ServiceConvertorAndWAV/ServiceQuickAndWAV.h ServiceConvertorAndWAV/ServiceBackgroundAndWAV.cpp ServiceConvertorAndWAV/ServiceBackgroundAndWAV.h Convertor/BackGround.cpp Convertor/BackGround.h)
 
 add_subdirectory(WAV)
 add_subdirectory(ParseCommandLine)

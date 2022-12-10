@@ -9,6 +9,7 @@
 #include "FactoryRegistration.h"
 #include "WAV.h"
 #include "../IncludeLibs.h"
+#include "ParserRegistrations.h"
 
 class Convertor {
 public:

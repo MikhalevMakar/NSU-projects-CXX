@@ -2,14 +2,14 @@
 // Created by Макар Михалёв on 09.12.2022.
 //
 
-#ifndef LAB3_SERVICEQUICKANDWAV_H
-#define LAB3_SERVICEQUICKANDWAV_H
+#ifndef LAB3_SERVICEBACKGROUNDANDWAV_H
+#define LAB3_SERVICEBACKGROUNDANDWAV_H
 
 #include "ServiceInterfaceConvertorAndWAV.h"
 
-class ServiceQuickAndWAV : public ServiceInterfaceConvertorAndWAV {
+class ServiceBackgroundAndWAV : public ServiceInterfaceConvertorAndWAV {
 public:
-    ServiceQuickAndWAV() = default;
+    ServiceBackgroundAndWAV() = default;
 
     void firstLaunchConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
                                     Convertor* ptrConvertor,
@@ -22,11 +22,11 @@ public:
                              std::vector<std::string> vectorInputFile,
                              ConfigurationFile* ptrConfigurationFile,
                              WAV* ptrWAV) override;
-    ~ServiceQuickAndWAV() = default;
+    ~ServiceBackgroundAndWAV() = default;
 };
 
 namespace FactoryConfigurationRegistration {
-    ConfigurationFactoryRegistrations<ServiceQuickAndWAV> _ServiceQuickAndWAV("quick", 3);
+    ConfigurationFactoryRegistrations<ServiceBackgroundAndWAV> _ServiceBackgroundAndWAV("backGround", 4);
 }
 
-#endif //LAB3_SERVICEQUICKANDWAV_H
+#endif //LAB3_SERVICEBACKGROUNDANDWAV_H

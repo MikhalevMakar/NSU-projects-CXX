@@ -2,9 +2,9 @@
 // Created by Макар Михалёв on 09.12.2022.
 //
 
-#include "Quick.h"
+#include "BackGround.h"
 
-void Quick::readArg(ConfigurationFile* ptrConfigurationFile) {
+void BackGround::readArg(ConfigurationFile* ptrConfigurationFile) {
     if (ptrConfigurationFile->getParametersSize() != 3) {
         throw std::invalid_argument("incorrect number of arguments in Mute");
     }
@@ -22,24 +22,22 @@ void Quick::readArg(ConfigurationFile* ptrConfigurationFile) {
     valueQuick = static_cast<int>(std::atoi(ptrConfigurationFile->getParameter(index+2).c_str()));
 }
 
-void Quick::changingSamples(uint16_tArray& buffer1,
+void BackGround::changingSamples(uint16_tArray& buffer1,
                             uint16_tArray& buffer2) {
     length = ConstantParameters::SampleRate / valueQuick;
     for (long i = 0; i < length; ++i)
         buffer1[i] = buffer1[i * 2];
-    for (long i = length; i < 2*length; ++i)
-        buffer1[i] = buffer2[i * 2];
 }
 
-int Quick:: getEndingTime() {
+int BackGround:: getEndingTime() {
     return timeEnd;
 }
 
-int Quick::getBeginningTime() {
+int BackGround::getBeginningTime() {
     return timeFrom;
 }
 
-int Quick::getNumberFile() {
+int BackGround::getNumberFile() {
     throw std::invalid_argument("No such option\n");
     return 0;
 }

@@ -9,9 +9,11 @@ void Mute::readArg(ConfigurationFile* ptrConfigurationFile) {
         throw std::invalid_argument("incorrect number of arguments in Mute");
     }
 
-    if(!is_number(ptrConfigurationFile->getParameter(index++)) || !is_number(ptrConfigurationFile->getParameter(index--))) {
+    if(!is_number(ptrConfigurationFile->getParameter(index++)) ||
+       !is_number(ptrConfigurationFile->getParameter(index--))) {
         throw std::invalid_argument("is not digit numberFile\n");
     }
+
     timeFrom = static_cast<int>(std::atoi(ptrConfigurationFile->getParameter(index++).c_str()));
 
     timeEnd = static_cast<int>(std::atoi(ptrConfigurationFile->getParameter(index).c_str()));

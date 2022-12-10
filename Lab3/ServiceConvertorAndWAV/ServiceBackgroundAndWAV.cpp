@@ -2,9 +2,9 @@
 // Created by Макар Михалёв on 09.12.2022.
 //
 
-#include "ServiceQuickAndWAV.h"
+#include "ServiceBackgroundAndWAV.h"
 
-void  ServiceQuickAndWAV::firstLaunchConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
+void  ServiceBackgroundAndWAV::firstLaunchConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
                                                      Convertor* ptrConvertor,
                                                      std::vector<std::string> vectorInputFile,
                                                      ConfigurationFile* ptrConfigurationFile,
@@ -13,7 +13,7 @@ void  ServiceQuickAndWAV::firstLaunchConvertorAndWAV(ParseCommandLine* ptrParseC
     tmpCnt = ptrConvertor->getBeginningTime();
     ptrWAV->fileOverWritten(tmpCnt, bufferSample1);
 
-    while(ptrWAV->readNewSample(bufferSample1) && ptrWAV->readNewSample(bufferSample2)) {
+    while(ptrWAV->readNewSample(bufferSample1)) {
         if (++tmpCnt > ptrConvertor->getEndingTime()) break;
         ptrConvertor->changingSamples(bufferSample1,
                                       bufferSample2);
@@ -22,7 +22,7 @@ void  ServiceQuickAndWAV::firstLaunchConvertorAndWAV(ParseCommandLine* ptrParseC
     ptrWAV->writeLastPart(bufferSample1);
 }
 
-void ServiceQuickAndWAV::linkConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
+void ServiceBackgroundAndWAV::linkConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
                                              Convertor* ptrConvertor,
                                              std::vector<std::string> vectorInputFile,
                                              ConfigurationFile* ptrConfigurationFile,
@@ -32,7 +32,7 @@ void ServiceQuickAndWAV::linkConvertorAndWAV(ParseCommandLine* ptrParseCommandLi
     tmpCnt = ptrConvertor->getBeginningTime();
     ptrWAV->seekIntroFile(tmpCnt);
 
-    while(ptrWAV->readNewSample(bufferSample1) && ptrWAV->readNewSample(bufferSample2)) {
+    while(ptrWAV->readNewSample(bufferSample1)) {
         if(++tmpCnt > ptrConvertor->getEndingTime()) break;
         ptrConvertor->changingSamples(bufferSample1,
                                       bufferSample2);
