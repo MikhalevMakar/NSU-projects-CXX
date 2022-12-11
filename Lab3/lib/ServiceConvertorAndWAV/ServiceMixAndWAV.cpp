@@ -19,6 +19,7 @@ void ServiceMixAndWAV::firstLaunchConvertorAndWAV(ParseCommandLine *ptrParseComm
                                       bufferSample2);
         ptrWAV->writeSample(bufferSample1);
     }
+    ptrWAV->writeLastPart(bufferSample1);
 }
 
 void ServiceMixAndWAV::linkConvertorAndWAV(ParseCommandLine* ptrParseCommandLine,
