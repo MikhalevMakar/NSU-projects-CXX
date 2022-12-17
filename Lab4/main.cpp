@@ -1,35 +1,24 @@
-#include <iostream>
-#include <string>
+#include "include/CSVParser.h"
+#include "include/IncludeLibs.h"
 
-template<std::size_t> struct int_{};
-
-template <class Tuple>
-std::ostream&  print_tuple(std::ostream& output, const Tuple& tuple, int_<1>) {
-    return output << std::get<std::tuple_size<Tuple>::value-1>(tuple)
-                  << std::endl;
-}
-
-template <class Tuple, std::size_t Size>
-std::ostream& print_tuple(std::ostream& output, const Tuple& tuple, int_<Size>) {
-    output << std::get<std::tuple_size<Tuple>::value-Size>(tuple) << " ";
-    return print_tuple(output, tuple, int_<Size-1>());
-}
-
-template <class... Args>
-std::ostream& operator<<(std::ostream& output,
-                         const std::tuple<Args...>& tuple) {
-    return print_tuple(output, tuple, int_<sizeof...(Args)>());
-}
 
 int main() {
-    std::tuple<int, std::string> t1{42, "C++|"};
-    auto t2 = std::make_tuple(232, "e3wd");
+    std::string path = "../FolderCSV/test.csv";
+    std::fstream ptrFile(path);
+    CSVParser<int> parser(&ptrFile);
 
-    std::string b;
-    int a = 3;
-    auto t3 = std::tie(a, b);
-
-
-    std::cout << t1;
+    //for (std::tuple<int, int>& rs : parser) {
+        //std::cout << rs << std::endl;
+    //}
+    std::ifstream ptrFFile(path);
+    std::tuple  <int> t;
+    ptrFFile >> t;
+//    ptrFFile >> t;
+//    ptrFFile >> t;
+    std::string a = "Makar";
+    get<0>(t) = {1};
+    get<1>(t) = {""};
+    std::cout << t;
     return 0;
 }
+
