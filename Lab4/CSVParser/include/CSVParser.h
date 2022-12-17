@@ -8,11 +8,14 @@
 #include "include/LazyIterator.h"
 
 template <class... Args>
-class CSVParser {
+class CSVParser  {
 public:
     CSVParser() = default;
 
-    CSVParser(std::fstream* ptrFile) : ptrStream(ptrFile){
+    CSVParser(std::fstream* ptrFile) {
+        ptrStream = ptrFile;
+        auto t = new std::tuple <Args...>;
+
         try {
             if (!ptrStream->is_open()) {
                 throw std::fstream::failure("File not open\n");
