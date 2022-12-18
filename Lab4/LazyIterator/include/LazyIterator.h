@@ -12,16 +12,11 @@ template<std::size_t> struct int_{};
 template <class... Args>
 class LazyIterator : public std::iterator<std::input_iterator_tag, std::tuple<Args...>> {
 public:
-//    typedef std::input_iterator_tag iterator_category;
-//    typedef std::tuple<Args...> value_type;
-//    typedef ptrdiff_t difference_type;
-//    typedef value_type& reference;
-//    typedef value_type* pointer;
-    using iterator_category = std::input_iterator_tag;
-    using value_type = std::tuple<Args...>;
-    using difference_type = ptrdiff_t;
-    using reference = const value_type&;
-    using pointer = const value_type*;
+    typedef std::input_iterator_tag iterator_category;
+    typedef std::tuple<Args...> value_type;
+    typedef ptrdiff_t difference_type;
+    typedef value_type& reference;
+    typedef value_type* pointer;
 public:
     LazyIterator() = default;
     LazyIterator(int value) : ptrStream(NULL) {}
@@ -95,36 +90,5 @@ std::ostream& operator<<(std::ostream& output,
                          const std::tuple<Args...>& tuple) {
     return printTuple(output, tuple, int_<sizeof...(Args)>());
 }
-
-
-
-//template <typename Head, typename ...Tail>
-//std::tuple <Head, Tail...> read_tuple(std::ifstream &is) {
-//    Head head;
-//    is.exceptions ( std::ifstream::failbit | std::ifstream::badbit );
-//    try {
-//        is >> head;
-//    }
-//    catch (std::ifstream::failure &e) {
-//        if (is.eof()) {
-//            return std::tuple<Head, Tail...>{};
-//        }
-//        std::cerr << "EXCEPTION: wrong format\n";
-//        exit(1);
-//    }
-//
-//    if constexpr (sizeof...(Tail) == 0) {
-//        return std::tuple{head};
-//    }
-//    else {
-//        return std::tuple_cat(std::tuple{head}, read_tuple<Tail...>(is));
-//    }
-//}
-//
-//template <typename ...Args>
-//std::ifstream& operator>> (std::ifstream &is, std::tuple <Args...> &t) {
-//    t = read_tuple<Args...>(is);
-//    return is;
-//}
 
 #endif //LAB4_LAZYITERATOR_H

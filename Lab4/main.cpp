@@ -16,8 +16,10 @@ int main() {
 //
 //    }
     CSVParser<int, int> parser(&ptrFile);
-      LazyIterator<int, int> it = parser.begin();
-      if(it != parser.end()) { }
+      LazyIterator<int, int> it;
+      it = parser.begin();
+
+      //if(it != parser.end()) { }
 //    LazyIterator<int, int> it1;
 //    it1 = parser.begin();
 
