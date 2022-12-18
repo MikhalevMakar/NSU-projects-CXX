@@ -44,7 +44,7 @@ cmake_ninja_workdir = /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/
 #############################################
 # Order-only phony target for Lab4
 
-build cmake_object_order_depends_target_Lab4: phony || cmake_object_order_depends_target_CSVParser cmake_object_order_depends_target_IncludeLibs cmake_object_order_depends_target_LazyIterator
+build cmake_object_order_depends_target_Lab4: phony || cmake_object_order_depends_target_IncludeLibs cmake_object_order_depends_target_LazyIterator
 
 build CMakeFiles/Lab4.dir/main.cpp.o: CXX_COMPILER__Lab4_Debug /Users/natasamihaleva/projectCXX/Lab4/main.cpp || cmake_object_order_depends_target_Lab4
   DEP_FILE = CMakeFiles/Lab4.dir/main.cpp.o.d
@@ -61,10 +61,10 @@ build CMakeFiles/Lab4.dir/main.cpp.o: CXX_COMPILER__Lab4_Debug /Users/natasamiha
 #############################################
 # Link the executable Lab4
 
-build Lab4: CXX_EXECUTABLE_LINKER__Lab4_Debug CMakeFiles/Lab4.dir/main.cpp.o | LazyIterator/libLazyIterator.a IncludeLibs/libIncludeLibs.a CSVParser/libCSVParser.a LazyIterator/libLazyIterator.a IncludeLibs/libIncludeLibs.a || CSVParser/libCSVParser.a IncludeLibs/libIncludeLibs.a LazyIterator/libLazyIterator.a
+build Lab4: CXX_EXECUTABLE_LINKER__Lab4_Debug CMakeFiles/Lab4.dir/main.cpp.o | LazyIterator/libLazyIterator.a IncludeLibs/libIncludeLibs.a CSVParser/libCSVParser.a LazyIterator/libLazyIterator.a CSVParser/libCSVParser.a IncludeLibs/libIncludeLibs.a || IncludeLibs/libIncludeLibs.a LazyIterator/libLazyIterator.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
-  LINK_LIBRARIES = -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator  LazyIterator/libLazyIterator.a  IncludeLibs/libIncludeLibs.a  CSVParser/libCSVParser.a  LazyIterator/libLazyIterator.a  IncludeLibs/libIncludeLibs.a
-  LINK_PATH = -L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs   -L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator
+  LINK_LIBRARIES = -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/CSVParser -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator  LazyIterator/libLazyIterator.a  IncludeLibs/libIncludeLibs.a  CSVParser/libCSVParser.a  LazyIterator/libLazyIterator.a  CSVParser/libCSVParser.a  IncludeLibs/libIncludeLibs.a
+  LINK_PATH = -L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs   -L/Users/natasamihaleva/projectCXX/Lab4/CSVParser   -L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator
   OBJECT_DIR = CMakeFiles/Lab4.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -106,12 +106,12 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for LazyIterator
 
-build cmake_object_order_depends_target_LazyIterator: phony || cmake_object_order_depends_target_IncludeLibs
+build cmake_object_order_depends_target_LazyIterator: phony || cmake_object_order_depends_target_CSVParser
 
 build LazyIterator/CMakeFiles/LazyIterator.dir/src/LazyIterator.cpp.o: CXX_COMPILER__LazyIterator_Debug /Users/natasamihaleva/projectCXX/Lab4/LazyIterator/src/LazyIterator.cpp || cmake_object_order_depends_target_LazyIterator
   DEP_FILE = LazyIterator/CMakeFiles/LazyIterator.dir/src/LazyIterator.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/CSVParser -I/Users/natasamihaleva/projectCXX/Lab4/LazyIterator
   OBJECT_DIR = LazyIterator/CMakeFiles/LazyIterator.dir
   OBJECT_FILE_DIR = LazyIterator/CMakeFiles/LazyIterator.dir/src
 
@@ -123,7 +123,7 @@ build LazyIterator/CMakeFiles/LazyIterator.dir/src/LazyIterator.cpp.o: CXX_COMPI
 #############################################
 # Link the static library LazyIterator/libLazyIterator.a
 
-build LazyIterator/libLazyIterator.a: CXX_STATIC_LIBRARY_LINKER__LazyIterator_Debug LazyIterator/CMakeFiles/LazyIterator.dir/src/LazyIterator.cpp.o || IncludeLibs/libIncludeLibs.a
+build LazyIterator/libLazyIterator.a: CXX_STATIC_LIBRARY_LINKER__LazyIterator_Debug LazyIterator/CMakeFiles/LazyIterator.dir/src/LazyIterator.cpp.o || CSVParser/libCSVParser.a
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = LazyIterator/CMakeFiles/LazyIterator.dir
@@ -227,12 +227,12 @@ build IncludeLibs/rebuild_cache: phony IncludeLibs/CMakeFiles/rebuild_cache.util
 #############################################
 # Order-only phony target for CSVParser
 
-build cmake_object_order_depends_target_CSVParser: phony || cmake_object_order_depends_target_IncludeLibs cmake_object_order_depends_target_LazyIterator
+build cmake_object_order_depends_target_CSVParser: phony || cmake_object_order_depends_target_IncludeLibs
 
 build CSVParser/CMakeFiles/CSVParser.dir/src/CSVParser.cpp.o: CXX_COMPILER__CSVParser_Debug /Users/natasamihaleva/projectCXX/Lab4/CSVParser/src/CSVParser.cpp || cmake_object_order_depends_target_CSVParser
   DEP_FILE = CSVParser/CMakeFiles/CSVParser.dir/src/CSVParser.cpp.o.d
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/LazyIterator
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/LazyIterator -I/Users/natasamihaleva/projectCXX/Lab4/CSVParser
   OBJECT_DIR = CSVParser/CMakeFiles/CSVParser.dir
   OBJECT_FILE_DIR = CSVParser/CMakeFiles/CSVParser.dir/src
 
@@ -244,7 +244,7 @@ build CSVParser/CMakeFiles/CSVParser.dir/src/CSVParser.cpp.o: CXX_COMPILER__CSVP
 #############################################
 # Link the static library CSVParser/libCSVParser.a
 
-build CSVParser/libCSVParser.a: CXX_STATIC_LIBRARY_LINKER__CSVParser_Debug CSVParser/CMakeFiles/CSVParser.dir/src/CSVParser.cpp.o || IncludeLibs/libIncludeLibs.a LazyIterator/libLazyIterator.a
+build CSVParser/libCSVParser.a: CXX_STATIC_LIBRARY_LINKER__CSVParser_Debug CSVParser/CMakeFiles/CSVParser.dir/src/CSVParser.cpp.o || IncludeLibs/libIncludeLibs.a
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CSVParser/CMakeFiles/CSVParser.dir

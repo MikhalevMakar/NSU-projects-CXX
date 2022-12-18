@@ -94,10 +94,6 @@
 		{
 			"backtrace" : 2,
 			"id" : "IncludeLibs::@39cf8bed84fdb73b35a8"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "CSVParser::@b72ff331589b0d8b4f50"
 		}
 	],
 	"id" : "Lab4::@6890427a1f51a3e7e1df",
@@ -120,11 +116,16 @@
 			},
 			{
 				"backtrace" : 2,
+				"fragment" : "-L/Users/natasamihaleva/projectCXX/Lab4/CSVParser",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
 				"fragment" : "-L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator",
+				"fragment" : "-Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/CSVParser -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator",
 				"role" : "libraries"
 			},
 			{
@@ -145,6 +146,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "LazyIterator/libLazyIterator.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "CSVParser/libCSVParser.a",
 				"role" : "libraries"
 			},
 			{

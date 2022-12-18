@@ -7,21 +7,26 @@
 
 #include "include/IncludeLibs.h"
 #include <algorithm>
+#include "include/CSVParser.h"
 template<std::size_t> struct int_{};
 template <class... Args>
-
-class LazyIterator {
+class LazyIterator : public std::iterator<std::input_iterator_tag, std::tuple<Args...>> {
 public:
-    typedef std::input_iterator_tag iterator_category;
-    typedef std::tuple<Args...> value_type;
-    typedef ptrdiff_t difference_type;
-    typedef value_type& reference;
-    typedef value_type* pointer;
+//    typedef std::input_iterator_tag iterator_category;
+//    typedef std::tuple<Args...> value_type;
+//    typedef ptrdiff_t difference_type;
+//    typedef value_type& reference;
+//    typedef value_type* pointer;
+    using iterator_category = std::input_iterator_tag;
+    using value_type = std::tuple<Args...>;
+    using difference_type = ptrdiff_t;
+    using reference = const value_type&;
+    using pointer = const value_type*;
 public:
-    LazyIterator() : ptrStream(NULL) {}
-    LazyIterator( std::fstream* ptrFile) : ptrStream(ptrFile) {}
-
-    LazyIterator(const LazyIterator& it) : value_type(it.value_type) { }
+    LazyIterator() = default;
+    LazyIterator(int value) : ptrStream(NULL) {}
+    LazyIterator(std::fstream* ptrFile) : ptrStream(ptrFile) {}
+    LazyIterator(LazyIterator& it) : value_type(it.value_type) { }
 
     bool operator==(LazyIterator& other) {
         return (this->ptrStream == other.ptrStream);
@@ -35,59 +40,43 @@ public:
         return tupleValue;
     }
 
-    void readTuple(std::stringstream& ss, std::tuple<Args...>& tuple, int_<sizeof...(Args)+1>) { }
-
-    template <std::size_t Size>
-    void readTuple(std::stringstream& ss, std::tuple<Args...>& tuple, int_<Size>) {
-        std::tuple_element_t<Size, std::tuple<Args...>> value;
-        ss >> value;
-        char c;
-        ss >> c;
-        if (c != ',' && c != ';') {
-            throw std::exception();
-        }
-        //readTuple(ss, tuple, int_<Size+1>());
-    }
-
     LazyIterator<Args...>& operator++() {
+        *ptrStream >> tupleValue;
         return *this;
     }
-    friend std::ifstream& operator>>(std::ifstream &is, std::tuple<Args...>& tuple);
-protected:
+
+    void readTuple(std::stringstream& ss, std::tuple<Args...>& tuple,  int cur_pos, int_<sizeof...(Args)>) { }
+
+    template<std::size_t Size>
+    void readTuple(std::stringstream& ss, std::tuple<Args...>& tuple, int cur_pos,int_<Size>) {
+        std::string line;
+        if(Size == sizeof...(Args)) return;
+        std::tuple_element_t<Size, std::tuple<Args...>> value;
+        getline(ss, line, c);
+        std::istringstream(line) >> value;
+        get<Size>(tuple) = value;
+        readTuple(ss, tuple, cur_pos,int_<Size+1>());
+    }
+
+    //friend std::ifstream& operator>>(std::ifstream &is, std::tuple<Args...>& tuple);
+private:
+    char c = ';';
     std::fstream* ptrStream;
      std::tuple<Args...> tupleValue;
 };
 
 //Input line convert to tuple
 
-template <size_t I = 0, class... Args>
-typename std::enable_if<I == sizeof...(Args), void>::type
- readTuple(std::stringstream& ss, std::tuple<Args...>& tuple, int_<0>) { }
-
-
-template <class... Args, std::size_t I = 0>
-typename std::enable_if<(I < sizeof...(Args)), void>::type
- readTuple(std::stringstream& ss, std::tuple<Args...>& tuple, int_<I>) {
-    if(I == sizeof...(Args)) return;
-    std::tuple_element_t<I, std::tuple<Args...>> value;
-    ss >> value;
-    char c;
-    ss >> c;
-    if (c != ',' && c != ';') {
-        throw std::exception();
-    }
-    readTuple(ss, tuple, int_<I+1>());
-}
-
 template <class... Args>
 std::ifstream& operator>>(std::ifstream &is, std::tuple<Args...>& tuple) {
     std::string line;
     getline(is, line);
     std::stringstream ss{std::move(line)};
-    int count = sizeof...(Args);
-    readTuple<Args...>(ss, tuple, int_<0>());
+    LazyIterator<Args...> lazyIterator;
+    lazyIterator.readTuple(ss, tuple, 0,int_<0>());
     return is;
 }
+
 //Output tuple
 template <class Tuple>
 std::ostream&  printTuple(std::ostream& output, const Tuple& tuple, int_<1>) {

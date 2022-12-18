@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CSVParser/libCSVParser.a"
+			"path" : "LazyIterator/libLazyIterator.a"
 		}
 	],
 	"backtrace" : 1,
@@ -12,12 +12,12 @@
 		"commands" : 
 		[
 			"add_library",
-			"target_link_libraries",
-			"target_include_directories"
+			"target_include_directories",
+			"target_link_libraries"
 		],
 		"files" : 
 		[
-			"CSVParser/CMakeLists.txt"
+			"LazyIterator/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -33,13 +33,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 5,
+				"line" : 7,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 8,
+				"line" : 4,
 				"parent" : 0
 			}
 		]
@@ -59,8 +59,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"path" : "/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/natasamihaleva/projectCXX/Lab4/CSVParser"
 				},
 				{
 					"backtrace" : 3,
@@ -85,21 +89,16 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 2,
-			"id" : "LazyIterator::@d248741314a1283b3bde"
-		},
-		{
-			"backtrace" : 2,
-			"id" : "IncludeLibs::@39cf8bed84fdb73b35a8"
+			"id" : "CSVParser::@b72ff331589b0d8b4f50"
 		}
 	],
-	"id" : "CSVParser::@b72ff331589b0d8b4f50",
-	"name" : "CSVParser",
-	"nameOnDisk" : "libCSVParser.a",
+	"id" : "LazyIterator::@d248741314a1283b3bde",
+	"name" : "LazyIterator",
+	"nameOnDisk" : "libLazyIterator.a",
 	"paths" : 
 	{
-		"build" : "CSVParser",
-		"source" : "CSVParser"
+		"build" : "LazyIterator",
+		"source" : "LazyIterator"
 	},
 	"sourceGroups" : 
 	[
@@ -122,13 +121,13 @@
 	[
 		{
 			"backtrace" : 1,
-			"path" : "CSVParser/include/CSVParser.h",
+			"path" : "LazyIterator/include/LazyIterator.h",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "CSVParser/src/CSVParser.cpp",
+			"path" : "LazyIterator/src/LazyIterator.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

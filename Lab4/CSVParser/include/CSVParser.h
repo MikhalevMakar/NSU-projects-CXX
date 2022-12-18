@@ -14,7 +14,6 @@ public:
 
     CSVParser(std::fstream* ptrFile) {
         ptrStream = ptrFile;
-        auto t = new std::tuple <Args...>;
 
         try {
             if (!ptrStream->is_open()) {
@@ -25,12 +24,14 @@ public:
         }
     }
 
-    LazyIterator<Args...>& begin() {
-        return LazyIterator<Args...>(ptrStream);
+    LazyIterator<Args...>& begin() const {
+        LazyIterator<Args...> it(ptrStream);
+        return it;
     }
 
-    LazyIterator<Args...>& end() {
-        return LazyIterator<Args...>();
+    LazyIterator<Args...>& end() const {
+        LazyIterator<Args...> it(1);
+        return it;
     }
 
     ~CSVParser() {
