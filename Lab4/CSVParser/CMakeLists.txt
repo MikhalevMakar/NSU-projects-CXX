@@ -3,10 +3,10 @@ add_library(CSVParser STATIC include/CSVParser.h
 
 
 target_link_libraries(CSVParser PUBLIC IncludeLibs
-                                       LazyIterator)
+                                       PrintTuple)
 
 target_include_directories(CSVParser PUBLIC ${CMAKE_SOURCE_DIR}/IncludeLibs
-                                            ${CMAKE_SOURCE_DIR}/LazyIterator)
+                                            ${CMAKE_SOURCE_DIR}/PrintTuple)
 
 target_link_directories(CSVParser PUBLIC ${CMAKE_BINARY_DIR}/IncludeLibs
-                                         ${CMAKE_BINARY_DIR}/LazyIterator)
+                                         ${CMAKE_BINARY_DIR}/PrintTuple)

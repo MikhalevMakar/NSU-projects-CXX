@@ -1,4 +1,4 @@
-# Install script for directory: /Users/natasamihaleva/projectCXX/Lab4/CSVParse
+# Install script for directory: /Users/natasamihaleva/projectCXX/Lab4/PrintTuple
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

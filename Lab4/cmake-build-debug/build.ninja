@@ -44,12 +44,12 @@ cmake_ninja_workdir = /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/
 #############################################
 # Order-only phony target for Lab4
 
-build cmake_object_order_depends_target_Lab4: phony || cmake_object_order_depends_target_IncludeLibs cmake_object_order_depends_target_LazyIterator
+build cmake_object_order_depends_target_Lab4: phony || cmake_object_order_depends_target_IncludeLibs cmake_object_order_depends_target_PrintTuple
 
 build CMakeFiles/Lab4.dir/main.cpp.o: CXX_COMPILER__Lab4_Debug /Users/natasamihaleva/projectCXX/Lab4/main.cpp || cmake_object_order_depends_target_Lab4
   DEP_FILE = CMakeFiles/Lab4.dir/main.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/LazyIterator -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/CSVParser
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/PrintTuple -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/CSVParser
   OBJECT_DIR = CMakeFiles/Lab4.dir
   OBJECT_FILE_DIR = CMakeFiles/Lab4.dir
 
@@ -61,10 +61,10 @@ build CMakeFiles/Lab4.dir/main.cpp.o: CXX_COMPILER__Lab4_Debug /Users/natasamiha
 #############################################
 # Link the executable Lab4
 
-build Lab4: CXX_EXECUTABLE_LINKER__Lab4_Debug CMakeFiles/Lab4.dir/main.cpp.o | LazyIterator/libLazyIterator.a IncludeLibs/libIncludeLibs.a CSVParser/libCSVParser.a LazyIterator/libLazyIterator.a CSVParser/libCSVParser.a IncludeLibs/libIncludeLibs.a || IncludeLibs/libIncludeLibs.a LazyIterator/libLazyIterator.a
+build Lab4: CXX_EXECUTABLE_LINKER__Lab4_Debug CMakeFiles/Lab4.dir/main.cpp.o | PrintTuple/libPrintTuple.a IncludeLibs/libIncludeLibs.a CSVParser/libCSVParser.a PrintTuple/libPrintTuple.a CSVParser/libCSVParser.a IncludeLibs/libIncludeLibs.a || IncludeLibs/libIncludeLibs.a PrintTuple/libPrintTuple.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
-  LINK_LIBRARIES = -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/CSVParser -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator  LazyIterator/libLazyIterator.a  IncludeLibs/libIncludeLibs.a  CSVParser/libCSVParser.a  LazyIterator/libLazyIterator.a  CSVParser/libCSVParser.a  IncludeLibs/libIncludeLibs.a
-  LINK_PATH = -L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs   -L/Users/natasamihaleva/projectCXX/Lab4/CSVParser   -L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator
+  LINK_LIBRARIES = -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/CSVParser -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple  PrintTuple/libPrintTuple.a  IncludeLibs/libIncludeLibs.a  CSVParser/libCSVParser.a  PrintTuple/libPrintTuple.a  CSVParser/libCSVParser.a  IncludeLibs/libIncludeLibs.a
+  LINK_PATH = -L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs   -L/Users/natasamihaleva/projectCXX/Lab4/CSVParser   -L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple
   OBJECT_DIR = CMakeFiles/Lab4.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -100,60 +100,60 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target LazyIterator
+# Object build statements for STATIC_LIBRARY target PrintTuple
 
 
 #############################################
-# Order-only phony target for LazyIterator
+# Order-only phony target for PrintTuple
 
-build cmake_object_order_depends_target_LazyIterator: phony || cmake_object_order_depends_target_CSVParser
+build cmake_object_order_depends_target_PrintTuple: phony || cmake_object_order_depends_target_CSVParser
 
-build LazyIterator/CMakeFiles/LazyIterator.dir/src/LazyIterator.cpp.o: CXX_COMPILER__LazyIterator_Debug /Users/natasamihaleva/projectCXX/Lab4/LazyIterator/src/LazyIterator.cpp || cmake_object_order_depends_target_LazyIterator
-  DEP_FILE = LazyIterator/CMakeFiles/LazyIterator.dir/src/LazyIterator.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/CSVParser -I/Users/natasamihaleva/projectCXX/Lab4/LazyIterator
-  OBJECT_DIR = LazyIterator/CMakeFiles/LazyIterator.dir
-  OBJECT_FILE_DIR = LazyIterator/CMakeFiles/LazyIterator.dir/src
+build PrintTuple/CMakeFiles/PrintTuple.dir/src/LazyIterator.cpp.o: CXX_COMPILER__PrintTuple_Debug /Users/natasamihaleva/projectCXX/Lab4/PrintTuple/src/LazyIterator.cpp || cmake_object_order_depends_target_PrintTuple
+  DEP_FILE = PrintTuple/CMakeFiles/PrintTuple.dir/src/LazyIterator.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/CSVParser -I/Users/natasamihaleva/projectCXX/Lab4/PrintTuple
+  OBJECT_DIR = PrintTuple/CMakeFiles/PrintTuple.dir
+  OBJECT_FILE_DIR = PrintTuple/CMakeFiles/PrintTuple.dir/src
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target LazyIterator
+# Link build statements for STATIC_LIBRARY target PrintTuple
 
 
 #############################################
-# Link the static library LazyIterator/libLazyIterator.a
+# Link the static library PrintTuple/libPrintTuple.a
 
-build LazyIterator/libLazyIterator.a: CXX_STATIC_LIBRARY_LINKER__LazyIterator_Debug LazyIterator/CMakeFiles/LazyIterator.dir/src/LazyIterator.cpp.o || CSVParser/libCSVParser.a
+build PrintTuple/libPrintTuple.a: CXX_STATIC_LIBRARY_LINKER__PrintTuple_Debug PrintTuple/CMakeFiles/PrintTuple.dir/src/LazyIterator.cpp.o || CSVParser/libCSVParser.a
   ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = LazyIterator/CMakeFiles/LazyIterator.dir
+  OBJECT_DIR = PrintTuple/CMakeFiles/PrintTuple.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = LazyIterator/libLazyIterator.a
-  TARGET_PDB = LazyIterator.a.dbg
+  TARGET_FILE = PrintTuple/libPrintTuple.a
+  TARGET_PDB = PrintTuple.a.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build LazyIterator/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build PrintTuple/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build LazyIterator/edit_cache: phony LazyIterator/CMakeFiles/edit_cache.util
+build PrintTuple/edit_cache: phony PrintTuple/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build LazyIterator/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab4 -B/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug
+build PrintTuple/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/natasamihaleva/projectCXX/Lab4 -B/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build LazyIterator/rebuild_cache: phony LazyIterator/CMakeFiles/rebuild_cache.util
+build PrintTuple/rebuild_cache: phony PrintTuple/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -171,7 +171,7 @@ build cmake_object_order_depends_target_IncludeLibs: phony || IncludeLibs/CMakeF
 
 build IncludeLibs/CMakeFiles/IncludeLibs.dir/src/IncludeLibs.cpp.o: CXX_COMPILER__IncludeLibs_Debug /Users/natasamihaleva/projectCXX/Lab4/IncludeLibs/src/IncludeLibs.cpp || cmake_object_order_depends_target_IncludeLibs
   DEP_FILE = IncludeLibs/CMakeFiles/IncludeLibs.dir/src/IncludeLibs.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20
   OBJECT_DIR = IncludeLibs/CMakeFiles/IncludeLibs.dir
   OBJECT_FILE_DIR = IncludeLibs/CMakeFiles/IncludeLibs.dir/src
 
@@ -231,8 +231,8 @@ build cmake_object_order_depends_target_CSVParser: phony || cmake_object_order_d
 
 build CSVParser/CMakeFiles/CSVParser.dir/src/CSVParser.cpp.o: CXX_COMPILER__CSVParser_Debug /Users/natasamihaleva/projectCXX/Lab4/CSVParser/src/CSVParser.cpp || cmake_object_order_depends_target_CSVParser
   DEP_FILE = CSVParser/CMakeFiles/CSVParser.dir/src/CSVParser.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
-  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/LazyIterator -I/Users/natasamihaleva/projectCXX/Lab4/CSVParser
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++20
+  INCLUDES = -I/Users/natasamihaleva/projectCXX/Lab4/IncludeLibs -I/Users/natasamihaleva/projectCXX/Lab4/PrintTuple -I/Users/natasamihaleva/projectCXX/Lab4/CSVParser
   OBJECT_DIR = CSVParser/CMakeFiles/CSVParser.dir
   OBJECT_FILE_DIR = CSVParser/CMakeFiles/CSVParser.dir/src
 
@@ -283,13 +283,13 @@ build CSVParser: phony CSVParser/libCSVParser.a
 
 build IncludeLibs: phony IncludeLibs/libIncludeLibs.a
 
-build LazyIterator: phony LazyIterator/libLazyIterator.a
+build PrintTuple: phony PrintTuple/libPrintTuple.a
 
 build libCSVParser.a: phony CSVParser/libCSVParser.a
 
 build libIncludeLibs.a: phony IncludeLibs/libIncludeLibs.a
 
-build libLazyIterator.a: phony LazyIterator/libLazyIterator.a
+build libPrintTuple.a: phony PrintTuple/libPrintTuple.a
 
 # =============================================================================
 # Folder targets.
@@ -299,7 +299,7 @@ build libLazyIterator.a: phony LazyIterator/libLazyIterator.a
 #############################################
 # Folder: /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug
 
-build all: phony Lab4 LazyIterator/all IncludeLibs/all CSVParser/all
+build all: phony Lab4 PrintTuple/all IncludeLibs/all CSVParser/all
 
 # =============================================================================
 
@@ -318,9 +318,9 @@ build IncludeLibs/all: phony IncludeLibs/libIncludeLibs.a
 # =============================================================================
 
 #############################################
-# Folder: /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator
+# Folder: /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple
 
-build LazyIterator/all: phony LazyIterator/libLazyIterator.a
+build PrintTuple/all: phony PrintTuple/libPrintTuple.a
 
 # =============================================================================
 # Built-in targets
@@ -329,14 +329,14 @@ build LazyIterator/all: phony LazyIterator/libLazyIterator.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../CSVParser/CMakeLists.txt ../IncludeLibs/CMakeLists.txt ../LazyIterator/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../CSVParser/CMakeLists.txt ../IncludeLibs/CMakeLists.txt ../PrintTuple/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../CSVParser/CMakeLists.txt ../IncludeLibs/CMakeLists.txt ../LazyIterator/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../CSVParser/CMakeLists.txt ../IncludeLibs/CMakeLists.txt ../PrintTuple/CMakeLists.txt /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

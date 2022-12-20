@@ -1,9 +1,9 @@
 /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/CMakeFiles/Lab4.dir
 /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator/CMakeFiles/LazyIterator.dir
-/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator/CMakeFiles/edit_cache.dir
-/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator/CMakeFiles/rebuild_cache.dir
+/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple/CMakeFiles/PrintTuple.dir
+/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple/CMakeFiles/edit_cache.dir
+/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple/CMakeFiles/rebuild_cache.dir
 /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs/CMakeFiles/IncludeLibs.dir
 /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs/CMakeFiles/edit_cache.dir
 /Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs/CMakeFiles/rebuild_cache.dir

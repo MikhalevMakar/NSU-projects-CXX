@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "LazyIterator",
-		"source" : "LazyIterator"
+		"build" : "PrintTuple",
+		"source" : "PrintTuple"
 	}
 }

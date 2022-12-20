@@ -52,14 +52,14 @@
 					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk"
 				},
 				{
-					"fragment" : "-std=gnu++14"
+					"fragment" : "-std=gnu++20"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/Users/natasamihaleva/projectCXX/Lab4/LazyIterator"
+					"path" : "/Users/natasamihaleva/projectCXX/Lab4/PrintTuple"
 				},
 				{
 					"backtrace" : 3,
@@ -77,7 +77,7 @@
 				[
 					1
 				],
-				"standard" : "14"
+				"standard" : "20"
 			},
 			"sourceIndexes" : 
 			[
@@ -89,7 +89,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "LazyIterator::@d248741314a1283b3bde"
+			"id" : "PrintTuple::@a0483e132f8e8af93558"
 		},
 		{
 			"backtrace" : 2,
@@ -121,16 +121,16 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator",
+				"fragment" : "-L/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/CSVParser -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/LazyIterator",
+				"fragment" : "-Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/IncludeLibs -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/CSVParser -Wl,-rpath,/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/PrintTuple",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "LazyIterator/libLazyIterator.a",
+				"fragment" : "PrintTuple/libPrintTuple.a",
 				"role" : "libraries"
 			},
 			{
@@ -145,7 +145,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "LazyIterator/libLazyIterator.a",
+				"fragment" : "PrintTuple/libPrintTuple.a",
 				"role" : "libraries"
 			},
 			{
