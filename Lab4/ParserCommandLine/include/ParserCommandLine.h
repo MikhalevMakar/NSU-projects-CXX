@@ -8,7 +8,7 @@
 
 class ParserCommandLine {
 public:
-    ParserCommandLine() = delete;
+    //ParserCommandLine() = delete;
     ParserCommandLine((int argc, char* argv[]);
 private:
     po::variables_map vm;
