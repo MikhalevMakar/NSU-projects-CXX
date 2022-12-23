@@ -1,0 +1,21 @@
+# ninja log v5
+3611	3618	1671598686882672091	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	62cd12ba11721944
+9	3602	1671598686866433288	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	1fcb093c0a72978
+3650	3661	1671598686925259701	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	7a5926acac798c98
+3602	3611	1671598686875035725	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	d9fdbd89a7cd927b
+0	9	1671598683273324498	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	2b7999287c31688
+3611	3618	1671598686882672091	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	62cd12ba11721944
+3602	3611	1671598686875035725	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	d9fdbd89a7cd927b
+3650	3661	1671598686925259701	CMakeFiles/googletest-populate-complete	7a5926acac798c98
+9	3602	1671598686866433288	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	1fcb093c0a72978
+3634	3642	1671598686905898269	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	39863d63129caad3
+3618	3626	1671598686890539496	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	45e812c9edb21ac8
+3618	3626	1671598686890539496	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	45e812c9edb21ac8
+0	9	1671598683273324498	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	2b7999287c31688
+3626	3634	1671598686898254653	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	bfa8288c36cee8da
+3626	3634	1671598686898254653	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	bfa8288c36cee8da
+3650	3661	1671598686925259701	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	7a5926acac798c98
+3634	3642	1671598686905898269	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	39863d63129caad3
+3642	3650	1671598686914588080	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	5f6ccf1eb957a65b
+3642	3650	1671598686914588080	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	5f6ccf1eb957a65b
+3650	3661	1671598686925259701	/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	7a5926acac798c98

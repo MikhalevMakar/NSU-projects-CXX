@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/boost-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/boost-src/libs/algorithm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/boost-src/libs/align" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/boost-src/libs/any" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/boost-src/libs/array" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/boost-src/libs/assert" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/boost-src/libs/atomic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/boost-src/libs/bind" vcs="Git" />
   </component>
 </project>

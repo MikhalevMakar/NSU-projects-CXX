@@ -6,8 +6,8 @@
 #define LAB4_PRINTTUPLE_H
 
 #include "include/IncludeLibs.h"
-#include <algorithm>
 #include "include/CSVParser.h"
+
 template<std::size_t> struct int_{};
 
 template <class Tuple>

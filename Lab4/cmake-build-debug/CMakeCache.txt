@@ -14,6 +14,33 @@
 # EXTERNAL cache entries
 ########################
 
+//Boost.Regex: Enable Standalone Mode (i.e. no Boost dependencies)
+BOOST_REGEX_STANDALONE:BOOL=OFF
+
+//Boost.Thread threading API (pthread or win32)
+BOOST_THREAD_THREADAPI:STRING=pthread
+
+//Builds the googlemock subproject
+BUILD_GMOCK:BOOL=ON
+
+//Value Computed by CMake
+BoostPredef_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/predef
+
+//Value Computed by CMake
+BoostPredef_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+BoostPredef_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/predef
+
+//Value Computed by CMake
+Boost_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build
+
+//Value Computed by CMake
+Boost_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Boost_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -81,11 +108,59 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Enable/Disable output of compile commands during generation.
 CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 
+//User executables (bin)
+CMAKE_INSTALL_BINDIR:PATH=bin
+
+//Read-only architecture-independent data (DATAROOTDIR)
+CMAKE_INSTALL_DATADIR:PATH=
+
+//Read-only architecture-independent data root (share)
+CMAKE_INSTALL_DATAROOTDIR:PATH=share
+
+//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
+CMAKE_INSTALL_DOCDIR:PATH=
+
+//C header files (include)
+CMAKE_INSTALL_INCLUDEDIR:PATH=include
+
+//Info documentation (DATAROOTDIR/info)
+CMAKE_INSTALL_INFODIR:PATH=
+
+//Object code libraries (lib)
+CMAKE_INSTALL_LIBDIR:PATH=lib
+
+//Program executables (libexec)
+CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
+
+//Locale-dependent data (DATAROOTDIR/locale)
+CMAKE_INSTALL_LOCALEDIR:PATH=
+
+//Modifiable single-machine data (var)
+CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
+
+//Man documentation (DATAROOTDIR/man)
+CMAKE_INSTALL_MANDIR:PATH=
+
 //Path to a program.
 CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
 
+//C header files for non-gcc (/usr/include)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
+
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
+
+//Run-time variable data (LOCALSTATEDIR/run)
+CMAKE_INSTALL_RUNSTATEDIR:PATH=
+
+//System admin executables (sbin)
+CMAKE_INSTALL_SBINDIR:PATH=sbin
+
+//Modifiable architecture-independent data (com)
+CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
+
+//Read-only single-machine data (etc)
+CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ld
@@ -141,6 +216,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=Lab4
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=1.12.1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=12
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -204,6 +294,115 @@ CMAKE_STRIP:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Directory under which to collect all populated content
+FETCHCONTENT_BASE_DIR:PATH=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps
+
+//Disables all attempts to download or update content and assumes
+// source dirs already exist
+FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
+
+//Enables QUIET option for all content population
+FETCHCONTENT_QUIET:BOOL=ON
+
+//When not empty, overrides where to find pre-populated content
+// for Boost
+FETCHCONTENT_SOURCE_DIR_BOOST:PATH=
+
+//When not empty, overrides where to find pre-populated content
+// for googletest
+FETCHCONTENT_SOURCE_DIR_GOOGLETEST:PATH=
+
+//Enables UPDATE_DISCONNECTED behavior for all content population
+FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of Boost
+FETCHCONTENT_UPDATES_DISCONNECTED_BOOST:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of googletest
+FETCHCONTENT_UPDATES_DISCONNECTED_GOOGLETEST:BOOL=OFF
+
+//Git command line client
+GIT_EXECUTABLE:FILEPATH=/usr/bin/git
+
+//ICU data library (debug)
+ICU_DATA_LIBRARY_DEBUG:FILEPATH=ICU_DATA_LIBRARY_DEBUG-NOTFOUND
+
+//ICU data library (release)
+ICU_DATA_LIBRARY_RELEASE:FILEPATH=ICU_DATA_LIBRARY_RELEASE-NOTFOUND
+
+//ICU derb executable
+ICU_DERB_EXECUTABLE:FILEPATH=ICU_DERB_EXECUTABLE-NOTFOUND
+
+//ICU genbrk executable
+ICU_GENBRK_EXECUTABLE:FILEPATH=ICU_GENBRK_EXECUTABLE-NOTFOUND
+
+//ICU genccode executable
+ICU_GENCCODE_EXECUTABLE:FILEPATH=ICU_GENCCODE_EXECUTABLE-NOTFOUND
+
+//ICU gencfu executable
+ICU_GENCFU_EXECUTABLE:FILEPATH=ICU_GENCFU_EXECUTABLE-NOTFOUND
+
+//ICU gencmn executable
+ICU_GENCMN_EXECUTABLE:FILEPATH=ICU_GENCMN_EXECUTABLE-NOTFOUND
+
+//ICU gencnval executable
+ICU_GENCNVAL_EXECUTABLE:FILEPATH=ICU_GENCNVAL_EXECUTABLE-NOTFOUND
+
+//ICU gendict executable
+ICU_GENDICT_EXECUTABLE:FILEPATH=ICU_GENDICT_EXECUTABLE-NOTFOUND
+
+//ICU gennorm2 executable
+ICU_GENNORM2_EXECUTABLE:FILEPATH=ICU_GENNORM2_EXECUTABLE-NOTFOUND
+
+//ICU genrb executable
+ICU_GENRB_EXECUTABLE:FILEPATH=ICU_GENRB_EXECUTABLE-NOTFOUND
+
+//ICU gensprep executable
+ICU_GENSPREP_EXECUTABLE:FILEPATH=ICU_GENSPREP_EXECUTABLE-NOTFOUND
+
+//ICU i18n library (debug)
+ICU_I18N_LIBRARY_DEBUG:FILEPATH=ICU_I18N_LIBRARY_DEBUG-NOTFOUND
+
+//ICU i18n library (release)
+ICU_I18N_LIBRARY_RELEASE:FILEPATH=ICU_I18N_LIBRARY_RELEASE-NOTFOUND
+
+//ICU icu-config executable
+ICU_ICU-CONFIG_EXECUTABLE:FILEPATH=ICU_ICU-CONFIG_EXECUTABLE-NOTFOUND
+
+//ICU icuinfo executable
+ICU_ICUINFO_EXECUTABLE:FILEPATH=ICU_ICUINFO_EXECUTABLE-NOTFOUND
+
+//ICU icupkg executable
+ICU_ICUPKG_EXECUTABLE:FILEPATH=ICU_ICUPKG_EXECUTABLE-NOTFOUND
+
+//ICU include directory
+ICU_INCLUDE_DIR:PATH=/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include
+
+//ICU makeconv executable
+ICU_MAKECONV_EXECUTABLE:FILEPATH=ICU_MAKECONV_EXECUTABLE-NOTFOUND
+
+//ICU Makefile.inc data file
+ICU_MAKEFILE_INC:FILEPATH=ICU_MAKEFILE_INC-NOTFOUND
+
+//ICU pkgdata executable
+ICU_PKGDATA_EXECUTABLE:FILEPATH=ICU_PKGDATA_EXECUTABLE-NOTFOUND
+
+//ICU pkgdata.inc data file
+ICU_PKGDATA_INC:FILEPATH=ICU_PKGDATA_INC-NOTFOUND
+
+//ICU uconv executable
+ICU_UCONV_EXECUTABLE:FILEPATH=ICU_UCONV_EXECUTABLE-NOTFOUND
+
+//ICU uc library (debug)
+ICU_UC_LIBRARY_DEBUG:FILEPATH=ICU_UC_LIBRARY_DEBUG-NOTFOUND
+
+//ICU uc library (release)
+ICU_UC_LIBRARY_RELEASE:FILEPATH=ICU_UC_LIBRARY_RELEASE-NOTFOUND
+
+//Enable installation of googletest. (Projects embedding googletest
+// may want to turn this OFF.)
+INSTALL_GTEST:BOOL=ON
+
 //Value Computed by CMake
 Lab4_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug
 
@@ -213,11 +412,531 @@ Lab4_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Lab4_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4
 
+//Value Computed by CMake
+boost_algorithm_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/algorithm
+
+//Value Computed by CMake
+boost_algorithm_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_algorithm_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/algorithm
+
+//Value Computed by CMake
+boost_align_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/align
+
+//Value Computed by CMake
+boost_align_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_align_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/align
+
+//Value Computed by CMake
+boost_any_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/any
+
+//Value Computed by CMake
+boost_any_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_any_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/any
+
+//Value Computed by CMake
+boost_array_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/array
+
+//Value Computed by CMake
+boost_array_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_array_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/array
+
+//Value Computed by CMake
+boost_assert_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/assert
+
+//Value Computed by CMake
+boost_assert_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_assert_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/assert
+
+//Value Computed by CMake
+boost_atomic_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/atomic
+
+//Value Computed by CMake
+boost_atomic_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_atomic_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/atomic
+
+//Value Computed by CMake
+boost_bind_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/bind
+
+//Value Computed by CMake
+boost_bind_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_bind_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/bind
+
+//Value Computed by CMake
+boost_chrono_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/chrono
+
+//Value Computed by CMake
+boost_chrono_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_chrono_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/chrono
+
+//Value Computed by CMake
+boost_concept_check_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/concept_check
+
+//Value Computed by CMake
+boost_concept_check_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_concept_check_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/concept_check
+
+//Value Computed by CMake
+boost_config_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/config
+
+//Value Computed by CMake
+boost_config_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_config_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/config
+
+//Value Computed by CMake
+boost_container_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/container
+
+//Value Computed by CMake
+boost_container_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_container_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/container
+
+//Value Computed by CMake
+boost_container_hash_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/container_hash
+
+//Value Computed by CMake
+boost_container_hash_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_container_hash_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/container_hash
+
+//Value Computed by CMake
+boost_conversion_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/conversion
+
+//Value Computed by CMake
+boost_conversion_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_conversion_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/conversion
+
+//Value Computed by CMake
+boost_core_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/core
+
+//Value Computed by CMake
+boost_core_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_core_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/core
+
+//Value Computed by CMake
+boost_date_time_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/date_time
+
+//Value Computed by CMake
+boost_date_time_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_date_time_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/date_time
+
+//Value Computed by CMake
+boost_detail_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/detail
+
+//Value Computed by CMake
+boost_detail_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_detail_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/detail
+
+//Value Computed by CMake
+boost_exception_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/exception
+
+//Value Computed by CMake
+boost_exception_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_exception_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/exception
+
+//Value Computed by CMake
+boost_function_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/function
+
+//Value Computed by CMake
+boost_function_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_function_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/function
+
+//Value Computed by CMake
+boost_function_types_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/function_types
+
+//Value Computed by CMake
+boost_function_types_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_function_types_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/function_types
+
+//Value Computed by CMake
+boost_functional_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/functional
+
+//Value Computed by CMake
+boost_functional_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_functional_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/functional
+
+//Value Computed by CMake
+boost_fusion_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/fusion
+
+//Value Computed by CMake
+boost_fusion_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_fusion_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/fusion
+
+//Value Computed by CMake
+boost_integer_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/integer
+
+//Value Computed by CMake
+boost_integer_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_integer_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/integer
+
+//Value Computed by CMake
+boost_intrusive_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/intrusive
+
+//Value Computed by CMake
+boost_intrusive_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_intrusive_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/intrusive
+
+//Value Computed by CMake
+boost_io_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/io
+
+//Value Computed by CMake
+boost_io_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_io_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/io
+
+//Value Computed by CMake
+boost_iterator_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/iterator
+
+//Value Computed by CMake
+boost_iterator_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_iterator_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/iterator
+
+//Value Computed by CMake
+boost_lexical_cast_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/lexical_cast
+
+//Value Computed by CMake
+boost_lexical_cast_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_lexical_cast_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/lexical_cast
+
+//Value Computed by CMake
+boost_move_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/move
+
+//Value Computed by CMake
+boost_move_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_move_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/move
+
+//Value Computed by CMake
+boost_mp11_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/mp11
+
+//Value Computed by CMake
+boost_mp11_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_mp11_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/mp11
+
+//Value Computed by CMake
+boost_mpl_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/mpl
+
+//Value Computed by CMake
+boost_mpl_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_mpl_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/mpl
+
+//Value Computed by CMake
+boost_numeric_conversion_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/numeric/conversion
+
+//Value Computed by CMake
+boost_numeric_conversion_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_numeric_conversion_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/numeric/conversion
+
+//Value Computed by CMake
+boost_optional_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/optional
+
+//Value Computed by CMake
+boost_optional_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_optional_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/optional
+
+//Value Computed by CMake
+boost_preprocessor_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/preprocessor
+
+//Value Computed by CMake
+boost_preprocessor_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_preprocessor_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/preprocessor
+
+//Value Computed by CMake
+boost_program_options_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/program_options
+
+//Value Computed by CMake
+boost_program_options_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_program_options_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/program_options
+
+//Value Computed by CMake
+boost_range_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/range
+
+//Value Computed by CMake
+boost_range_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_range_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/range
+
+//Value Computed by CMake
+boost_ratio_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/ratio
+
+//Value Computed by CMake
+boost_ratio_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_ratio_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/ratio
+
+//Value Computed by CMake
+boost_rational_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/rational
+
+//Value Computed by CMake
+boost_rational_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_rational_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/rational
+
+//Value Computed by CMake
+boost_regex_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/regex
+
+//Value Computed by CMake
+boost_regex_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_regex_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/regex
+
+//Value Computed by CMake
+boost_smart_ptr_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/smart_ptr
+
+//Value Computed by CMake
+boost_smart_ptr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_smart_ptr_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/smart_ptr
+
+//Value Computed by CMake
+boost_static_assert_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/static_assert
+
+//Value Computed by CMake
+boost_static_assert_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_static_assert_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/static_assert
+
+//Value Computed by CMake
+boost_system_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/system
+
+//Value Computed by CMake
+boost_system_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_system_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/system
+
+//Value Computed by CMake
+boost_thread_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/thread
+
+//Value Computed by CMake
+boost_thread_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_thread_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/thread
+
+//Value Computed by CMake
+boost_throw_exception_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/throw_exception
+
+//Value Computed by CMake
+boost_throw_exception_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_throw_exception_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/throw_exception
+
+//Value Computed by CMake
+boost_tokenizer_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/tokenizer
+
+//Value Computed by CMake
+boost_tokenizer_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_tokenizer_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/tokenizer
+
+//Value Computed by CMake
+boost_tuple_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/tuple
+
+//Value Computed by CMake
+boost_tuple_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_tuple_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/tuple
+
+//Value Computed by CMake
+boost_type_index_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/type_index
+
+//Value Computed by CMake
+boost_type_index_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_type_index_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/type_index
+
+//Value Computed by CMake
+boost_type_traits_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/type_traits
+
+//Value Computed by CMake
+boost_type_traits_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_type_traits_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/type_traits
+
+//Value Computed by CMake
+boost_typeof_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/typeof
+
+//Value Computed by CMake
+boost_typeof_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_typeof_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/typeof
+
+//Value Computed by CMake
+boost_unordered_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/unordered
+
+//Value Computed by CMake
+boost_unordered_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_unordered_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/unordered
+
+//Value Computed by CMake
+boost_utility_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/utility
+
+//Value Computed by CMake
+boost_utility_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_utility_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/utility
+
+//Value Computed by CMake
+boost_variant2_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/variant2
+
+//Value Computed by CMake
+boost_variant2_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_variant2_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/variant2
+
+//Value Computed by CMake
+boost_winapi_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-build/libs/winapi
+
+//Value Computed by CMake
+boost_winapi_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+boost_winapi_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/winapi
+
+//Value Computed by CMake
+gmock_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-build/googlemock
+
+//Value Computed by CMake
+gmock_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+gmock_LIB_DEPENDS:STATIC=general;gtest;
+
+//Value Computed by CMake
+gmock_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-src/googlemock
+
+//Build all of Google Mock's own tests.
+gmock_build_tests:BOOL=OFF
+
+//Dependencies for the target
+gmock_main_LIB_DEPENDS:STATIC=general;gmock;
+
+//Value Computed by CMake
+googletest-distribution_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-build
+
+//Value Computed by CMake
+googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+googletest-distribution_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-src
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-build/googletest
+
+//Value Computed by CMake
+gtest_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+gtest_SOURCE_DIR:STATIC=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-src/googletest
+
+//Build gtest's sample programs.
+gtest_build_samples:BOOL=OFF
+
+//Build all of gtest's own tests.
+gtest_build_tests:BOOL=OFF
+
+//Disable uses of pthreads in gtest.
+gtest_disable_pthreads:BOOL=OFF
+
+//Use shared (DLL) run-time lib even when Google Test is built
+// as static lib.
+gtest_force_shared_crt:BOOL=ON
+
+//Build gtest with internal symbols hidden in shared libraries.
+gtest_hide_internal_symbols:BOOL=OFF
+
+//Dependencies for the target
+gtest_main_LIB_DEPENDS:STATIC=general;gtest;
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//Test BOOST_ATOMIC_TARGET_X86
+BOOST_ATOMIC_TARGET_X86:INTERNAL=
+//List of all Boost library include paths
+BOOST_LIBRARY_INCLUDES:INTERNAL=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/algorithm/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/align/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/any/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/array/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/assert/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/atomic/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/bind/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/chrono/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/concept_check/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/config/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/container/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/container_hash/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/conversion/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/core/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/date_time/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/detail/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/exception/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/function/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/function_types/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/functional/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/fusion/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/integer/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/intrusive/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/io/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/iterator/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/lexical_cast/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/move/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/mp11/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/mpl/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/optional/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/predef/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/preprocessor/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/program_options/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/range/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/ratio/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/rational/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/regex/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/smart_ptr/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/static_assert/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/system/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/thread/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/throw_exception/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/tokenizer/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/tuple/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/type_index/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/type_traits/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/typeof/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/unordered/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/utility/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/variant2/include;/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/boost-src/libs/winapi/include
+//STRINGS property for variable: BOOST_THREAD_THREADAPI
+BOOST_THREAD_THREADAPI-STRINGS:INTERNAL=pthread;win32
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -286,11 +1005,47 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/natasamihaleva/projectCXX/Lab4
+//ADVANCED property for variable: CMAKE_INSTALL_BINDIR
+CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATADIR
+CMAKE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DATAROOTDIR
+CMAKE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_DOCDIR
+CMAKE_INSTALL_DOCDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INCLUDEDIR
+CMAKE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_INFODIR
+CMAKE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBDIR
+CMAKE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LIBEXECDIR
+CMAKE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALEDIR
+CMAKE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_LOCALSTATEDIR
+CMAKE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_MANDIR
+CMAKE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_NAME_TOOL
 CMAKE_INSTALL_NAME_TOOL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_OLDINCLUDEDIR
+CMAKE_INSTALL_OLDINCLUDEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_RUNSTATEDIR
+CMAKE_INSTALL_RUNSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SBINDIR
+CMAKE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SHAREDSTATEDIR
+CMAKE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_INSTALL_SYSCONFDIR
+CMAKE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -306,7 +1061,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=58
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -349,4 +1104,80 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Python
+FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/opt/homebrew/Frameworks/Python.framework/Versions/3.10/bin/python3.10][cfound components: Interpreter ][v3.10.8()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: GIT_EXECUTABLE
+GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_DATA_LIBRARY_DEBUG
+ICU_DATA_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_DATA_LIBRARY_RELEASE
+ICU_DATA_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_DERB_EXECUTABLE
+ICU_DERB_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENBRK_EXECUTABLE
+ICU_GENBRK_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENCCODE_EXECUTABLE
+ICU_GENCCODE_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENCFU_EXECUTABLE
+ICU_GENCFU_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENCMN_EXECUTABLE
+ICU_GENCMN_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENCNVAL_EXECUTABLE
+ICU_GENCNVAL_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENDICT_EXECUTABLE
+ICU_GENDICT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENNORM2_EXECUTABLE
+ICU_GENNORM2_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENRB_EXECUTABLE
+ICU_GENRB_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_GENSPREP_EXECUTABLE
+ICU_GENSPREP_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_I18N_LIBRARY_DEBUG
+ICU_I18N_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_I18N_LIBRARY_RELEASE
+ICU_I18N_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_ICU-CONFIG_EXECUTABLE
+ICU_ICU-CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_ICUINFO_EXECUTABLE
+ICU_ICUINFO_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_ICUPKG_EXECUTABLE
+ICU_ICUPKG_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_MAKECONV_EXECUTABLE
+ICU_MAKECONV_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_MAKEFILE_INC
+ICU_MAKEFILE_INC-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_PKGDATA_EXECUTABLE
+ICU_PKGDATA_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_PKGDATA_INC
+ICU_PKGDATA_INC-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_UCONV_EXECUTABLE
+ICU_UCONV_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_UC_LIBRARY_DEBUG
+ICU_UC_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ICU_UC_LIBRARY_RELEASE
+ICU_UC_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//CMAKE_INSTALL_PREFIX during last run
+_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//Path to a program.
+_Python_EXECUTABLE:INTERNAL=/opt/homebrew/Frameworks/Python.framework/Versions/3.10/bin/python3.10
+//Python Properties
+_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;8;64;;cpython-310-darwin;/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/lib/python3.10;/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/lib/python3.10;/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages;/opt/homebrew/opt/python@3.10/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages
+_Python_INTERPRETER_SIGNATURE:INTERNAL=d861879f6de0f60676098025cfcd84c2
+cmake_package_name:INTERNAL=GTest
+generated_dir:INTERNAL=/Users/natasamihaleva/projectCXX/Lab4/cmake-build-debug/_deps/googletest-build/googletest/generated
+//ADVANCED property for variable: gmock_build_tests
+gmock_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_samples
+gtest_build_samples-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_build_tests
+gtest_build_tests-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_disable_pthreads
+gtest_disable_pthreads-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_force_shared_crt
+gtest_force_shared_crt-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: gtest_hide_internal_symbols
+gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
+targets_export_name:INTERNAL=GTestTargets
 
