@@ -29,6 +29,6 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 target_link_libraries(Lab4  gtest_main PrintTuple
-        IncludeLibs
-        CSVParser
-        ParserCommandLine)
+                                       IncludeLibs
+                                       CSVParser
+                                       ParserCommandLine)

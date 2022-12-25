@@ -7,6 +7,7 @@
 
 #include "include/PrintTuple.h"
 #include "ExceptionsParserCSV.h"
+
 template <class... Args>
 class CSVParser {
 private:
@@ -18,7 +19,7 @@ private:
     std::string line;
     int indexReadRow = 0;
 
-    void  EscapeSymbols(int countSkip) {
+    void  escapeSymbols(int countSkip) {
         for(int i = 0; i < countSkip; ++i) {
             getline(*file, line);
             if(file->eof()) {
@@ -45,7 +46,7 @@ public:
             std::cerr << ex.what();
         }
 
-        EscapeSymbols(countSkip);
+        escapeSymbols(countSkip);
         this->fillTuple();
         ++indexReadRow;
     }

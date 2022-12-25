@@ -3,32 +3,42 @@
 //
 
 #include "../include/ParserCommandLine.h"
-ParserCommandLine::ParserCommandLine((int argc, char* argv[]) {
+
+ParserCommandLine::ParserCommandLine(int argc, char* argv[]) {
     po::options_description desc("Generate parameters");
-    std::string tmp;
+    std::string lineRowDelim;
     desc.add_options()
             ("help, h", "All options_description")
-            ("countOffset, o", po::value<char>(&columnDelim), "--count=countOffset")
+            ("countOffset, o", po::value<int>(&countOffset), "--count=countOffset")
             ("row, r", po::value<char>(&columnDelim), "--row=columnDelim")
-            ("column, c", po::value<char>(&rowDelim), "--column=rowDelim")
-            ("shielding, s", po::value<char>(&shielding), "--shielding=shielding")
-            ;
-    try {
-        po::store(po::parse_command_line(argc, argv, desc), vm);
-        po::notify(vm);
-        if(vm.count("help")) {
-            std::cout << desc;
-            throw std::invalid_argument("call --help\n");
-        }
-    } catch(po::error &e) {
-        throw Exceptions(BAD_ARGS, e.what());
+            ("column, c", po::value<std::string>(&lineRowDelim), "--column=rowDelim")
+            ("shielding, s", po::value<char>(&shielding), "--shielding=shielding");
+    po::store(po::parse_command_line(argc, argv, desc), vm);
+    po::notify(vm);
+    if (vm.count("help")) {
+        std::cout << desc;
+        throw std::invalid_argument("call --help\n");
     }
 
-    switch(shielding) {
-        case '\\n' : shielding = '\n'; break;
-    }
-//    if (tmp == "\\n")
-//        lines_separator = '\n';
-//    else
-//        std::istringstream(tmp) >> lines_separator;
+    if(lineRowDelim == "\n") rowDelim = '\n';
+    else if(lineRowDelim == "\a") rowDelim = '\a';
+    else if(lineRowDelim == "\t") rowDelim = '\t';
+    else if(lineRowDelim == "\v") rowDelim = '\v';
+//    else rowDelim = static_cast<char>(lineRowDelim);
+}
+
+char ParserCommandLine::getColumnDelim() {
+    return columnDelim;
+}
+
+char ParserCommandLine::getRowDelim() {
+    return rowDelim;
+}
+
+char ParserCommandLine::getShielding() {
+    return shielding;
+}
+
+int ParserCommandLine::getCountOffset() {
+    return countOffset;
 }

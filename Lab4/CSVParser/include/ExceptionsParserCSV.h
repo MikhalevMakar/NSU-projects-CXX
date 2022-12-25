@@ -6,10 +6,10 @@
 #define LAB4_EXCEPTIONSPARSERCSV_H
 
 #include "include/CSVParser.h"
-
-inline constexpr int exceptionsDATA = 3;
-inline constexpr int exceptionsFile = 2;
-inline constexpr int exceptionsFilePermission = 1;
+inline constexpr int EXCEPTIONS_COMMAND_LINE = 4;
+inline constexpr int EXCEPTIONS_DATA = 3;
+inline constexpr int EXCEPTIONS_FILE = 2;
+inline constexpr int EXCEPTIONS_FILE_PERMISSION = 1;
 
 class ExceptionsParserCSV : public std::runtime_error {
 public:
@@ -41,6 +41,13 @@ class ExceptionsReadThread : public ExceptionsParserCSV {
 public:
     ExceptionsReadThread() = delete;
     ExceptionsReadThread(size_t row,
+                         size_t column);
+};
+
+class ExceptionsCommandLine : public ExceptionsParserCSV {
+public:
+    ExceptionsCommandLine() = delete;
+    ExceptionsCommandLine(size_t row,
                          size_t column);
 };
 
