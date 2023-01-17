@@ -14,7 +14,6 @@
 
 * ## Реализация
 
-
     class BigInt {
      public:
       BigInt();
@@ -60,20 +59,21 @@
       BigInt operator+(const BigInt&, const BigInt&);
       BigInt operator-(const BigInt&, const BigInt&);
       BigInt operator*(const BigInt&, const BigInt&);
-        BigInt operator/(const BigInt&, const BigInt&);
-        BigInt operator^(const BigInt&, const BigInt&);
-        BigInt operator%(const BigInt&, const BigInt&);
-        BigInt operator&(const BigInt&, const BigInt&);
-        BigInt operator|(const BigInt&, const BigInt&);
-
-
-    std::ostream& operator<<(std::ostream& o, const BigInt& i);
+      BigInt operator/(const BigInt&, const BigInt&);
+      BigInt operator^(const BigInt&, const BigInt&);
+      BigInt operator%(const BigInt&, const BigInt&);
+      BigInt operator&(const BigInt&, const BigInt&);
+      BigInt operator|(const BigInt&, const BigInt&);
+      
+      std::ostream& operator<<(std::ostream& o, const BigInt& i);
 
 * ## Повышенная сложность (по желанию):
 
 Реализовать семантику перемещения 
+    
     BigInt(BigInt&&); 
     BigInt& operator=(BigInt&&);
     
 Реализовать оператор ввода из потока с корректной обработкой ошибок 
+    
     std::istream& operator>>(std::istream& o, BigInt& i);
