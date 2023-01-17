@@ -7,7 +7,7 @@
 Познакомьтесь с раздельной компиляцией и пространством имен в C++. 
 В качестве примера используйте следующую программу:
 
-File module1.h:
+* ## File module1.h:
 
     #include <string>
 
@@ -28,7 +28,7 @@ File module1.h:
       }
     }
 
-*  # File module2.h:
+*  ## File module2.h:
 
     #include <string>
 
@@ -49,7 +49,7 @@ File module1.h:
       }
     }
 
-* # File main.cpp:
+* ## File main.cpp:
     
     #include "module1.h"
     #include "module2.h"
