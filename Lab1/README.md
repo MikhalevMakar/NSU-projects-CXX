@@ -43,17 +43,17 @@
        BigInt operator+() const;  // unary +
        BigInt operator-() const;  // unary -
 
-      bool operator==(const BigInt&) const;
-      bool operator!=(const BigInt&) const;
-      bool operator<(const BigInt&) const;
-      bool operator>(const BigInt&) const;
-      bool operator<=(const BigInt&) const;
-      bool operator>=(const BigInt&) const;
+       bool operator==(const BigInt&) const;
+       bool operator!=(const BigInt&) const;
+       bool operator<(const BigInt&) const;
+       bool operator>(const BigInt&) const;
+       bool operator<=(const BigInt&) const;
+       bool operator>=(const BigInt&) const;
 
-      operator int() const;
-      operator std::string() const;
+       operator int() const;
+       operator std::string() const;
 
-      size_t size() const;  // size in bytes
+       size_t size() const;  // size in bytes
       };
 
       BigInt operator+(const BigInt&, const BigInt&);
