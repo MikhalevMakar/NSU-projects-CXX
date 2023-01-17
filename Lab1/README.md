@@ -55,11 +55,11 @@
       operator std::string() const;
 
       size_t size() const;  // size in bytes
-    };
+      };
 
-        BigInt operator+(const BigInt&, const BigInt&);
-        BigInt operator-(const BigInt&, const BigInt&);
-        BigInt operator*(const BigInt&, const BigInt&);
+      BigInt operator+(const BigInt&, const BigInt&);
+      BigInt operator-(const BigInt&, const BigInt&);
+      BigInt operator*(const BigInt&, const BigInt&);
         BigInt operator/(const BigInt&, const BigInt&);
         BigInt operator^(const BigInt&, const BigInt&);
         BigInt operator%(const BigInt&, const BigInt&);
