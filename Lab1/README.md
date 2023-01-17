@@ -57,14 +57,14 @@
       size_t size() const;  // size in bytes
     };
 
-    BigInt operator+(const BigInt&, const BigInt&);
-    BigInt operator-(const BigInt&, const BigInt&);
-    BigInt operator*(const BigInt&, const BigInt&);
-    BigInt operator/(const BigInt&, const BigInt&);
-    BigInt operator^(const BigInt&, const BigInt&);
-    BigInt operator%(const BigInt&, const BigInt&);
-    BigInt operator&(const BigInt&, const BigInt&);
-    BigInt operator|(const BigInt&, const BigInt&);
+        BigInt operator+(const BigInt&, const BigInt&);
+        BigInt operator-(const BigInt&, const BigInt&);
+        BigInt operator*(const BigInt&, const BigInt&);
+        BigInt operator/(const BigInt&, const BigInt&);
+        BigInt operator^(const BigInt&, const BigInt&);
+        BigInt operator%(const BigInt&, const BigInt&);
+        BigInt operator&(const BigInt&, const BigInt&);
+        BigInt operator|(const BigInt&, const BigInt&);
 
 
     std::ostream& operator<<(std::ostream& o, const BigInt& i);
