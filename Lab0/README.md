@@ -12,69 +12,71 @@
 
 * ## File module1.h:
 
-    #include <string>
+        #include <string>
 
-    namespace Module1
-    {
-      std::string getMyName();
-    }
+        namespace Module1
+        {
+          std::string getMyName();
+        }
+    
+* ## File module1.cpp
+    
+    
+        #include "module1.h"
 
-    File module1.cpp
-    #include "module1.h"
-
-    namespace Module1
-    {
-      std::string getMyName()
-      {
-        std::string name = "John";
-        return name;
-      }
-    }
+        namespace Module1
+        {
+          std::string getMyName()
+          {
+            std::string name = "John";
+            return name;
+          }
+        }
 
 *  ## File module2.h:
 
-    #include <string>
+        #include <string>
 
-    namespace Module2
-    {
-      std::string getMyName();
-    }
+        namespace Module2
+        {
+          std::string getMyName();
+        }
 
-    File module2.cpp
-    #include "module2.h"
+* ## File module2.cpp
+        #include "module2.h"
 
-    namespace Module2
-    {
-      std::string getMyName()
-      {
-        std::string name = "James";
-        return name;
-      }
-    }
+        namespace Module2
+        {
+          std::string getMyName()
+          {
+            std::string name = "James";
+            return name;
+          }
+        }
 
 * ## File main.cpp:
     
-    #include "module1.h"
-    #include "module2.h"
-    #include <iostream>
+        #include "module1.h"
+        #include "module2.h"
+        #include <iostream>
 
-    int main(int argc, char** argv)
-    {
-      std::cout <<  "Hello world!" << "\n";
+        int main(int argc, char** argv)
+        {
+          std::cout <<  "Hello world!" << "\n";
 
-      std::cout << Module1::getMyName() << "\n";
-      std::cout << Module2::getMyName() << "\n";
+          std::cout << Module1::getMyName() << "\n";
+          std::cout << Module2::getMyName() << "\n";
 
-      using namespace Module1;
-      std::cout << getMyName() << "\n"; // (A)
-      std::cout << Module2::getMyName() << "\n";
+          using namespace Module1;
+          std::cout << getMyName() << "\n"; // (A)
+          std::cout << Module2::getMyName() << "\n";
 
-      //using namespace Module2; // (B)
-      //std::cout << getMyName() << "\n"; // COMPILATION ERROR (C)
+          //using namespace Module2; // (B)
+          //std::cout << getMyName() << "\n"; // COMPILATION ERROR (C)
 
-      using Module2::getMyName;
-      std::cout << getMyName() << "\n"; // (D)
-    }
+          using Module2::getMyName;
+          std::cout << getMyName() << "\n"; // (D)
+        }
     
 ##  З⃣а⃣д⃣а⃣ч⃣а⃣     №⃣ 0⃣ b⃣
     
