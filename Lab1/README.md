@@ -14,13 +14,13 @@
 
 * ## Реализация
 
-    class BigInt {
-     public:
-      BigInt();
-      BigInt(int);
-      BigInt(std::string); // бросать исключение std::invalid_argument при ошибке
-      BigInt(const BigInt&);
-      ~BigInt();
+        class BigInt {
+         public:
+          BigInt();
+          BigInt(int);
+          BigInt(std::string); // бросать исключение std::invalid_argument при ошибке
+          BigInt(const BigInt&);
+          ~BigInt();
 
       BigInt& operator=(const BigInt&);  //возможно присваивание самому себе!
 
