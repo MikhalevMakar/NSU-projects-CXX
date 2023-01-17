@@ -14,34 +14,34 @@
 
 * ## Реализация
 
-        class BigInt {
-         public:
-          BigInt();
-          BigInt(int);
-          BigInt(std::string); // бросать исключение std::invalid_argument при ошибке
-          BigInt(const BigInt&);
-          ~BigInt();
+      class BigInt {
+       public:
+        BigInt();
+        BigInt(int);
+        BigInt(std::string); // бросать исключение std::invalid_argument при ошибке
+        BigInt(const BigInt&);
+        ~BigInt();
 
-      BigInt& operator=(const BigInt&);  //возможно присваивание самому себе!
+       BigInt& operator=(const BigInt&);  //возможно присваивание самому себе!
 
-      BigInt operator~() const;
+       BigInt operator~() const;
 
-      BigInt& operator++();
-      const BigInt operator++(int) const;
-      BigInt& operator--();
-      const BigInt operator--(int) const;
+       BigInt& operator++();
+       const BigInt operator++(int) const;
+       BigInt& operator--();
+       const BigInt operator--(int) const;
 
-      BigInt& operator+=(const BigInt&);
-      BigInt& operator*=(const BigInt&);
-      BigInt& operator-=(const BigInt&);
-      BigInt& operator/=(const BigInt&);
-      BigInt& operator^=(const BigInt&);
-      BigInt& operator%=(const BigInt&);
-      BigInt& operator&=(const BigInt&);
-      BigInt& operator|=(const BigInt&);
+       BigInt& operator+=(const BigInt&);
+       BigInt& operator*=(const BigInt&);
+       BigInt& operator-=(const BigInt&);
+       BigInt& operator/=(const BigInt&);
+       BigInt& operator^=(const BigInt&);
+       BigInt& operator%=(const BigInt&);
+       BigInt& operator&=(const BigInt&);
+       BigInt& operator|=(const BigInt&);
 
-      BigInt operator+() const;  // unary +
-      BigInt operator-() const;  // unary -
+       BigInt operator+() const;  // unary +
+       BigInt operator-() const;  // unary -
 
       bool operator==(const BigInt&) const;
       bool operator!=(const BigInt&) const;
